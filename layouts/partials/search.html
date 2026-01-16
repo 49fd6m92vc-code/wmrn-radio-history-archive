@@ -1,0 +1,10 @@
+{{ if .Site.Params.search.enable }}
+<form class="header-search" action="{{ "search/" | relURL }}" method="get" role="search">
+  <input
+    type="search"
+    name="q"
+    placeholder="Search archive…"
+    aria-label="Search the WMRN Radio History Archive"
+  >
+</form>
+{{ end }}

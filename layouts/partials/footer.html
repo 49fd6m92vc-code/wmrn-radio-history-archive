@@ -1,0 +1,32 @@
+<footer class="footer">
+  <div class="footer__inner">
+
+    {{- if .Site.Params.widgets.footer }}
+    <div class="footer__widgets">
+      {{- range .Site.Params.widgets.footer }}
+        {{- partial (printf "widgets/%s.html" .) $ }}
+      {{- end }}
+    </div>
+    {{- end }}
+
+    {{/* Footer navigation (Access & Use, etc.) */}}
+    {{ with .Site.Menus.footer }}
+    <nav class="footer__nav" aria-label="Footer navigation">
+      <ul class="footer__menu">
+        {{ range . }}
+        <li class="footer__menu-item">
+          <a class="footer__menu-link" href="{{ .URL }}">
+            {{ .Name }}
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </nav>
+    {{ end }}
+
+    <div class="footer__copyright">
+      {{ .Site.Params.copyright | default (printf "© %d %s" now.Year .Site.Title) }}
+    </div>
+
+  </div>
+</footer>

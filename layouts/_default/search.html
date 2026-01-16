@@ -1,0 +1,25 @@
+{{ define "main" }}
+<div class="content">
+  <h1>{{ .Title }}</h1>
+
+  <form id="search-form" action="{{ "search" | relURL }}">
+    <input
+      type="search"
+      id="search-input"
+      name="q"
+      placeholder="Search the archive…"
+      value="{{ .Site.Params.search.query | default "" }}"
+    >
+  </form>
+
+  <div id="search-results"></div>
+</div>
+
+<script>
+  var indexURL = "{{ "index.json" | relURL }}";
+</script>
+
+<script src="/js/lunr.min.js"></script>
+<script src="/js/search.js"></script>
+{{ end }}
+

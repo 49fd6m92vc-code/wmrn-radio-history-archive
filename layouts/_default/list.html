@@ -1,0 +1,23 @@
+{{ define "main" }}
+<main class="main" role="main">
+
+	{{/*
+		IMPORTANT:
+		- NO .Title is rendered here
+		- Section titles must live inside _index.md content
+	*/}}
+
+	<div class="content main__content clearfix">
+		{{ .Content }}
+	</div>
+
+	{{ if .Pages }}
+	<section class="list">
+		{{ range .Pages }}
+			{{ .Render "summary" }}
+		{{ end }}
+	</section>
+	{{ end }}
+
+</main>
+{{ end }}

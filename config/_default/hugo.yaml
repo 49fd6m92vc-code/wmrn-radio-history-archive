@@ -1,0 +1,16 @@
+publishDir: docs
+
+module:
+  hugoVersion:
+    extended: true
+
+build:
+  useResourceCacheWhen: always
+
+params:
+  # HARD KILL SCSS + Font Awesome
+  disableSCSS: true
+  disableFontAwesome: true
+
+security:
+  enableInlineShortcodes: false

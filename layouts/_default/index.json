@@ -1,0 +1,22 @@
+{{/* 
+  DO NOT MODIFY WITHOUT INTENT.
+  This file powers site-wide search.
+  Uses site.AllPages intentionally for archive-style content.
+*/}}
+{{- $index := slice -}}
+
+{{- range site.AllPages -}}
+  {{- if and (not .Draft) (ne .Params.searchable false) -}}
+    {{- if .Content -}}
+      {{- $index = $index | append (dict
+        "title" .Title
+        "contents" (.Plain | htmlUnescape)
+        "uri" .RelPermalink
+        "section" .Section
+        "kind" .Kind
+      ) -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $index | jsonify -}}

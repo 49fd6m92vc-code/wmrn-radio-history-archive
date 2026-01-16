@@ -1,0 +1,31 @@
+<style>
+/* =========================
+   OVERRIDE MAINROAD NAV STYLES
+   ========================= */
+
+.menu__sub-list .menu__link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #eee;
+  background: transparent;
+}
+
+/* Hover (now beats theme CSS) */
+.menu__sub-list .menu__link:hover {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+/* Active submenu page */
+.menu__sub-item--active > .menu__link {
+  background-color: #9c1d1d;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Indicator */
+.menu__sub-item--active > .menu__link::before {
+  content: "› ";
+  opacity: 0.8;
+}
+</style>

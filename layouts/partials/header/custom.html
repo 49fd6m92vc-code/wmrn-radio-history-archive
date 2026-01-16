@@ -1,0 +1,24 @@
+{{ with .Site.Params.social }}
+<div class="header-social">
+  {{ with .facebook }}
+    <a href="{{ . }}" aria-label="Facebook" target="_blank" rel="noopener">
+      {{ partial "svg/facebook.svg" }}
+    </a>
+  {{ end }}
+  {{ with .instagram }}
+    <a href="{{ . }}" aria-label="Instagram" target="_blank" rel="noopener">
+      {{ partial "svg/instagram.svg" }}
+    </a>
+  {{ end }}
+  {{ with .youtube }}
+    <a href="{{ . }}" aria-label="YouTube" target="_blank" rel="noopener">
+      {{ partial "svg/youtube.svg" }}
+    </a>
+  {{ end }}
+  {{ with .twitter }}
+    <a href="{{ . }}" aria-label="Twitter" target="_blank" rel="noopener">
+      {{ partial "svg/twitter.svg" }}
+    </a>
+  {{ end }}
+</div>
+{{ end }}

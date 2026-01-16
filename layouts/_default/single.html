@@ -1,0 +1,26 @@
+{{ define "content" }}
+
+<article class="post">
+
+	{{/* AUTO-GENERATED TITLE REMOVED — CONTENT CONTROLS HEADINGS */}}
+
+	{{ partial "post_thumbnail.html" (dict "class" "post" "page" .) }}
+	{{ partial "post_toc.html" . }}
+
+	<div class="content post__content clearfix">
+		{{ .Content }}
+	</div>
+
+	{{ if .Params.tags }}
+	<footer class="post__footer">
+		{{ partial "post_tags.html" . }}
+	</footer>
+	{{ end }}
+
+</article>
+
+{{ partial "authorbox.html" . }}
+{{ partial "pager.html" . }}
+{{ partial "comments.html" . }}
+
+{{ end }}

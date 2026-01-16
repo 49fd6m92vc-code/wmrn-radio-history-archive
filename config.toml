@@ -1,0 +1,139 @@
+baseURL = "https://wmrnhistory.org/"
+languageCode = "en-us"
+title = "WMRN Radio History Archive"
+theme = "mainroad"
+
+# ------------------------
+# Core Hugo Settings
+# ------------------------
+
+enableGitInfo = false
+enableRobotsTXT = false
+
+mainSections = [
+  "station-history",
+  "people-programming",
+  "facilities-equipment",
+  "browse-the-archive",
+  "about",
+  "contribute-materials"
+]
+
+# ------------------------
+# Build
+# ------------------------
+
+[build]
+  writeStats = false
+  useResourceCacheWhen = "never"
+
+# ------------------------
+# Outputs (REQUIRED FOR SEARCH)
+# ------------------------
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# ------------------------
+# Markup
+# ------------------------
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+# ------------------------
+# Mainroad Parameters
+# ------------------------
+
+[params]
+  description = "Preserving the broadcast legacy of WMRN-AM (1490) and WMRN-FM — Marion, Ohio."
+  author = "WMRN Radio History Archive"
+
+  pager = true
+  toc = false
+  post_meta = ["author", "date"]
+
+  customCSS = ["css/custom.css"]
+
+  copyright = "© 2026 WMRN Radio History Archive"
+
+  images = ["images/social/wmrn-radio-history-archive-social.png"]
+
+# ------------------------
+# Search (Lunr)
+# ------------------------
+
+[params.search]
+  enable = true
+  provider = "lunr"
+  index_sections = false
+
+# ------------------------
+# Site Logo
+# ------------------------
+
+[params.logo]
+  image = "images/site-logo.png"
+  title = "WMRN Radio History Archive"
+
+# ------------------------
+# Social Links
+# ------------------------
+
+[params.social]
+  facebook = "https://www.facebook.com/WMRNHistoryArchive"
+
+# ------------------------
+# Navigation Menu
+# ------------------------
+
+[menu]
+
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Station History"
+    identifier = "station-history"
+    url = "/station-history/"
+    weight = 2
+
+  [[menu.main]]
+    name = "Founding of WMRN"
+    parent = "station-history"
+    url = "/station-history/founding/"
+    weight = 1
+
+  [[menu.main]]
+    name = "Facilities & Equipment"
+    url = "/facilities-equipment/"
+    weight = 3
+
+  [[menu.main]]
+    name = "People & Programming"
+    url = "/people-programming/"
+    weight = 4
+
+  [[menu.main]]
+    name = "Browse the Archive"
+    url = "/browse-the-archive/"
+    weight = 5
+
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 6
+
+  [[menu.main]]
+    name = "Contribute"
+    url = "/contribute-materials/"
+    weight = 7
+
+  [[menu.footer]]
+    name = "Access & Use Policy"
+    url = "/access-and-use/"
+    weight = 10

@@ -1,0 +1,87 @@
+/* =========================
+   GLOBAL TYPOGRAPHY
+   ========================= */
+
+body {
+  font-family: "Libre Baskerville", Georgia, "Times New Roman", serif;
+  color: #1f2933;
+}
+
+/* =========================
+   HEADER / NAV
+   ========================= */
+
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.logo a {
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: #5b0f14;
+}
+
+/* =========================
+   MENU / DROPDOWNS
+   ========================= */
+
+#menu {
+  display: flex;
+  gap: 1.25rem;
+}
+
+#menu li {
+  position: relative;
+  list-style: none;
+}
+
+#menu li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  padding: 0.4rem 0;
+  z-index: 9999;
+}
+
+#menu li:hover > ul {
+  display: block;
+}
+
+#menu li ul li a {
+  display: block;
+  padding: 0.45rem 1rem;
+  white-space: nowrap;
+  color: #1f2933;
+}
+
+#menu li ul li a:hover {
+  background: #f3f4f6;
+}
+
+/* =========================
+   FIX PAPERMOD CLIPPING
+   ========================= */
+
+.header,
+.nav,
+.nav ul,
+#menu {
+  overflow: visible !important;
+}
+
+/* =========================
+   HOMEPAGE IMAGE NORMALIZATION
+   ========================= */
+
+body.home .page-content img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+  margin: 1.5rem 0;
+}

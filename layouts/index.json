@@ -1,0 +1,22 @@
+{{- $index := slice -}}
+
+{{- range site.AllPages -}}
+  {{- if and
+    (ne .Params.searchable false)
+    (or
+      (eq .Kind "home")
+      (eq .Kind "section")
+      (eq .Kind "page")
+    )
+  -}}
+    {{- $index = $index | append (dict
+      "title" .Title
+      "contents" .Plain
+      "uri" .RelPermalink
+      "section" (cond (eq .Kind "home") "home" .Section)
+      "kind" .Kind
+    ) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $index | jsonify -}}

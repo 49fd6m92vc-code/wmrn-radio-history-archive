@@ -1,0 +1,10 @@
+{{- $index := slice -}}
+{{- if ne .Params.searchable false -}}
+  {{- $index = $index | append (dict
+    "title" .Title
+    "contents" .Plain
+    "uri" .RelPermalink
+    "section" .Section
+  ) -}}
+{{- end -}}
+{{- $index | jsonify -}}
