@@ -2,6 +2,7 @@ baseURL = "https://wmrnhistory.org/"
 languageCode = "en-us"
 title = "WMRN Radio History Archive"
 theme = "mainroad"
+publishDir = "docs"
 
 # ------------------------
 # Core Hugo Settings
