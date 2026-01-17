@@ -3,6 +3,10 @@ languageCode = "en-us"
 title = "WMRN Radio History Archive"
 theme = "mainroad"
 
+canonifyURLs = true
+relativeURLs = true
+publishDir = "public"
+
 # ------------------------
 # Core Hugo Settings
 # ------------------------
