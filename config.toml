@@ -55,7 +55,7 @@ mainSections = [
   description = "Preserving the broadcast legacy of WMRN-AM (1490) and WMRN-FM — Marion, Ohio."
   author = "WMRN Radio History Archive"
 
-  pager = true
+  pager = false
   toc = false
   post_meta = ["author", "date"]
 

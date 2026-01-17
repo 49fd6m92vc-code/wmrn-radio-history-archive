@@ -3,6 +3,7 @@ title: "Station History"
 layout: page
 searchable: true
 menu: false
+pager: false
 description: "The story of WMRN Radio — Marion’s hometown station since 1940."
 ---
 
