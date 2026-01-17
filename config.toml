@@ -2,7 +2,8 @@ baseURL = "https://49fd6m92vc-code.github.io/wmrn-radio-history-archive/"
 languageCode = "en-us"
 title = "WMRN Radio History Archive"
 theme = "mainroad"
-publishDir = "public"
+canonifyURLs = true
+relativeURLs = false
 
 # ------------------------
 # Core Hugo Settings
