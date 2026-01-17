@@ -11,13 +11,7 @@
 		{{ .Content }}
 	</div>
 
-	{{ if .Pages }}
-	<section class="list">
-		{{ range .Pages }}
-			{{ .Render "summary" }}
-		{{ end }}
-	</section>
-	{{ end }}
+{{/* Section children intentionally not auto-listed */}}
 
 </main>
 {{ end }}
