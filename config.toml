@@ -1,10 +1,10 @@
-baseURL = "https://49fd6m92vc-code.github.io/wmrn-radio-history-archive/"
+baseURL = "https://courageous-figolla-52a287.netlify.app/"
 languageCode = "en-us"
 title = "WMRN Radio History Archive"
 theme = "mainroad"
 
 canonifyURLs = true
-relativeURLs = true
+relativeURLs = false
 publishDir = "public"
 
 # ------------------------
