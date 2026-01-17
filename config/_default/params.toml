@@ -1,0 +1,12 @@
+[header]
+  title = "WMRN Radio History Archive"
+  logo = "/images/site-logo.png"
+
+[footer]
+  copyright = "© WMRN Radio History Archive"
+
+[sidebar]
+  show = true
+
+[search]
+  enable = true
