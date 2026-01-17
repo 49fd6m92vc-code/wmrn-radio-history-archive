@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "WMRN Radio History Archive"
 theme = "mainroad"
 
-canonifyURLs = true
+canonifyURLs = false
 relativeURLs = false
 publishDir = "public"
 
@@ -12,7 +12,7 @@ publishDir = "public"
 # ------------------------
 
 enableGitInfo = false
-enableRobotsTXT = false
+enableRobotsTXT = true
 
 mainSections = [
   "station-history",
@@ -63,6 +63,7 @@ mainSections = [
 
   copyright = "© 2026 WMRN Radio History Archive"
 
+  # 🔑 THIS is what generates og:image in Mainroad
   images = ["images/social/wmrn-radio-history-archive-social.png"]
 
 # ------------------------
