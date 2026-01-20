@@ -7,9 +7,9 @@ pager: false
 list: false
 description: "The story of WMRN Radio — Marion’s hometown station since 1940."
 
-cascade:
   _build:
-    list: never
+    list: false
+    render: true
 
 ---
 
