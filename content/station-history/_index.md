@@ -4,12 +4,11 @@ layout: page
 searchable: true
 menu: false
 pager: false
-description: "The story of WMRN Radio — Marion’s hometown station since 1940."
+description: "The story of WMRN Radio – Marion’s hometown station since 1940."
 
-  _build:
-    list: false
-    render: true
-
+_build:
+  list: false
+  render: true
 ---
 
 # Station History  
