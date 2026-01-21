@@ -1,5 +1,5 @@
 [build]
-  command = "hugo"
+  command = "hugo --destination public --cleanDestinationDir"
   publish = "public"
 
 [build.environment]
