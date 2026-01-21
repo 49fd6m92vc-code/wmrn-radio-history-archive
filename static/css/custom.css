@@ -965,3 +965,33 @@ h2 + p em {
 .header__social a:hover svg path {
   fill: #145DBF !important;
 }
+
+/* === TYPOGRAPHY OVERRIDE (ARCHIVAL SAFE) === */
+
+html {
+  font-size: 100%; /* preserve browser defaults */
+}
+
+body {
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+/* Main content paragraphs */
+.content,
+.entry__content,
+.post__content,
+.page__content {
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+/* Optional: slightly larger on wide screens */
+@media (min-width: 1200px) {
+  .content,
+  .entry__content,
+  .post__content,
+  .page__content {
+    font-size: 19px;
+  }
+}
