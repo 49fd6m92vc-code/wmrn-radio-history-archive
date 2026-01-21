@@ -110,7 +110,7 @@ mainSections = [
   [[menu.main]]
     name = "Founding of WMRN"
     parent = "station-history"
-    url = "/station-history/founding/"
+    url = "/founding-of-wmrn/"
     weight = 1
 
   [[menu.main]]
