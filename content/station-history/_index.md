@@ -24,9 +24,11 @@ This archive documents the station’s ownership, call letters, formats, milesto
 
 ### 1940s — WMRN Goes on the Air
 
-WMRN officially signed on the air at **2:00 p.m. on December 23, 1940**, beginning operations on **AM 1490** from Marion, Ohio.
+WMRN officially began regular broadcasting at **1:15 p.m. on December 23, 1940**, following receipt of final federal authorization earlier that day. The station signed on broadcasting at **1500 kilocycles on the AM dial** from Marion, Ohio.
 
-The station’s inaugural broadcast marked the arrival of Marion’s first full-time local radio voice. From its earliest days, WMRN emphasized local news, community information, and public service, quickly becoming an essential part of daily life in Marion and north-central Ohio.
+The inaugural broadcast marked the arrival of Marion’s first full-time local radio voice. From its earliest days, WMRN emphasized local news, community information, and public service, quickly becoming an essential part of daily life in Marion and north-central Ohio.
+
+In **early 1941**, WMRN shifted from **1500 kilocycles to 1490 kilocycles** as part of the nationwide frequency reallocation mandated by the North American Regional Broadcasting Agreement (NARBA). The reassignment placed WMRN on a standard local-channel frequency, where it has continued to operate for decades.
 
 During World War II and the years that followed, WMRN served as a trusted source of information, helping connect the community during a period of national uncertainty and change.
 
@@ -102,7 +104,7 @@ These efforts laid the groundwork for formal archival preservation.
 
 The **WMRN Radio History Archive** exists to preserve and share the station’s legacy across:
 
-- AM broadcasting since **December 23, 1940 (2:00 p.m. sign-on)**
+- AM broadcasting since **December 23, 1940 (1:15 p.m. first regular broadcast)**
 - FM broadcasting since **May 1953**
 
 This is a living project dedicated to documenting WMRN’s people, programming, facilities, and community impact so that its history is preserved for future generations.
