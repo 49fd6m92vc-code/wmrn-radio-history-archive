@@ -36,7 +36,7 @@ During World War II and the years that followed, WMRN served as a trusted source
 
 ### 1950s — Expansion and the Birth of WMRN-FM
 
-On **May 6, 1953**, WMRN expanded to the FM band with the launch of **WMRN-FM**, representing a major technical and strategic milestone in the station’s history.
+On **May 6, 1953 at 6:30a.m.**, WMRN expanded to the FM band with the launch of **WMRN-FM**, representing a major technical and strategic milestone in the station’s history.
 
 In its early years, WMRN-FM primarily simulcast WMRN-AM, a common practice at the time as FM broadcasting was still emerging and FM receivers were not yet widespread. The addition of FM positioned WMRN for the future while maintaining the station’s established AM service.
 
