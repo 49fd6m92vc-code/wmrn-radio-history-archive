@@ -105,7 +105,7 @@ These efforts laid the groundwork for formal archival preservation.
 The **WMRN Radio History Archive** exists to preserve and share the station’s legacy across:
 
 - AM broadcasting since **December 23, 1940 (1:15 p.m. first regular broadcast)**
-- FM broadcasting since **May 1953**
+- FM broadcasting since **May 6, 1953 at 6:30a.m.**
 
 This is a living project dedicated to documenting WMRN’s people, programming, facilities, and community impact so that its history is preserved for future generations.
 
