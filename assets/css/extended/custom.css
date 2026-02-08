@@ -8,6 +8,15 @@ body {
 }
 
 /* =========================
+   BRAND COLORS (LIGHT MODE)
+   ========================= */
+
+:root {
+  --wmrn-red: #8B1E1E;
+  --wmrn-red-hover: #6F1616;
+}
+
+/* =========================
    HEADER / NAV
    ========================= */
 
@@ -19,7 +28,7 @@ body {
 .logo a {
   font-weight: 700;
   letter-spacing: 0.03em;
-  color: #5b0f14;
+  color: var(--wmrn-red);
 }
 
 /* =========================
@@ -34,6 +43,14 @@ body {
 #menu li {
   position: relative;
   list-style: none;
+}
+
+#menu li a {
+  color: var(--wmrn-red);
+}
+
+#menu li a:hover {
+  color: var(--wmrn-red-hover);
 }
 
 #menu li ul {
@@ -84,4 +101,51 @@ body.home .page-content img {
   object-fit: cover;
   display: block;
   margin: 1.5rem 0;
+}
+
+/* =========================
+   DARK MODE (SYSTEM-BASED)
+   ========================= */
+
+@media (prefers-color-scheme: dark) {
+
+  :root {
+    --wmrn-red: #9C2A2A;
+    --wmrn-red-hover: #B33A3A;
+  }
+
+  body {
+    background: #0f141a;
+    color: #e5e7eb;
+  }
+
+  .header {
+    background: #111827;
+    border-bottom: 1px solid #1f2933;
+  }
+
+  .logo a {
+    color: var(--wmrn-red);
+  }
+
+  #menu li a {
+    color: var(--wmrn-red);
+  }
+
+  #menu li a:hover {
+    color: var(--wmrn-red-hover);
+  }
+
+  #menu li ul {
+    background: #111827;
+    border-color: #1f2933;
+  }
+
+  #menu li ul li a {
+    color: #e5e7eb;
+  }
+
+  #menu li ul li a:hover {
+    background: #1f2933;
+  }
 }
