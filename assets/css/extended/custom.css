@@ -1,3 +1,7 @@
+body {
+  outline: 10px solid hotpink !important;
+}
+
 /* =========================
    BRAND COLOR TOKENS
    ========================= */
