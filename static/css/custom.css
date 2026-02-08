@@ -1,34 +1,12 @@
 /* =========================
-   BRAND TOKENS (WMRN)
-   ========================= */
-
-:root {
-  --wmrn-red: #8B1E1E;
-  --wmrn-red-hover: #6F1616;
-
-  --bg-light: #ffffff;
-  --bg-soft: #f5f5f5;
-  --bg-muted: #f9f9f9;
-  --border-light: #dddddd;
-
-  --text-main: #222222;
-  --text-muted: #555555;
-}
-
-/* =========================
    BASE TYPOGRAPHY
    ========================= */
 
-html {
-  font-size: 100%;
-}
-
 body {
   font-family: "EB Garamond", serif;
-  font-size: 18px;
-  color: var(--text-main);
-  line-height: 1.65;
-  background: var(--bg-light);
+   font-size: 19px
+  color: #222;
+  line-height: 1.6;
 }
 
 /* =========================
@@ -53,9 +31,9 @@ body {
   object-fit: contain;
   display: block;
   margin: 1.75rem 0;
-  background: var(--bg-soft);
+  background: #f5f5f5;
   padding: 0.75rem;
-  border: 1px solid var(--border-light);
+  border: 1px solid #ddd;
   border-radius: 2px;
 }
 
@@ -67,7 +45,41 @@ body {
 }
 
 /* =========================
-   HEADER / SEARCH
+   REMOVE AUTO-GENERATED LISTS (SAFE)
+   ========================= */
+
+/* Hide widgets in sidebar/footer only */
+.widget-recent,
+.widget-pages {
+  display: none !important;
+}
+
+/* DO NOT hide list__item globally — search uses it */
+
+/* =========================
+   HEADER — DESKTOP
+   ========================= */
+
+.header .header__container {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo {
+  flex-shrink: 0;
+}
+
+.header .header__tools {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+  padding-left: 12px;
+  border-left: none;
+}
+
+/* =========================
+   SEARCH FIELD
    ========================= */
 
 .header-search input,
@@ -84,12 +96,856 @@ body {
 
 .header-search input:focus {
   outline: none;
-  border-color: var(--wmrn-red);
+  border-color: #e22d30;
 }
 
 /* =========================
-   SOCIAL ICON (FACEBOOK)
+   SOCIAL ICON
    ========================= */
+
+.header__social {
+  display: flex;
+  align-items: center;
+}
+
+.header__social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  color: #1877F2;
+}
+  color: #1877F2;
+}
+}
+
+.header__social a:hover {
+   color: #145DBF;
+}
+
+.header__social svg {
+  width: 48px;
+  height: 48px;
+}
+
+/* =========================
+   DESKTOP NAV
+   ========================= */
+
+@media (min-width: 1024px) {
+
+  .menu__list {
+    display: flex;
+    align-items: center;
+  }
+
+  .menu__item {
+    white-space: nowrap;
+  }
+
+  .menu__link {
+    font-size: 0.83rem;
+    padding: 0.45rem 0.55rem;
+  }
+}
+
+/* =========================
+   DESKTOP DROPDOWNS
+   ========================= */
+
+.menu__item--has-children {
+  position: relative;
+}
+
+.menu__item--has-children > .menu__link::after {
+  content: " ▾";
+  font-size: 0.7em;
+  margin-left: 0.25rem;
+  opacity: 0.7;
+}
+
+.menu__sub-list {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: #222;
+  border-top: 2px solid #e22d30;
+  z-index: 1000;
+}
+
+.menu__item--has-children:hover > .menu__sub-list {
+  display: block;
+}
+
+.menu__sub-list .menu__link {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #fff;
+}
+
+.menu__sub-list .menu__link:hover {
+  background: #e22d30;
+}
+
+/* =========================
+   FOUNDING RECORD BOX
+   ========================= */
+
+.founding-record-box {
+  border: 1px solid #ccc;
+  padding: 1rem 1.25rem;
+  margin: 2rem 0;
+  background: #fafafa;
+}
+
+/* =========================
+   MOBILE — STOCK MAINROAD MENU
+   ========================= */
+
+@media (max-width: 1023px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  /* Header stack */
+  .header__container {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .header__tools {
+    width: 100%;
+    justify-content: center;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .header__tools input {
+    width: 160px;
+    max-width: 70vw;
+  }
+
+  /* Hide checkbox but keep functionality */
+  .menu__toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* Stock MENU bar */
+  .menu {
+    background: #2a2a2a;
+  }
+
+  .menu__btn {
+    display: block;
+    width: 100%;
+    padding: 0.9rem 1rem;
+    text-align: right;
+    cursor: pointer;
+    background: #2a2a2a;
+  }
+
+  .menu__btn-title {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  /* Menu closed by default */
+  .menu__list {
+    display: none;
+    background: #2a2a2a;
+  }
+
+  /* Open when toggled */
+  .menu__toggle:checked ~ .menu__list {
+    display: block;
+  }
+
+  /* Links */
+  .menu__link {
+    display: block;
+    padding: 1rem;
+    color: #ffffff;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .menu__link:hover,
+  .menu__link:focus {
+    background: #333333;
+  }
+
+  /* Submenus */
+  .menu__sub-list {
+    background: #1f1f1f;
+  }
+
+  .menu__sub-list .menu__link {
+    padding-left: 2rem;
+    color: #dddddd;
+  }
+
+  .menu__sub-list .menu__link:hover {
+    background: #e22d30;
+    color: #ffffff;
+  }
+}
+
+/* =========================
+   MOBILE MENU BAR — MATCH STOCK MAINROAD HEIGHT
+   ========================= */
+
+@media (max-width: 1023px) {
+
+  /* Slim down the MENU bar */
+  .menu {
+    height: auto;
+  }
+
+  .menu__btn {
+    padding: 0.55rem 1rem; /* STOCK-like height */
+    line-height: 1.2;
+  }
+
+  .menu__btn-title {
+    font-size: 0.75rem;     /* Stock Mainroad size */
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+  }
+
+  /* Ensure no extra vertical padding sneaks in */
+  .menu__btn * {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+/* =========================
+   DESKTOP NAV — HARD FIX
+   ========================= */
+
+/* NEVER show the raw checkbox (desktop or mobile) */
+.menu__toggle {
+  position: absolute !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0;
+  height: 0;
+}
+
+/* Desktop menu bar alignment */
+@media (min-width: 1024px) {
+
+  .menu {
+    display: flex;
+    align-items: center;
+    height: 42px; /* Stock Mainroad height */
+  }
+
+  .menu__list {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .menu__item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .menu__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    line-height: 1;
+    padding: 0 0.65rem; /* Stock spacing */
+  }
+}
+
+/* =========================
+   DESKTOP NAV — CENTER FIX (FINAL)
+   ========================= */
+
+/* Kill checkbox everywhere, forever */
+.menu__toggle {
+  position: absolute !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  width: 0 !important;
+  height: 0 !important;
+}
+
+/* Desktop nav bar */
+@media (min-width: 1024px) {
+
+  /* Full-width bar */
+  .menu {
+    display: flex;
+    justify-content: center;   /* KEY FIX */
+    background: #1f1f1f;
+    height: 42px;              /* Stock Mainroad height */
+  }
+
+  /* Inner centering container */
+  .menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;   /* KEY FIX */
+    max-width: 1100px;         /* Match content width */
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+  }
+
+  /* Menu items */
+  .menu__item {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  /* Links */
+  .menu__link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 0.65rem;        /* Stock spacing */
+    line-height: 1;
+    white-space: nowrap;
+  }
+}
+
+/* =========================
+   SITE TITLE — USE TITLE CASE
+   ========================= */
+
+/* Header title text */
+.logo__title,
+.logo__link,
+.logo__text {
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+/* =========================
+   NAVIGATION — TITLE CASE (MATCH SITE TITLE)
+   ========================= */
+
+/* Main navigation links */
+.menu__link {
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  font-weight: 600; /* matches title strength without shouting */
+}
+
+/* Dropdown links */
+.menu__sub-list .menu__link {
+  text-transform: none !important;
+  letter-spacing: normal !important;
+  font-weight: 500;
+}
+
+/* =========================
+   NAVIGATION — SPACING & SCALE REFINEMENT
+   ========================= */
+
+@media (min-width: 1024px) {
+
+  /* Navigation bar height stays stock */
+  .menu {
+    height: 42px;
+  }
+
+  /* Nav list fills the bar more confidently */
+ .menu__list {
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 1.25rem; /* matches stock horizontal inset */
+}
+
+  /* Individual menu items */
+  .menu__item {
+    margin: 0; /* rely on padding instead */
+  }
+
+  /* Nav links — larger and more spacious */
+  .menu__link {
+    font-size: 0.95rem;              /* up from ~0.83rem */
+    padding: 0 1.05rem;             /* spread buttons out */
+    font-weight: 600;
+    line-height: 1;
+  }
+
+/* =========================
+   REMOVE SUBMENU LIST MARKERS (DOT)
+   ========================= */
+
+.menu__sub-list,
+.menu__sub-list li {
+  list-style: none !important;
+  margin: 0;
+  padding: 0;
+}
+}
+
+/* =========================
+   ACCESSIONS — ARCHIVAL RECORD STYLING
+   ========================= */
+
+/* Overall accession block */
+.accession,
+.accessions article,
+.entry__content > h3 {
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Accession ID (WMRN-2026-001) */
+.accession-id,
+.entry__content h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+/* Accession title */
+.accession-title,
+.entry__content h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* Description paragraph */
+.accession-description,
+.entry__content p {
+  margin-bottom: 0.75rem;
+}
+
+/* Metadata list */
+.accession-meta,
+.entry__content ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0.75rem 0 1rem;
+}
+
+/* Individual metadata lines */
+.accession-meta li,
+.entry__content ul li {
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin-bottom: 0.35rem;
+}
+
+/* Metadata labels */
+.accession-meta strong,
+.entry__content ul li strong {
+  font-weight: 600;
+  display: inline-block;
+  min-width: 7.5rem;
+}
+
+/* Digital location / links */
+.accession-link,
+.entry__content a {
+  font-size: 0.9rem;
+}
+
+/* Make "View collection record" stand out */
+.entry__content a[href*="collection"] {
+  display: inline-block;
+  margin-top: 0.35rem;
+  color: #e22d30;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.entry__content a[href*="collection"]:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   ACCESSIONS — ARCHIVAL STYLING
+   ========================= */
+
+/* Accession title */
+h3[id^="wmrn-"] {
+  margin-top: 2.5rem;
+  padding: 0.6rem 0.75rem;
+  background: #f3f3f3;
+  border-left: 4px solid #8b0000; /* WMRN red */
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+/* First paragraph after accession title (subtitle / item name) */
+h3[id^="wmrn-"] + p {
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+/* Metadata labels (Description, Creator, etc.) */
+h3[id^="wmrn-"] ~ p strong {
+  display: inline-block;
+  min-width: 170px;
+  font-weight: 600;
+}
+
+/* Space between accessions */
+h3[id^="wmrn-"] + p,
+h3[id^="wmrn-"] ~ p {
+  margin-left: 0.75rem;
+}
+
+/* Optional: soften long blocks */
+h3[id^="wmrn-"] ~ p {
+  line-height: 1.55;
+}
+
+/* =========================
+   ACCESSIONS — ARCHIVAL CARDS
+   ========================= */
+
+/* Accession anchor (ID line) */
+.content h3[id^="wmrn-"] {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: #f4f4f4;
+  border-left: 4px solid #8b1e1e; /* WMRN red */
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+/* All content until the next accession */
+.content h3[id^="wmrn-"] ~ p {
+  margin-left: 0.75rem;
+  max-width: 42em;
+}
+
+/* Stop when the next accession starts */
+.content h3[id^="wmrn-"] ~ h3[id^="wmrn-"] {
+  margin-left: 0;
+}
+
+/* Accession title (first bold line after h3) */
+.content h3[id^="wmrn-"] + p strong {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+/* Metadata labels */
+.content p strong {
+  font-weight: 600;
+}
+
+/* Metadata spacing */
+.content p {
+  margin-bottom: 0.4rem;
+  line-height: 1.45;
+}
+
+/* Subtle divider before next accession */
+.content h3[id^="wmrn-"]::after {
+  content: "";
+  display: block;
+  margin-top: 1.25rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* =========================
+   ACCESSIONS — CONTINUOUS CARD BODY
+   ========================= */
+
+/* Body of accession (everything after the h3 until next h3) */
+.content h3[id^="wmrn-"] ~ p {
+  background: #f9f9f9;
+  padding: 0.25rem 0.75rem;
+}
+
+/* First paragraph after h3 gets top padding */
+.content h3[id^="wmrn-"] + p {
+  padding-top: 0.75rem;
+}
+
+/* Last paragraph before next accession gets bottom padding + border */
+.content h3[id^="wmrn-"] ~ p:last-of-type {
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Align borders with header */
+.content h3[id^="wmrn-"] ~ p {
+  border-left: 4px solid #8b1e1e;
+}
+
+/* Remove duplicate divider from earlier rule */
+.content h3[id^="wmrn-"]::after {
+  content: none;
+}
+
+/* =========================
+   ACCESSIONS — COLLAPSIBLE CARDS (ARCHIVE-FRIENDLY)
+   ========================= */
+
+.accession-card {
+  margin: 1.25rem 0 1.75rem;
+  border: 1px solid #d7d7d7;
+  background: #f7f7f7;
+  border-left: 4px solid #8b1e1e; /* WMRN red */
+}
+
+/* clickable header row */
+.accession-card > summary {
+  cursor: pointer;
+  list-style: none; /* removes default marker */
+  padding: 0.75rem 0.9rem;
+  background: #eeeeee;
+  font-weight: 600;
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+}
+
+/* remove the default disclosure triangle in most browsers */
+.accession-card > summary::-webkit-details-marker {
+  display: none;
+}
+
+/* add our own indicator */
+.accession-card > summary::before {
+  content: "+";
+  font-weight: 700;
+  width: 1.25rem;
+  display: inline-block;
+  opacity: 0.8;
+}
+
+.accession-card[open] > summary::before {
+  content: "–";
+}
+
+/* ID and title styling */
+.accession-card .acc-id {
+  font-weight: 700;
+  min-width: 10.5rem;
+}
+
+.accession-card .acc-title {
+  font-weight: 600;
+}
+
+/* body */
+.accession-card .acc-body {
+  padding: 0.85rem 0.95rem 0.95rem;
+  background: #fbfbfb;
+  border-top: 1px solid #e1e1e1;
+}
+
+.accession-card .acc-body p {
+  margin: 0 0 0.65rem;
+  line-height: 1.5;
+}
+
+.accession-card .acc-body p strong {
+  font-weight: 600;
+}
+
+/* links */
+.accession-card .acc-body a {
+  color: #8b1e1e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.accession-card .acc-body a:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   PRINT — SHOW ALL ACCESSIONS EXPANDED
+   ========================= */
+
+@media print {
+  .accession-card > summary {
+    display: none !important;
+  }
+
+  /* override UA rule that hides closed details */
+  .accession-card:not([open]) > :not(summary) {
+    display: block !important;
+  }
+
+  .accession-card {
+    border: 1px solid #000;
+    background: #fff;
+    page-break-inside: avoid;
+  }
+
+  .accession-card .acc-body {
+    border-top: none;
+    background: #fff;
+  }
+
+  .accession-card a::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+  }
+}
+
+/* =========================
+   ACCESSION METADATA — STRUCTURED
+   ========================= */
+
+.accession-meta {
+  margin-top: 1rem;
+  margin-left: 0.75rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid #8b1e1e;
+}
+
+.accession-meta .meta-row {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 0.75rem;
+  margin-bottom: 0.4rem;
+  line-height: 1.45;
+}
+
+.accession-meta .meta-label {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.accession-meta .meta-value {
+  max-width: 42em;
+}
+/* =========================
+   FOOTER NAVIGATION
+   ========================= */
+
+.footer__nav {
+  margin: 0.75rem 0;
+}
+
+.footer__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer__menu-link {
+  font-size: 0.85rem;
+  color: #666;
+  text-decoration: none;
+}
+
+.footer__menu-link:hover {
+  color: #e22d30;
+  text-decoration: underline;
+}
+
+/* =========================
+   ACCESSIONS – EMBEDDED CATALOG (AIRTABLE)
+   ========================= */
+
+.airtable-embed {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 1.25rem auto 2.5rem auto;
+
+  border: 1px solid #d6d6d6;
+  border-radius: 3px;
+  background: #ffffff;
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+/* Tighten spacing above the embed label */
+.accessions-label,
+h2 + p em {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Optional: subtle separation from surrounding text */
+.airtable-embed {
+  padding: 0;
+}
+
+/* =========================
+   HEADER TOOLS — VISUAL REFINEMENT (SAFE)
+   ========================= */
+
+/* Treat search + social as a composed unit */
+.header__tools {
+  gap: 8px;                 /* tighter, intentional spacing */
+  padding-left: 14px;       /* subtle inset from divider */
+}
+
+/* Nudge the whole tools group inward slightly */
+@media (min-width: 1024px) {
+  .header__tools {
+    margin-right: 12px;     /* pulls away from screen edge */
+  }
+}
+
+/* =========================
+   SEARCH FIELD — OPTICAL BALANCE
+   ========================= */
+
+.header__tools input {
+  margin-right: 2px;        /* prevents crowding against icon */
+}
+
+/* =========================
+   SOCIAL ICON — PROFESSIONAL SCALE
+   ========================= */
+
+.header__social {
+  margin-left: 6px;         /* deliberate separation from search */
+}
+
+.header__social a {
+  width: 28px;              /* slightly larger hit area */
+  height: 28px;
+}
+
+.header__social svg {
+  width: 18px;              /* visual balance with search box */
+  height: 18px;
+}
+
+/* FORCE Facebook icon sizing — IMAGE + SVG SAFE */
+.header__social img,
+.header__social svg,
+.header__social a img {
+  width: 32px !important;
+  height: 32px !important;
+  max-width: none !important;
+}
+
+/* SOCIAL ICON (FACEBOOK) */
 
 .header__social a {
   display: inline-flex;
@@ -99,136 +955,43 @@ body {
   height: 28px;
 }
 
+/* Default Facebook blue */
 .header__social svg path {
   fill: #1877F2 !important;
   transition: fill 0.15s ease-in-out;
 }
 
+/* Hover: darker Facebook blue */
 .header__social a:hover svg path {
   fill: #145DBF !important;
 }
 
-/* =========================
-   DESKTOP DROPDOWNS
-   ========================= */
+/* === TYPOGRAPHY OVERRIDE (ARCHIVAL SAFE) === */
 
-.menu__sub-list {
-  background: #222222;
-  border-top: 2px solid var(--wmrn-red);
+html {
+  font-size: 100%; /* preserve browser defaults */
 }
 
-.menu__sub-list .menu__link {
-  color: #ffffff;
+body {
+  font-size: 18px;
+  line-height: 1.65;
 }
 
-.menu__sub-list .menu__link:hover {
-  background: var(--wmrn-red);
+/* Main content paragraphs */
+.content,
+.entry__content,
+.post__content,
+.page__content {
+  font-size: 18px;
+  line-height: 1.65;
 }
 
-/* =========================
-   ACCESSIONS — ARCHIVAL STYLING
-   ========================= */
-
-h3[id^="wmrn-"] {
-  margin-top: 2.5rem;
-  padding: 0.6rem 0.75rem;
-  background: #f3f3f3;
-  border-left: 4px solid var(--wmrn-red);
-  font-size: 1.05rem;
-  font-weight: 700;
-}
-
-.entry__content a[href*="collection"],
-.accession-card .acc-body a {
-  color: var(--wmrn-red);
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.entry__content a[href*="collection"]:hover,
-.accession-card .acc-body a:hover {
-  text-decoration: underline;
-}
-
-/* =========================
-   ACCESSION CARDS
-   ========================= */
-
-.accession-card {
-  margin: 1.25rem 0 1.75rem;
-  border: 1px solid #d7d7d7;
-  background: #f7f7f7;
-  border-left: 4px solid var(--wmrn-red);
-}
-
-.accession-card > summary {
-  cursor: pointer;
-  list-style: none;
-  padding: 0.75rem 0.9rem;
-  background: #eeeeee;
-  font-weight: 600;
-}
-
-.accession-card > summary::before {
-  content: "+";
-  font-weight: 700;
-  width: 1.25rem;
-  display: inline-block;
-}
-
-.accession-card[open] > summary::before {
-  content: "–";
-}
-
-/* =========================
-   FOOTER NAVIGATION
-   ========================= */
-
-.footer__menu-link {
-  font-size: 0.85rem;
-  color: #666666;
-  text-decoration: none;
-}
-
-.footer__menu-link:hover {
-  color: var(--wmrn-red);
-  text-decoration: underline;
-}
-
-/* =========================
-   DARK MODE — MAINROAD TOGGLE
-   ========================= */
-
-body.theme-dark {
-  background: #0f141a;
-  color: #e5e7eb;
-
-  --bg-light: #0f141a;
-  --bg-soft: #1a1f26;
-  --bg-muted: #151a20;
-  --border-light: #2a2f36;
-
-  --text-main: #e5e7eb;
-  --text-muted: #a1a1aa;
-
-  --wmrn-red: #9C2A2A;
-  --wmrn-red-hover: #B33A3A;
-}
-
-body.theme-dark img {
-  background: #1a1f26;
-  border-color: #2a2f36;
-}
-
-body.theme-dark .menu__sub-list {
-  background: #111827;
-}
-
-body.theme-dark .accession-card {
-  background: #141922;
-  border-color: #2a2f36;
-}
-
-body.theme-dark .accession-card > summary {
-  background: #1a1f26;
-}
+/* Optional: slightly larger on wide screens */
+@media (min-width: 1200px) {
+  .content,
+  .entry__content,
+  .post__content,
+  .page__content {
+    font-size: 19px;
+  }
+}”
