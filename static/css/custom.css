@@ -1049,3 +1049,22 @@ body.theme-dark .accession-card {
 body.theme-dark .accession-card .acc-body a {
   color: #9C2A2A;
 }
+
+/* =====================================================
+   MOBILE MENU — ACTIVE ITEM COLOR (SAFE OVERRIDE)
+   ===================================================== */
+
+@media (max-width: 1023px) {
+
+  /* Active/open parent item */
+  .menu__toggle:checked ~ .menu__list
+  .menu__item--has-children > .menu__link {
+    background: #990000 !important; /* WMRN red */
+  }
+
+  /* Active submenu item */
+  .menu__sub-list .menu__link:hover,
+  .menu__sub-list .menu__link:focus {
+    background: #990000 !important;
+  }
+}
