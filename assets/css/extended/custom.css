@@ -1,4 +1,13 @@
 /* =========================
+   BRAND COLOR TOKENS
+   ========================= */
+
+:root {
+  --wmrn-red: #8B1E1E;
+  --wmrn-red-hover: #6F1616;
+}
+
+/* =========================
    GLOBAL TYPOGRAPHY
    ========================= */
 
@@ -8,16 +17,7 @@ body {
 }
 
 /* =========================
-   BRAND COLORS (LIGHT MODE)
-   ========================= */
-
-:root {
-  --wmrn-red: #8B1E1E;
-  --wmrn-red-hover: #6F1616;
-}
-
-/* =========================
-   HEADER / NAV
+   HEADER / NAV (LIGHT MODE)
    ========================= */
 
 .header {
@@ -29,6 +29,14 @@ body {
   font-weight: 700;
   letter-spacing: 0.03em;
   color: var(--wmrn-red);
+}
+
+#menu li a {
+  color: var(--wmrn-red);
+}
+
+#menu li a:hover {
+  color: var(--wmrn-red-hover);
 }
 
 /* =========================
@@ -43,14 +51,6 @@ body {
 #menu li {
   position: relative;
   list-style: none;
-}
-
-#menu li a {
-  color: var(--wmrn-red);
-}
-
-#menu li a:hover {
-  color: var(--wmrn-red-hover);
 }
 
 #menu li ul {
@@ -81,7 +81,7 @@ body {
 }
 
 /* =========================
-   FIX PAPERMOD CLIPPING
+   FIX NAV CLIPPING
    ========================= */
 
 .header,
@@ -104,48 +104,42 @@ body.home .page-content img {
 }
 
 /* =========================
-   DARK MODE (SYSTEM-BASED)
+   MAINROAD DARK MODE (TOGGLE)
    ========================= */
 
-@media (prefers-color-scheme: dark) {
+body.theme-dark {
+  --wmrn-red: #9C2A2A;
+  --wmrn-red-hover: #B33A3A;
+  background: #0f141a;
+  color: #e5e7eb;
+}
 
-  :root {
-    --wmrn-red: #9C2A2A;
-    --wmrn-red-hover: #B33A3A;
-  }
+body.theme-dark .header {
+  background: #111827;
+  border-bottom-color: #1f2933;
+}
 
-  body {
-    background: #0f141a;
-    color: #e5e7eb;
-  }
+body.theme-dark .logo a {
+  color: var(--wmrn-red);
+}
 
-  .header {
-    background: #111827;
-    border-bottom: 1px solid #1f2933;
-  }
+body.theme-dark #menu li a {
+  color: var(--wmrn-red);
+}
 
-  .logo a {
-    color: var(--wmrn-red);
-  }
+body.theme-dark #menu li a:hover {
+  color: var(--wmrn-red-hover);
+}
 
-  #menu li a {
-    color: var(--wmrn-red);
-  }
+body.theme-dark #menu li ul {
+  background: #111827;
+  border-color: #1f2933;
+}
 
-  #menu li a:hover {
-    color: var(--wmrn-red-hover);
-  }
+body.theme-dark #menu li ul li a {
+  color: #e5e7eb;
+}
 
-  #menu li ul {
-    background: #111827;
-    border-color: #1f2933;
-  }
-
-  #menu li ul li a {
-    color: #e5e7eb;
-  }
-
-  #menu li ul li a:hover {
-    background: #1f2933;
-  }
+body.theme-dark #menu li ul li a:hover {
+  background: #1f2933;
 }
