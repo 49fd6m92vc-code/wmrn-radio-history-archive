@@ -993,3 +993,89 @@ body {
   .post__content,
   .page__content {
     font-size: 19px;
+    
+    /* =====================================================
+   WMRN COLOR OVERRIDES (SAFE — NO LAYOUT CHANGES)
+   ===================================================== */
+
+/* Replace legacy red with WMRN heritage red */
+:root {
+  --wmrn-red: #8B1E1E;
+}
+
+/* Override existing hard-coded reds */
+.header-search input:focus {
+  border-color: var(--wmrn-red);
+}
+
+.menu__sub-list {
+  border-top-color: var(--wmrn-red);
+}
+
+.menu__sub-list .menu__link:hover {
+  background: var(--wmrn-red);
+}
+
+.menu__sub-list .menu__link:hover,
+.menu__sub-list .menu__link:focus {
+  background: var(--wmrn-red);
+}
+
+.entry__content a[href*="collection"],
+.footer__menu-link:hover {
+  color: var(--wmrn-red);
+}
+
+h3[id^="wmrn-"],
+.content h3[id^="wmrn-"],
+.accession-card,
+.content h3[id^="wmrn-"] ~ p,
+.accession-meta {
+  border-left-color: var(--wmrn-red);
+}
+
+.accession-card .acc-body a {
+  color: var(--wmrn-red);
+}
+
+/* =====================================================
+   DARK MODE — MAINROAD TOGGLE ONLY
+   (NO HEADER / NAV / MENU STRUCTURE CHANGES)
+   ===================================================== */
+
+body.theme-dark {
+
+  /* text */
+  color: #e5e7eb;
+}
+
+body.theme-dark .content,
+body.theme-dark .entry__content,
+body.theme-dark .post__content,
+body.theme-dark .page__content {
+  color: #e5e7eb;
+}
+
+/* backgrounds — CONTENT ONLY */
+body.theme-dark h3[id^="wmrn-"] {
+  background: #1a1f26;
+}
+
+body.theme-dark .content h3[id^="wmrn-"] ~ p {
+  background: #141922;
+}
+
+body.theme-dark .accession-card {
+  background: #141922;
+  border-color: #2a2f36;
+}
+
+body.theme-dark .accession-card > summary {
+  background: #1a1f26;
+}
+
+/* links in dark mode */
+body.theme-dark .entry__content a,
+body.theme-dark .accession-card .acc-body a {
+  color: #9C2A2A;
+}
