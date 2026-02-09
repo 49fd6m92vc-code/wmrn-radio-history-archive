@@ -1080,3 +1080,91 @@ body::before {
   padding: 2px 6px;
   z-index: 99999;
 }
+
+/* =====================================================
+   WMRN COLOR OVERRIDES — NAVIGATION & LINKS ONLY
+   Safe: no layout, spacing, or structure changes
+   ===================================================== */
+
+/* --- Primary WMRN red --- */
+:root {
+  --wmrn-red: #8B1E1E;
+}
+
+/* =========================
+   DESKTOP NAVIGATION
+   ========================= */
+
+/* Top-level nav hover */
+.menu__link:hover,
+.menu__link:focus {
+  color: #ffffff !important;
+  background-color: var(--wmrn-red) !important;
+}
+
+/* Dropdown menu container */
+.menu__sub-list {
+  border-top-color: var(--wmrn-red) !important;
+}
+
+/* Dropdown item hover */
+.menu__sub-list .menu__link:hover,
+.menu__sub-list .menu__link:focus {
+  background-color: var(--wmrn-red) !important;
+  color: #ffffff !important;
+}
+
+/* =========================
+   MOBILE NAVIGATION
+   ========================= */
+
+@media (max-width: 1023px) {
+
+  /* MENU bar */
+  .menu,
+  .menu__btn {
+    background-color: #2a2a2a !important;
+  }
+
+  /* Top-level item hover / tap */
+  .menu__link:hover,
+  .menu__link:focus,
+  .menu__link:active {
+    background-color: var(--wmrn-red) !important;
+    color: #ffffff !important;
+  }
+
+  /* Parent item with children (the big red block you saw) */
+  .menu__item--has-children > .menu__link {
+    background-color: var(--wmrn-red) !important;
+    color: #ffffff !important;
+  }
+
+  /* Submenu background */
+  .menu__sub-list {
+    background-color: #1f1f1f !important;
+  }
+
+  /* Submenu item hover */
+  .menu__sub-list .menu__link:hover,
+  .menu__sub-list .menu__link:focus {
+    background-color: var(--wmrn-red) !important;
+    color: #ffffff !important;
+  }
+}
+
+/* =========================
+   LINK COLOR (CONTENT ONLY)
+   ========================= */
+
+.entry__content a,
+.post__content a,
+.page__content a {
+  color: var(--wmrn-red);
+}
+
+.entry__content a:hover,
+.post__content a:hover,
+.page__content a:hover {
+  text-decoration: underline;
+}
