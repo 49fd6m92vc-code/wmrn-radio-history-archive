@@ -114,3 +114,13 @@ This is a living project dedicated to documenting WMRN’s people, programming, 
 ## Archival Note
 
 This timeline reflects ongoing historical research. As additional documentation, recordings, and firsthand accounts are discovered, details and milestones will be further refined.
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQHE4LCHPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BQHE4LCHPT');
+</script>
