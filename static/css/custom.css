@@ -1098,7 +1098,7 @@ body::before {
 /* Top-level nav hover */
 .menu__link:hover,
 .menu__link:focus {
-  color: #ffffff !important;
+  color: #990000 !important;
   background-color: var(--wmrn-red) !important;
 }
 
@@ -1111,7 +1111,7 @@ body::before {
 .menu__sub-list .menu__link:hover,
 .menu__sub-list .menu__link:focus {
   background-color: var(--wmrn-red) !important;
-  color: #ffffff !important;
+  color: #990000 !important;
 }
 
 /* =========================
@@ -1131,13 +1131,13 @@ body::before {
   .menu__link:focus,
   .menu__link:active {
     background-color: var(--wmrn-red) !important;
-    color: #ffffff !important;
+    color: #99000 !important;
   }
 
   /* Parent item with children (the big red block you saw) */
   .menu__item--has-children > .menu__link {
     background-color: var(--wmrn-red) !important;
-    color: #ffffff !important;
+    color: #990000 !important;
   }
 
   /* Submenu background */
@@ -1149,7 +1149,7 @@ body::before {
   .menu__sub-list .menu__link:hover,
   .menu__sub-list .menu__link:focus {
     background-color: var(--wmrn-red) !important;
-    color: #ffffff !important;
+    color: #990000 !important;
   }
 }
 
