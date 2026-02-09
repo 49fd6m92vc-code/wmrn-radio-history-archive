@@ -190,16 +190,6 @@ body {
   background: #990000;
 }
 
-/* Desktop nav hover + active — COLOR ONLY */
-@media (min-width: 1024px) {
-
-  .menu__link:hover,
-  .menu__item--active > .menu__link {
-    background-color: #990000;
-    color: #ffffff;
-  }
-}
-
 /* =========================
    FOUNDING RECORD BOX
    ========================= */
