@@ -67,3 +67,13 @@ The Marion Star, 1940–1953 (construction announcements, licensing coverage, op
 
 All dates, times, frequencies, names, locations, and technical details presented here are derived from contemporaneous newspaper reporting and established federal broadcast history. Later recollections are preserved elsewhere in the archive as oral history and are not substituted where primary documentation exists.
 {{< founding-record >}}
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQHE4LCHPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BQHE4LCHPT');
+</script>
