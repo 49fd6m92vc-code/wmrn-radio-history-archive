@@ -1071,101 +1071,31 @@ body.theme-dark .accession-card .acc-body a {
 
 body::before {
   content: "CSS LOADED";
-  position: fixed;
-  bottom: 5px;
-  right: 5px;
-  background: red;
-  color: white;
-  font-size: 10px;
-  padding: 2px 6px;
-  z-index: 99999;
+
+/* ===============================
+   WMRN NAVIGATION COLOR OVERRIDES
+   =============================== */
+
+/* Desktop hover */
+.menu__link:hover {
+  color: #ffffff !important;
+  background-color: #990000 !important;
 }
 
-/* =====================================================
-   WMRN COLOR OVERRIDES — NAVIGATION & LINKS ONLY
-   Safe: no layout, spacing, or structure changes
-   ===================================================== */
-
-/* --- Primary WMRN red --- */
-:root {
-  --wmrn-red: #8B1E1E;
+/* Desktop active item */
+.menu__item--active > .menu__link {
+  color: #ffffff !important;
+  background-color: #990000 !important;
 }
 
-/* =========================
-   DESKTOP NAVIGATION
-   ========================= */
-
-/* Top-level nav hover */
-.menu__link:hover,
-.menu__link:focus {
-  color: #990000 !important;
-  background-color: var(--wmrn-red) !important;
+/* Mobile menu item background */
+.menu__item:hover,
+.menu__item--active {
+  background-color: #990000 !important;
 }
 
-/* Dropdown menu container */
-.menu__sub-list {
-  border-top-color: var(--wmrn-red) !important;
+/* Submenu hover */
+.menu__sub-list .menu__link:hover {
+  background-color: #990000 !important;
+  color: #ffffff !important;
 }
-
-/* Dropdown item hover */
-.menu__sub-list .menu__link:hover,
-.menu__sub-list .menu__link:focus {
-  background-color: var(--wmrn-red) !important;
-  color: #990000 !important;
-}
-
-/* =========================
-   MOBILE NAVIGATION
-   ========================= */
-
-@media (max-width: 1023px) {
-
-  /* MENU bar */
-  .menu,
-  .menu__btn {
-    background-color: #2a2a2a !important;
-  }
-
-  /* Top-level item hover / tap */
-  .menu__link:hover,
-  .menu__link:focus,
-  .menu__link:active {
-    background-color: var(--wmrn-red) !important;
-    color: #99000 !important;
-  }
-
-  /* Parent item with children (the big red block you saw) */
-  .menu__item--has-children > .menu__link {
-    background-color: var(--wmrn-red) !important;
-    color: #990000 !important;
-  }
-
-  /* Submenu background */
-  .menu__sub-list {
-    background-color: #1f1f1f !important;
-  }
-
-  /* Submenu item hover */
-  .menu__sub-list .menu__link:hover,
-  .menu__sub-list .menu__link:focus {
-    background-color: var(--wmrn-red) !important;
-    color: #990000 !important;
-  }
-}
-
-/* =========================
-   LINK COLOR (CONTENT ONLY)
-   ========================= */
-
-.entry__content a,
-.post__content a,
-.page__content a {
-  color: var(--wmrn-red);
-}
-
-.entry__content a:hover,
-.post__content a:hover,
-.page__content a:hover {
-  text-decoration: underline;
-}
-
