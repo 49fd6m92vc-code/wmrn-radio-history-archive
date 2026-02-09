@@ -290,7 +290,8 @@ body {
 
   .menu__link:hover,
   .menu__link:focus {
-    background: #333333;
+    background: #990000;
+    color: #ffffff;
   }
 
   /* Submenus */
