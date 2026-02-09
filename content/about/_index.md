@@ -85,3 +85,13 @@ This site is not affiliated with, endorsed by, or operated by the current or for
 All materials and recollections presented here reflect historical records, publicly available information, or the personal memories of contributors. While every effort is made to ensure accuracy, historical materials may be incomplete or subject to differing recollections.
 
 No content on this site is intended as commentary, evaluation, or judgment of individuals, organizations, or events.
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQHE4LCHPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BQHE4LCHPT');
+</script>
