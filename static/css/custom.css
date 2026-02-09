@@ -172,7 +172,7 @@ body {
   left: 0;
   min-width: 220px;
   background: #222;
-  border-top: 2px solid #e22d30;
+  border-top: 2px solid #990000;
   z-index: 1000;
 }
 
@@ -187,7 +187,17 @@ body {
 }
 
 .menu__sub-list .menu__link:hover {
-  background: #e22d30;
+  background: #990000;
+}
+
+/* Desktop nav hover + active — COLOR ONLY */
+@media (min-width: 1024px) {
+
+  .menu__link:hover,
+  .menu__item--active > .menu__link {
+    background-color: #990000;
+    color: #ffffff;
+  }
 }
 
 /* =========================
@@ -294,7 +304,7 @@ body {
   }
 
   .menu__sub-list .menu__link:hover {
-    background: #e22d30;
+    background: #990000;
     color: #ffffff;
   }
 }
