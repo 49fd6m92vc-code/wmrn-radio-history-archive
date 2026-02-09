@@ -65,3 +65,13 @@ Understanding how technology shaped daily operations helps preserve the full sto
 Photographs, documentation, manuals, equipment lists, and firsthand recollections related to WMRN facilities or equipment are welcome. Items do not need to be in working condition or professionally documented to be useful.
 
 If you have materials or information that may help document this aspect of WMRN’s history, please contact: archive@wmrnhistory.com
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQHE4LCHPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BQHE4LCHPT');
+</script>
