@@ -1168,3 +1168,7 @@ body::before {
 .page__content a:hover {
   text-decoration: underline;
 }
+
+.menu__link {
+  outline: 2px solid lime !important;
+}
