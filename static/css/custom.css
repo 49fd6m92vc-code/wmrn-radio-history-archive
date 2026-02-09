@@ -4,7 +4,7 @@
 
 body {
   font-family: "EB Garamond", serif;
-  font-size: 19px;
+   font-size: 19px
   color: #222;
   line-height: 1.6;
 }
@@ -93,11 +93,11 @@ body {
 
 .header-search input:focus {
   outline: none;
-  border-color: #e22d30;
+  border-color: #8b1e1e;
 }
 
 /* =========================
-   SOCIAL ICON (FIXED)
+   SOCIAL ICON
    ========================= */
 
 .header__social {
@@ -113,9 +113,12 @@ body {
   height: 48px;
   color: #1877F2;
 }
+  color: #1877F2;
+}
+}
 
 .header__social a:hover {
-  color: #145DBF;
+   color: #145DBF;
 }
 
 .header__social svg {
@@ -128,6 +131,7 @@ body {
    ========================= */
 
 @media (min-width: 1024px) {
+
   .menu__list {
     display: flex;
     align-items: center;
@@ -165,7 +169,7 @@ body {
   left: 0;
   min-width: 220px;
   background: #222;
-  border-top: 2px solid #e22d30;
+  border-top: 2px solid #8b1e1e;
   z-index: 1000;
 }
 
@@ -180,21 +184,33 @@ body {
 }
 
 .menu__sub-list .menu__link:hover {
-  background: #e22d30;
+  background: #8b1e1e;
 }
 
 /* =========================
-   MOBILE MENU (STOCK)
+   FOUNDING RECORD BOX
+   ========================= */
+
+.founding-record-box {
+  border: 1px solid #ccc;
+  padding: 1rem 1.25rem;
+  margin: 2rem 0;
+  background: #fafafa;
+}
+
+/* =========================
+   MOBILE — STOCK MAINROAD MENU
    ========================= */
 
 @media (max-width: 1023px) {
 
-  .menu {
-    background: #2a2a2a;
+  html,
+  body {
+    overflow-x: hidden;
   }
 
-  .menu__link {
-    color: #ffffff;
+  .menu {
+    background: #2a2a2a;
   }
 
   .menu__link:hover,
@@ -203,40 +219,28 @@ body {
   }
 
   .menu__sub-list .menu__link:hover {
-    background: #e22d30;
+    background: #8b1e1e;
     color: #ffffff;
   }
 }
 
-/* =====================================================
-   WMRN NAV COLOR OVERRIDE — COLOR ONLY (SAFE)
-   ===================================================== */
+/* =========================
+   FOOTER NAVIGATION
+   ========================= */
 
-:root {
-  --wmrn-red: #8b1e1e;
+.footer__menu-link:hover {
+  color: #8b1e1e;
+  text-decoration: underline;
 }
 
-/* Desktop hover + active */
-@media (min-width: 1024px) {
-  .menu__link:hover,
-  .menu__item--active > .menu__link {
-    background-color: var(--wmrn-red);
-    color: #ffffff;
-  }
+/* =========================
+   ACCESSIONS — LINKS
+   ========================= */
+
+.entry__content a[href*="collection"] {
+  color: #8b1e1e;
 }
 
-/* Desktop dropdown hover */
-.menu__sub-list .menu__link:hover {
-  background-color: var(--wmrn-red);
-  color: #ffffff;
-}
-
-/* Mobile hover / tap */
-@media (max-width: 1023px) {
-  .menu__link:hover,
-  .menu__link:focus,
-  .menu__item--active > .menu__link {
-    background-color: var(--wmrn-red);
-    color: #ffffff;
-  }
+.accession-card .acc-body a {
+  color: #8b1e1e;
 }
