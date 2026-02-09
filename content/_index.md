@@ -66,3 +66,13 @@ Scope, collection policy, provenance, and project background.
 This site is a **living archive**. New materials are added as they are identified, documented, and preserved.
 
 WMRN and WMRN-FM are referenced for historical documentation purposes only.
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQHE4LCHPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BQHE4LCHPT');
+</script>
