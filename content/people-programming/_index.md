@@ -68,3 +68,13 @@ This page is not intended to be definitive or final. Radio history is often frag
 If you worked at WMRN, appeared on the air, supported programming, or have information that can help improve the accuracy or completeness of this section, contributions and corrections are welcome. Even small details — a program name, a role, or a rough timeframe — can help preserve an important piece of the station’s story.
 
 For contributions or corrections, please contact: archive@wmrnhistory.com
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQHE4LCHPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BQHE4LCHPT');
+</script>
