@@ -61,3 +61,13 @@ A brief description of what you have, along with any known dates, names, or cont
 Preserving local radio history is only possible through the willingness of individuals to share what they have kept. Every contribution, no matter how small it may seem, helps ensure that WMRN’s story remains accessible for future generations.
 
 Thank you for helping preserve this history.
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQHE4LCHPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BQHE4LCHPT');
+</script>
