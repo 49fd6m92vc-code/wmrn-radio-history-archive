@@ -16,7 +16,7 @@
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ .Params.description }}">
-  <meta property="og:image" content="{{ with .Params.images }}{{ (index . 0) | absURL }}{{ end }}">
+  <meta property="og:image" content="https://wmrnhistory.com/images/share/buckeye-chuck-2006-share.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
@@ -24,10 +24,10 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="{{ .Title }}">
   <meta name="twitter:description" content="{{ .Params.description }}">
-  <meta name="twitter:image" content="{{ with .Params.images }}{{ (index . 0) | absURL }}{{ end }}">
+  <meta name="twitter:image" content="{{ (index .Params.images 0) | absURL }}">
 
   <script>
-    // Do NOT redirect bots
+    // Do NOT redirect bots (including Facebook crawler)
     const ua = navigator.userAgent.toLowerCase();
     const isBot =
       ua.includes("facebookexternalhit") ||
@@ -68,4 +68,3 @@
   <p>Redirecting to iHeart…</p>
   <a class="button" href="{{ .Params.redirect }}">Listen on iHeart</a>
 </body>
-</html>
