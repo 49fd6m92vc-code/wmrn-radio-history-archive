@@ -1,0 +1,26 @@
+<div class="podcast-archive">
+
+  {{ $pages := where .Site.RegularPages "Section" "podcast" }}
+  {{ range $pages.ByDate.Reverse }}
+
+    <article class="podcast-entry">
+      <h3>
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      </h3>
+
+      <p class="podcast-meta">
+        {{ .Date.Format "January 2, 2006" }}
+      </p>
+
+      {{ with .Params.summary }}
+        <p>{{ . }}</p>
+      {{ else }}
+        <p>{{ .Summary }}</p>
+      {{ end }}
+
+      <hr>
+    </article>
+
+  {{ end }}
+
+</div>
