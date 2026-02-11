@@ -1,24 +1,42 @@
+{{ define "main" }}
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <title>{{ .Title }}</title>
+
+  <!-- Force correct canonical -->
+  <link rel="canonical" href="{{ .Permalink }}">
+
+  <!-- Basic SEO -->
   <meta name="description" content="{{ .Params.description }}">
+  <meta name="robots" content="noindex, follow">
+
+  <!-- Open Graph (Force override) -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ .Params.description }}">
   <meta property="og:image" content="{{ (index .Params.images 0) | absURL }}">
-  <meta property="og:url" content="{{ .Permalink }}">
-  <meta property="og:type" content="website">
 
-  <meta http-equiv="refresh" content="2; url=https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/from-the-wmrn-archives-buckeye-chuck-forecast-voiced-by-terry-cole-circa-2006-322148870">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ .Params.description }}">
+  <meta name="twitter:image" content="{{ (index .Params.images 0) | absURL }}">
+
+  <!-- Delay redirect so crawlers read OG tags -->
+  <meta http-equiv="refresh" content="6; url={{ .Params.redirect }}">
 
   <script>
     setTimeout(function(){
-      window.location.href = "https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/from-the-wmrn-archives-buckeye-chuck-forecast-voiced-by-terry-cole-circa-2006-322148870";
-    }, 2000);
+      window.location.href = "{{ .Params.redirect }}";
+    }, 6000);
   </script>
+
 </head>
 <body>
-  <p>Redirecting to iHeart…</p>
+  <p>Redirecting to iHeart...</p>
 </body>
 </html>
+{{ end }}
