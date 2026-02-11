@@ -1,4 +1,4 @@
-by---
+---
 title: "WMRN Radio History Archive Podcast"
 description: "The official podcast of the WMRN Radio History Archive."
 layout: "list"
@@ -32,9 +32,7 @@ Episodes highlight archival audio, historical context, and behind-the-scenes ins
 
 ---
 
----
-
-## Episode Archive
+## Previous Episodes
 
 Previously released episodes are listed below. Each episode is cataloged as part of the archival record and may include contextual notes or historical references.
 
