@@ -4,5 +4,5 @@ description: "A historic Buckeye Chuck forecast recording preserved by the WMRN 
 images:
   - "/images/share/buckeye-chuck-2006-share.jpg"
 layout: "redirect"
-redirect: "https://www.iheart.com/your-episode-link"
+redirect: "https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/from-the-wmrn-archives-buckeye-chuck-forecast-voiced-by-terry-cole-circa-2006-322148870"
 ---
