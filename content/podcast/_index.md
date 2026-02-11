@@ -44,7 +44,7 @@ Previously released episodes are listed below. Each episode is cataloged as part
 
 The WMRN Radio History Archive Podcast is available through the following services:
 
-**[iHeartRadio](https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340)**  
+**[iHeart](https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340)**  
 **[Apple Podcasts](https://podcasts.apple.com/us/podcast/wmrn-radio-history-archive/id1876130746)**  
 **[Spotify](https://open.spotify.com/show/5haziZnLeeexUzHcaODr54)**  
 **[RSS Feed](https://www.spreaker.com/show/6874929/episodes/feed)**
