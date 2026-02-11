@@ -1025,3 +1025,8 @@ body {
   border-top: 1px solid #ddd;
   margin: 1.5rem 0;
 }
+
+.podcast-divider {
+  border-top: 1px solid #ededed;
+  margin: 2rem 0 1.5rem 0;
+}
