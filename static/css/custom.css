@@ -1026,9 +1026,8 @@ body {
   margin: 1.5rem 0;
 }
 
-.podcast-divider {
-  height: 1px !important;
-  background-color: #d6d6d6 !important;
-  margin: 2rem 0 1.5rem 0 !important;
-  display: block !important;
+.podcast-divider-test {
+  height: 2px;
+  background: red;
+  margin: 2rem 0;
 }
