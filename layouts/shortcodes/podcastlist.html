@@ -5,18 +5,18 @@
   {{ if ne $index 0 }}
 
     <article class="podcast-entry">
-      <h3>
+      <h3 class="podcast-title">
         <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
       </h3>
 
-      <p class="podcast-meta">
+      <p class="podcast-date">
         {{ $page.Date.Format "January 2, 2006" }}
       </p>
 
       {{ with $page.Params.summary }}
-        <p>{{ . }}</p>
+        <p class="podcast-summary">{{ . }}</p>
       {{ else }}
-        <p>{{ $page.Summary }}</p>
+        <p class="podcast-summary">{{ $page.Summary }}</p>
       {{ end }}
 
     </article>
