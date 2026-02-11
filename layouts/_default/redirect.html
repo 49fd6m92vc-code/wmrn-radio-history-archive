@@ -4,12 +4,14 @@
   <meta charset="utf-8">
   <title>{{ .Title }}</title>
 
+  <!-- Canonical -->
   <link rel="canonical" href="{{ .Permalink }}">
 
+  <!-- SEO -->
   <meta name="description" content="{{ .Params.description }}">
   <meta name="robots" content="noindex, follow">
 
-  <!-- Force Open Graph -->
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:title" content="{{ .Title }}">
@@ -24,16 +26,46 @@
   <meta name="twitter:description" content="{{ .Params.description }}">
   <meta name="twitter:image" content="{{ (index .Params.images 0) | absURL }}">
 
-  <meta http-equiv="refresh" content="6; url={{ .Params.redirect }}">
-
   <script>
-    setTimeout(function(){
-      window.location.href = "{{ .Params.redirect }}";
-    }, 6000);
+    // Do NOT redirect bots (including Facebook crawler)
+    const ua = navigator.userAgent.toLowerCase();
+    const isBot =
+      ua.includes("facebookexternalhit") ||
+      ua.includes("twitterbot") ||
+      ua.includes("linkedinbot") ||
+      ua.includes("slackbot") ||
+      ua.includes("discordbot");
+
+    if (!isBot) {
+      setTimeout(function() {
+        window.location.href = "{{ .Params.redirect }}";
+      }, 2500);
+    }
   </script>
+
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 24px;
+      background: #990000;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+  </style>
 
 </head>
 <body>
-  <p>Redirecting to iHeart...</p>
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Params.description }}</p>
+  <p>Redirecting to iHeart…</p>
+  <a class="button" href="{{ .Params.redirect }}">Listen on iHeart</a>
 </body>
 </html>
