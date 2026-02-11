@@ -1026,8 +1026,12 @@ body {
   margin: 1.5rem 0;
 }
 
-.content .podcast-divider {
-  height: 1px !important;
-  background: #d8d8d8 !important;
-  margin: 2rem 0 1.5rem 0 !important;
+.content .podcast-entry {
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+.content .podcast-entry:first-of-type {
+  border-top: none;
+  padding-top: 0;
 }
