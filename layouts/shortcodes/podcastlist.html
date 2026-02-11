@@ -4,6 +4,8 @@
 
   {{ if ne $index 0 }}
 
+    <div class="podcast-divider"></div>
+
     <article class="podcast-entry">
       <h3>
         <a href="{{ $page.RelPermalink }}">{{ $page.Title }}</a>
@@ -18,8 +20,6 @@
       {{ else }}
         <p>{{ $page.Summary }}</p>
       {{ end }}
-
-      <hr>
 
     </article>
 
