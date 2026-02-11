@@ -16,7 +16,16 @@ The WMRN Radio History Archive Podcast explores the voices, events, and stories 
 
 ## 🎙 Latest Episode
 
-
+<div class="podcast-player">
+  <iframe
+    src="https://widget.spreaker.com/player?show_id=6874929&theme=light&playlist=show&playlist-continuous=false&chapters-image=true&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
+    width="100%"
+    height="200"
+    title="WMRN Radio History Archive Podcast"
+    frameborder="0"
+    scrolling="no">
+  </iframe>
+</div>
 
 ---
 
