@@ -1,6 +1,6 @@
 ---
 title: "WMRN Radio History Archive Podcast"
-description: "Stories behind the archive. Voices from WMRN’s past and present."
+description: "The official podcast of the WMRN Radio History Archive."
 draft: false
 ---
 
@@ -10,11 +10,13 @@ draft: false
 
 ---
 
-The WMRN Radio History Archive Podcast explores the voices, events, and stories that shaped Marion’s radio history. Episodes highlight archival recordings, historical context, and behind-the-scenes insight into the station’s legacy.
+The WMRN Radio History Archive Podcast serves as an interpretive extension of the archive, presenting historical recordings, contextual analysis, and oral history related to WMRN and its role in the Marion community.
+
+Episodes highlight archival audio, historical context, and behind-the-scenes insight into the station’s legacy.
 
 ---
 
-## 🎙 Latest Episode
+## Latest Episode
 
 <div class="podcast-player">
   <iframe
@@ -29,7 +31,18 @@ The WMRN Radio History Archive Podcast explores the voices, events, and stories 
 
 ---
 
-## 📻 Listen on Your Preferred Platform
+## Episode Archive
+
+Previously released episodes are listed below. Each episode is cataloged as part of the archival record and may include contextual notes or historical references.
+
+<!-- Hugo will automatically list podcast posts below this section
+     when individual episode files are placed inside content/podcast/ -->
+
+---
+
+## Listen on Your Preferred Platform
+
+The WMRN Radio History Archive Podcast is available through the following services:
 
 **[iHeartRadio](https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340)**  
 **[Apple Podcasts](https://podcasts.apple.com/us/podcast/wmrn-radio-history-archive/id1876130746)**  
@@ -37,3 +50,6 @@ The WMRN Radio History Archive Podcast explores the voices, events, and stories 
 **[RSS Feed](https://www.spreaker.com/show/6874929/episodes/feed)**
 
 ---
+
+Interested in contributing a recording, memory, or related archival material?  
+Visit the [Contribute](/contribute/) page for submission information.
