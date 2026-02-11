@@ -31,7 +31,16 @@ The WMRN Radio History Archive Podcast explores the voices, events, and stories 
 
 ## 📻 Listen on Your Preferred Platform
 
-- Apple Podcasts
-- Spotify
-- iHeartRadio
-- RSS Feed
+**iHeartRadio**  
+https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340
+
+**Apple Podcasts**  
+https://podcasts.apple.com/us/podcast/wmrn-radio-history-archive/id1876130746
+
+**Spotify**  
+https://open.spotify.com/show/5haziZnLeeexUzHcaODr54
+
+**RSS Feed**  
+https://www.spreaker.com/show/6874929/episodes/feed
+
+---
