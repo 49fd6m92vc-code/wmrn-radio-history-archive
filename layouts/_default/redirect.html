@@ -1,23 +1,22 @@
-{{ define "main" }}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>{{ .Title }}</title>
 
-  <!-- Force correct canonical -->
   <link rel="canonical" href="{{ .Permalink }}">
 
-  <!-- Basic SEO -->
   <meta name="description" content="{{ .Params.description }}">
   <meta name="robots" content="noindex, follow">
 
-  <!-- Open Graph (Force override) -->
+  <!-- Force Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ .Permalink }}">
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ .Params.description }}">
   <meta property="og:image" content="{{ (index .Params.images 0) | absURL }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -25,7 +24,6 @@
   <meta name="twitter:description" content="{{ .Params.description }}">
   <meta name="twitter:image" content="{{ (index .Params.images 0) | absURL }}">
 
-  <!-- Delay redirect so crawlers read OG tags -->
   <meta http-equiv="refresh" content="6; url={{ .Params.redirect }}">
 
   <script>
@@ -39,4 +37,3 @@
   <p>Redirecting to iHeart...</p>
 </body>
 </html>
-{{ end }}
