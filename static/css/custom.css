@@ -1026,12 +1026,37 @@ body {
   margin: 1.5rem 0;
 }
 
+/* Previous Episodes formatting */
+
 .content .podcast-entry {
-  padding-top: 2rem;
-  border-top: 1px solid #e0e0e0;
+  padding: 2rem 0;
+  border-top: 1px solid #e4e4e4;
 }
 
 .content .podcast-entry:first-of-type {
   border-top: none;
-  padding-top: 0;
+  padding-top: 1.5rem;
+}
+
+.content .podcast-title {
+  margin-bottom: 0.25rem;
+  font-size: 1.2rem;
+}
+
+.content .podcast-title a {
+  text-decoration: none;
+}
+
+.content .podcast-title a:hover {
+  text-decoration: underline;
+}
+
+.content .podcast-date {
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 0.75rem;
+}
+
+.content .podcast-summary {
+  margin-bottom: 0;
 }
