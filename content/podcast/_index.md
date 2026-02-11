@@ -1,7 +1,6 @@
 ---
 title: "WMRN Radio History Archive Podcast"
 description: "Stories behind the archive. Voices from WMRN’s past and present."
-layout: "list"
 draft: false
 ---
 
