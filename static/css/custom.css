@@ -1009,3 +1009,19 @@ body {
 .menu__list > li > a:hover {
   background-color: #222;
 }
+
+.podcast-entry h3 {
+  margin-bottom: 0.25rem;
+}
+
+.podcast-meta {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0.75rem;
+}
+
+.podcast-entry hr {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 1.5rem 0;
+}
