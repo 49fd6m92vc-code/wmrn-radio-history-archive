@@ -31,14 +31,27 @@ Episodes highlight archival audio, historical context, and behind-the-scenes ins
 
 ---
 
+---
+
 ## Episode Archive
 
 Previously released episodes are listed below. Each episode is cataloged as part of the archival record and may include contextual notes or historical references.
 
-<!-- Hugo will automatically list podcast posts below this section
-     when individual episode files are placed inside content/podcast/ -->
+{{ range .Pages.ByDate.Reverse }}
+
+### [{{ .Title }}]({{ .RelPermalink }})
+
+{{ .Date.Format "January 2, 2006" }}
+
+{{ with .Params.summary }}
+{{ . }}
+{{ else }}
+{{ .Summary }}
+{{ end }}
 
 ---
+
+{{ end }}
 
 ## Listen on Your Preferred Platform
 
