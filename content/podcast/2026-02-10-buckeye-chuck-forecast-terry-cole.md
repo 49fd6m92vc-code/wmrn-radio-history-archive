@@ -1,5 +1,5 @@
 ---
-title: "From the WMRN Archives: Buckeye Chuck Forecast Voiced by Terry Cole (circa 2006)"
+title: "FROM THE WMRN ARCHIVES: Buckeye Chuck Forecast Voiced by Terry Cole (circa 2006)"
 date: 2026-02-10
 summary: "A preserved Buckeye Chuck forecast announcement voiced by Terry Cole, reflecting WMRN’s longstanding Groundhog Day tradition."
 draft: false
@@ -23,7 +23,7 @@ Buckeye Chuck, Ohio’s official weather prognosticating groundhog, has forecast
 
 <div class="podcast-player">
   <iframe
-    src="https://widget.spreaker.com/player?episode_id=69966310&theme=light&playlist=show&playlist-continuous=false&chapters-image=true&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
+    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/from-the-wmrn-archives-buckeye-chuck-forecast-voiced-by-terry-cole-circa-2006-322148870?app=listen&embed=true"
     width="100%"
     height="200"
     title="Buckeye Chuck Forecast Voiced by Terry Cole"
