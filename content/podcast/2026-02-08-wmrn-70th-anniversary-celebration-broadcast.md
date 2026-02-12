@@ -24,11 +24,12 @@ The program reflects on the station’s history, community impact, and decades o
 
 <div class="podcast-player">
   <iframe
-    src="https://widget.spreaker.com/player?episode_id=69955527&theme=light&playlist=show&playlist-continuous=false&chapters-image=true&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
+    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/wmrn-anniversary-70th-anniversary-celebration-broadcast-322098568?app=listen&embed=true"
     width="100%"
     height="200"
-    title="WMRN 70th Anniversary Celebration Broadcast"
+    title="WMRN Anniversary: 70th Anniversary Celebration Broadcast"
     frameborder="0"
-    scrolling="no">
+    scrolling="no"
+    allow="autoplay">
   </iframe>
 </div>
