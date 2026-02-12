@@ -466,11 +466,12 @@ body {
     height: 42px;
   }
 
-  /* Nav list fills the bar more confidently */
+    /* Nav list fills the bar more confidently */
  .menu__list {
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 1.25rem; /* matches stock horizontal inset */
+  justify-content: center;
+  width: auto;
+  padding: 0 1.25rem;
+  gap: 1.75rem;
 }
 
   /* Individual menu items */
