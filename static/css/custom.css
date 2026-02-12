@@ -1077,7 +1077,7 @@ body {
   color: #ffffff;
 }
 
-   .archive-list {
+ .archive-list {
   margin-top: 2rem;
 }
 
@@ -1102,11 +1102,11 @@ body {
 }
 
 .archive-meta {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   color: #777;
   margin-bottom: 0.75rem;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 
 .archive-summary {
