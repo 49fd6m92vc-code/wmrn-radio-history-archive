@@ -1076,3 +1076,41 @@ body {
   background: #990000;
   color: #ffffff;
 }
+
+   .archive-list {
+  margin-top: 2rem;
+}
+
+.archive-item {
+  padding: 2rem 0;
+  border-top: 1px solid #e5e5e5;
+}
+
+.archive-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.archive-title a {
+  text-decoration: none;
+  color: #990000;
+}
+
+.archive-title a:hover {
+  text-decoration: underline;
+}
+
+.archive-meta {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.archive-summary {
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+}
