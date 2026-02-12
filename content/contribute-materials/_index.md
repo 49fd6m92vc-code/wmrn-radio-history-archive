@@ -52,7 +52,7 @@ Corrections, clarifications, and additional information are always welcome.
 
 If you have materials, information, or recollections you would like to share — or if you are unsure whether something may be useful — please contact:
 
-**archives@wmrnhistory.com**
+**archive@wmrnhistory.com**
 
 A brief description of what you have, along with any known dates, names, or context, is helpful but not required.
 
