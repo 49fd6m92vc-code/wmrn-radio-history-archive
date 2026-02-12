@@ -1,13 +1,11 @@
 ---
 title: "Contribute Materials"
-layout: page
-searchable: true
-description: "How to contribute materials, recordings, and information to the WMRN Radio History Archive."
+description: "Help preserve the broadcast history of WMRN by contributing recordings, photographs, documents, and memories."
 ---
 
-# Contribute Materials
+## Contribute Materials
 
-The WMRN Radio History Archive relies on the collective memory and preserved materials of those who were part of the station’s history—or who safeguarded pieces of it along the way.
+The WMRN Radio History Archive relies on the collective memory and preserved materials of those who were part of the station’s history — or who safeguarded pieces of it along the way.
 
 Radio history is often scattered across personal collections: photographs in drawers, tapes on shelves, documents in boxes, and memories that were never written down. This page exists to invite the preservation of those materials before they are lost.
 
@@ -28,11 +26,15 @@ Materials do not need to be rare, polished, or complete. Even partial informatio
 
 ---
 
-## How Materials Are Used
+## How Materials Are Managed
 
-All contributed materials are considered for inclusion in the archive for historical and educational purposes. Contributors retain ownership of their original materials unless otherwise agreed.
+All contributed materials are reviewed for historical relevance and preservation feasibility.
 
-Whenever possible, credit will be given to contributors. If you have preferences regarding attribution, privacy, or usage, those can be discussed before anything is published.
+Accepted items are cataloged within the archive and assigned a permanent accession number. When appropriate, materials are digitized for long-term preservation.
+
+Contributors retain ownership of original materials unless otherwise agreed. Loan arrangements for digitization are welcome.
+
+Whenever possible, contributors are credited in the archival record. Attribution preferences, privacy considerations, or usage limitations can be discussed prior to publication.
 
 Not every contribution may appear publicly, but all submissions are reviewed with care and respect.
 
@@ -40,17 +42,17 @@ Not every contribution may appear publicly, but all submissions are reviewed wit
 
 ## Accuracy & Context
 
-Historical records are sometimes incomplete, and memories can differ. Contributions may be used alongside other materials to provide context rather than definitive conclusions.
+Historical records are sometimes incomplete, and recollections may differ. Contributions may be presented alongside other materials to provide context rather than definitive conclusions.
 
-Corrections, clarifications, and additional information are always welcome and encouraged.
+Corrections, clarifications, and additional information are always welcome.
 
 ---
 
 ## How to Contribute
 
-If you have materials, information, or recollections you would like to share—or if you simply have questions about whether something may be useful—please reach out:
+If you have materials, information, or recollections you would like to share — or if you are unsure whether something may be useful — please contact:
 
-**archive@wmrnhistory.com**
+**archives@wmrnhistory.com**
 
 A brief description of what you have, along with any known dates, names, or context, is helpful but not required.
 
@@ -58,16 +60,8 @@ A brief description of what you have, along with any known dates, names, or cont
 
 ## A Note of Thanks
 
-Preserving local radio history is only possible through the willingness of individuals to share what they have kept. Every contribution, no matter how small it may seem, helps ensure that WMRN’s story remains accessible for future generations.
+Preserving local radio history depends on individuals who choose not to let it fade.
+
+Every contribution, no matter how small it may seem, strengthens the historical record and ensures that WMRN’s story remains accessible for future generations.
 
 Thank you for helping preserve this history.
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQHE4LCHPT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BQHE4LCHPT');
-</script>
