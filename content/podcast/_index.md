@@ -42,4 +42,4 @@ All episodes are individually preserved within the archive and include historica
 
 Interested in contributing a recording, memory, or related archival material?
 
-Visit the [Contribute](/contribute/) page for submission information.
+Visit the [Contribute](/contribute-materials/) page for submission information.
