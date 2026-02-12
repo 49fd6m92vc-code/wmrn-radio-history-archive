@@ -1,0 +1,8 @@
+<ul>
+{{ range (where .Site.RegularPages "Section" "podcast") }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a><br>
+    <small>{{ .Date.Format "January 2, 2006" }}</small>
+  </li>
+{{ end }}
+</ul>
