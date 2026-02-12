@@ -148,7 +148,7 @@ mainSections = [
   [[menu.main]]
     parent = "about"
     name = "Contribute"
-    url = "/contribute/"
+    url = "/contribute-materials/"
     weight = 1
 
   [[menu.footer]]
