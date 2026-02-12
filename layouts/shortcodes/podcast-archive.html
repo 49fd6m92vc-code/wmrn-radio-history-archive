@@ -1,26 +1,17 @@
-<div class="podcast-archive">
-
-  {{ $pages := where .Site.RegularPages "Section" "podcast" }}
-  {{ range $pages.ByDate.Reverse }}
-
-    <article class="podcast-entry">
-      <h3>
-        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      </h3>
-
-      <p class="podcast-meta">
-        {{ .Date.Format "January 2, 2006" }}
-      </p>
-
-      {{ with .Params.summary }}
-        <p>{{ . }}</p>
-      {{ else }}
-        <p>{{ .Summary }}</p>
-      {{ end }}
-
-      <hr>
-    </article>
-
+<div class="archive-list">
+  {{ range (where .Site.RegularPages "Section" "podcast").ByDate.Reverse }}
+    {{ if not .Params.draft }}
+      <div class="archive-item">
+        <h3 class="archive-title">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </h3>
+        <div class="archive-meta">
+          {{ .Date.Format "January 2, 2006" }}
+        </div>
+        {{ with .Summary }}
+          <p class="archive-summary">{{ . }}</p>
+        {{ end }}
+      </div>
+    {{ end }}
   {{ end }}
-
 </div>
