@@ -25,7 +25,7 @@ Every release is cataloged as part of the permanent archival record.
 
 All episodes are individually preserved within the archive and include historical notes, source references, and contextual documentation.
 
-[Browse All Episodes →](/podcast/episodes/)
+[Browse All Episodes →](/podcast/archive/)
 
 ---
 
