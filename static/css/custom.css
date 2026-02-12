@@ -113,6 +113,9 @@ body {
   height: 48px;
   color: #1877F2;
 }
+  color: #1877F2;
+}
+}
 
 .header__social a:hover {
    color: #145DBF;
@@ -205,12 +208,12 @@ body {
     height: 42px;
   }
 
-  /* UPDATED: remove sparse full-width spacing */
+  /* UPDATED: tightened and centered spacing */
   .menu__list {
     justify-content: center;
-    gap: 1.1rem;
     width: auto;
-    padding: 0;
+    padding: 0 1.25rem;
+    gap: 1.75rem;
   }
 
   .menu__item {
@@ -219,7 +222,7 @@ body {
 
   .menu__link {
     font-size: 0.95rem;
-    padding: 0 0.85rem;
+    padding: 0 1.05rem;
     font-weight: 600;
     line-height: 1;
   }
@@ -231,5 +234,3 @@ body {
     padding: 0;
   }
 }
-
-/* ALL REMAINING CSS BELOW IS 100% UNCHANGED */
