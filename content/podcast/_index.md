@@ -20,14 +20,8 @@ Episodes highlight archival audio, historical context, and behind-the-scenes ins
 ## Latest Episode
 
 <div class="podcast-player">
-  <iframe
-    src="https://widget.spreaker.com/player?show_id=6874929&theme=light&playlist=show&playlist-continuous=false&chapters-image=true&episode_image_position=left&hide-logo=true&hide-likes=true&hide-comments=true&hide-sharing=true&hide-download=true"
-    width="100%"
-    height="200"
-    title="WMRN Radio History Archive Podcast"
-    frameborder="0"
-    scrolling="no">
-  </iframe>
+  {{< iheart "https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/" >}}
+
 </div>
 
 ---
