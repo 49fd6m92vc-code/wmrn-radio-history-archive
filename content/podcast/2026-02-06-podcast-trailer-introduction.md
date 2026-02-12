@@ -15,12 +15,12 @@ The podcast serves as an interpretive extension of the archive, presenting prese
 
 <div class="podcast-player">
   <iframe
-   src=["https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/from-the-wmrn-archives-20th-anniversary-address-by-robert-t-mason-december-23-1960-322359461?app=listen&embed=true]"
+    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/about-the-wmrn-radio-history-archive-321958388?app=listen&embed=true"
     width="100%"
     height="200"
     title="About the WMRN Radio History Archive"
     frameborder="0"
-    scrolling="no">
+    scrolling="no"
+    allow="autoplay">
   </iframe>
 </div>
-
