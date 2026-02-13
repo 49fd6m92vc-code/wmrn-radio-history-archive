@@ -59,11 +59,9 @@ mainSections = [
   post_meta = ["author", "date"]
 
   customCSS = ["css/custom.css"]
-]
 
   copyright = "© 2026 WMRN Radio History Archive"
 
-  # og:image
   images = ["images/wmrn-radio-history-archive-social.png"]
 
 # ------------------------
