@@ -1149,57 +1149,55 @@ body {
     max-width: 340px !important;
   }
 
-/* =========================================
-   MAINROAD NAV — HARD OVERRIDE (REAL FIX)
-   ========================================= */
+/* =====================================================
+   WMRN NAV + ACCENT HARD OVERRIDE (Mainroad Specific)
+   ===================================================== */
 
-/* Kill red accent line */
-.menu::before,
-.menu::after,
-.menu__list::before,
-.menu__list::after {
-  display: none !important;
-  background: none !important;
-}
-
-/* Force bottom bar navy */
+/* Remove Mainroad red bottom line */
 .menu {
-  border-bottom: 3px solid #1c2d4a !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
-/* Top-level nav buttons */
-.menu__link {
-  background-color: transparent !important;
-  color: #1c2d4a !important;
+/* Add navy bottom accent line */
+.menu::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #1c2d4a;
+  position: relative;
+  bottom: -1px;
 }
 
-/* Hover + Active */
-.menu__item:hover > .menu__link,
+/* Active menu item (red background block) */
 .menu__item--active > .menu__link {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* Dropdown background */
-.menu__sub-list {
+/* Hover state (red hover block) */
+.menu__link:hover {
   background-color: #1c2d4a !important;
-}
-
-/* Dropdown links */
-.menu__sub-list .menu__link {
   color: #ffffff !important;
 }
 
 /* Dropdown hover */
 .menu__sub-list .menu__link:hover {
-  background-color: #0f1f36 !important;
+  background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* =========================================
-   TAGLINE — FORCE NAVY
-   ========================================= */
-
+/* Tagline under header */
 .logo__description {
   color: #1c2d4a !important;
+}
+
+/* Standard links */
+a,
+a:visited {
+  color: #1c2d4a !important;
+}
+
+a:hover {
+  color: #0f1f36 !important;
 }
