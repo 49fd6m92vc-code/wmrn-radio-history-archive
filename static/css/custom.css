@@ -1162,21 +1162,24 @@ body {
   }
 }
 
-/* FORCE podcast badge sizing (must be last rule in file) */
+/* FINAL podcast badge sizing override */
 
 .content .podcast-platforms img,
 .entry__content .podcast-platforms img,
 .post__content .podcast-platforms img {
-  width: 220px !important;
-  max-width: 220px !important;
+  width: 220px;
+  max-width: 100%;
 }
 
-/* Mobile override */
+/* Portrait mobile – stack properly */
 @media (max-width: 768px) {
-  .content .podcast-platforms img,
-  .entry__content .podcast-platforms img,
-  .post__content .podcast-platforms img {
-    width: 65% !important;
-    max-width: 300px !important;
+  .podcast-platforms {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .podcast-platforms img {
+    width: 85%;
+    max-width: 320px;
   }
 }
