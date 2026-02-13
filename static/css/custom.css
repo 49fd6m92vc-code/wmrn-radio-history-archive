@@ -1159,3 +1159,19 @@ body {
   }
 
 }
+
+/* ===== KILL GLOBAL IMAGE CONSTRAINT FOR PODCAST BADGES ===== */
+
+.content img.podcast-badge,
+.entry__content img.podcast-badge,
+.post__content img.podcast-badge {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  object-fit: initial !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+}
