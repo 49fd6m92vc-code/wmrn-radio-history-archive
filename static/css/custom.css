@@ -1186,3 +1186,15 @@ a:hover,
 .pagination__item--active {
   border-color: #1c2d4a !important;
 }
+
+/* ===== FORCE NAV ACCENT COLOR ===== */
+
+.header,
+.menu,
+.menu__list {
+  border-bottom: 3px solid #1c2d4a !important;
+}
+
+.menu {
+  border-top: 0 !important;
+}
