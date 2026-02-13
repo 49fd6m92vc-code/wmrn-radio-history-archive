@@ -1267,22 +1267,27 @@ a:hover {
 }
 
 /* =========================================
-   HARD MAINROAD NAV + TAGLINE OVERRIDE
+   ABSOLUTE NAV + ACCENT OVERRIDE
 ========================================= */
 
-/* --- NAVIGATION RED LINE FIX --- */
-.nav__menu {
+/* Kill ALL red accent lines */
+.nav,
+.nav__menu,
+.nav::after,
+.nav::before,
+.nav__menu::after,
+.nav__menu::before {
+  border: none !important;
+  box-shadow: none !important;
+  background-image: none !important;
+}
+
+/* Force navigation bar bottom accent */
+.nav {
   border-bottom: 3px solid #1c2d4a !important;
 }
 
-/* Remove any inherited red borders */
-.nav,
-.menu,
-.header {
-  border-bottom: none !important;
-}
-
-/* --- NAV LINKS --- */
+/* Force nav link color */
 .nav__menu a,
 .nav__menu a:visited,
 .nav__menu a:hover,
@@ -1290,9 +1295,10 @@ a:hover {
   color: #1c2d4a !important;
 }
 
-/* --- TAGLINE UNDER SITE TITLE --- */
+/* Force tagline color */
+.logo__item,
 .logo__title,
-.logo__title::after,
-.logo__item::after {
+.logo__link,
+.logo__link::after {
   color: #1c2d4a !important;
 }
