@@ -1150,52 +1150,44 @@ body {
     max-width: 340px !important;
   }
 
-/* =======================================================
-   WMRN — REMOVE ALL MAINROAD RED (GLOBAL ACCENT OVERRIDE)
-   ======================================================= */
+/* =====================================================
+   FINAL — DESTROY ALL MAINROAD RED ACCENT
+   ===================================================== */
 
-/* Replace ALL instances of Mainroad red */
-:root {
-  --wmrn-navy: #1c2d4a;
-}
-
-/* Kill hard-coded red border stripe */
+/* Desktop nav stripe override */
 @media screen and (min-width: 767px) {
   .menu {
-    border-bottom: 5px solid var(--wmrn-navy) !important;
+    border-bottom: 5px solid #1c2d4a !important;
   }
 }
 
-/* Kill red dropdown top border */
-.menu__sub-list {
-  border-top: 3px solid var(--wmrn-navy) !important;
+/* Mobile nav stripe override */
+@media screen and (max-width: 766px) {
+  .menu {
+    border-bottom: 5px solid #1c2d4a !important;
+  }
 }
 
-/* Kill red hover background */
-.menu__link:hover,
-.menu__item--active > .menu__link {
-  background-color: var(--wmrn-navy) !important;
+/* Remove any red border-top */
+.menu__sub-list {
+  border-top: 5px solid #1c2d4a !important;
+}
+
+/* Main nav hover */
+.menu__link:hover {
+  background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* Kill red anywhere it appears */
-[style*="#e22d30"],
-[style*="#E22D30"] {
-  color: var(--wmrn-navy) !important;
-  border-color: var(--wmrn-navy) !important;
-  background-color: var(--wmrn-navy) !important;
+/* Active menu item */
+.menu__item--active > .menu__link {
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
 }
 
-/* Override theme accent globally */
+/* Kill any remaining red in nav */
 .menu,
 .menu::before,
 .menu::after {
   box-shadow: none !important;
-}
-
-/* Force all anchor accents */
-a,
-a:visited,
-a:hover {
-  color: var(--wmrn-navy) !important;
 }
