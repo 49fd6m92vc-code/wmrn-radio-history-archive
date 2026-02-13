@@ -1171,15 +1171,31 @@ body {
   max-width: 100%;
 }
 
-/* Portrait mobile – stack properly */
+/* HARD MOBILE STACK FIX – podcast badges */
+
 @media (max-width: 768px) {
-  .podcast-platforms {
-    flex-direction: column;
-    align-items: center;
+
+  .content .podcast-platforms,
+  .entry__content .podcast-platforms,
+  .post__content .podcast-platforms {
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
   }
 
-  .podcast-platforms img {
-    width: 85%;
-    max-width: 320px;
+  .content .podcast-platforms a,
+  .entry__content .podcast-platforms a,
+  .post__content .podcast-platforms a {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
+  .content .podcast-platforms img,
+  .entry__content .podcast-platforms img,
+  .post__content .podcast-platforms img {
+    width: 85% !important;
+    max-width: 320px !important;
   }
 }
