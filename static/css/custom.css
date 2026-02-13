@@ -1133,26 +1133,29 @@ body {
   height: auto;
   display: block;
 }
-/* ===== ABSOLUTE FINAL MOBILE OVERRIDE ===== */
+
+/* ===== TRUE MOBILE FIX – FORCE FULL WIDTH ROWS ===== */
 
 @media screen and (max-width: 768px) {
 
   .podcast-platforms {
-    display: block !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    width: 100% !important;
   }
 
   .podcast-platforms a {
-    display: block !important;
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
     width: 100% !important;
-    margin: 0 0 18px 0 !important;
-    text-align: center !important;
+    display: block !important;
   }
 
   .podcast-badge {
     display: block !important;
-    width: 90% !important;
-    max-width: 340px !important;
-    margin: 0 auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
 }
