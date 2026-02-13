@@ -1130,7 +1130,7 @@ body {
 }
 
 .podcast-platforms a img {
-  width: 220px;      /* Desktop size */
+  width: 250px;      /* Desktop size */
   height: auto;
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
