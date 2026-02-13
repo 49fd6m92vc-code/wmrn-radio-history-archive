@@ -83,7 +83,7 @@ mainSections = [
 
 [params.logo]
   image = "images/site-logo.png"
-  title = false
+  title = "WMRN Radio History Archive"
 
 # ------------------------
 # Social Links
