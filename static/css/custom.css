@@ -1150,15 +1150,32 @@ body {
     max-width: 340px !important;
   }
 
-/* ===== FORCE SUBMENU HOVER NAVY ===== */
+/* =========================
+   KILL ALL MAINROAD RED
+   ========================= */
 
+/* Desktop underline */
+@media screen and (min-width: 767px) {
+  .menu {
+    border-bottom: 3px solid #1c2d4a !important;
+  }
+}
+
+/* Mobile active menu underline */
+.menu__list--active,
+.menu__list-active {
+  border-bottom: 3px solid #1c2d4a !important;
+}
+
+/* Submenu hover (both systems) */
 .menu__sub-list .menu__link:hover,
-.menu__sub-list .menu__item--active > .menu__link {
+.menu__list .menu__link:hover {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* Remove any red border on dropdown */
+/* Remove any leftover red borders */
+.menu,
 .menu__sub-list {
-  border-top: 3px solid #1c2d4a !important;
+  border-top: none !important;
 }
