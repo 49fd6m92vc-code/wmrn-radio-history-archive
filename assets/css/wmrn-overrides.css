@@ -1150,50 +1150,56 @@ body {
   }
 
 /* =========================================
-   FINAL NAVY ACCENT OVERRIDE — LAST WORD
+   MAINROAD NAV — HARD OVERRIDE (REAL FIX)
    ========================================= */
 
-:root {
-  --wmrn-navy: #1c2d4a;
+/* Kill red accent line */
+.menu::before,
+.menu::after,
+.menu__list::before,
+.menu__list::after {
+  display: none !important;
+  background: none !important;
 }
 
-/* Tagline */
-.logo__description {
-  color: var(--wmrn-navy) !important;
-}
-
-/* Links */
-a,
-a:visited {
-  color: var(--wmrn-navy) !important;
-}
-
-a:hover {
-  color: #0f1f36 !important;
-}
-
-/* Remove Mainroad red bar */
+/* Force bottom bar navy */
 .menu {
-  border-bottom: none !important;
-  box-shadow: none !important;
-  border-bottom: 3px solid var(--wmrn-navy) !important;
+  border-bottom: 3px solid #1c2d4a !important;
 }
 
-/* Top nav hover + active */
-.menu__item > .menu__link:hover,
+/* Top-level nav buttons */
+.menu__link {
+  background-color: transparent !important;
+  color: #1c2d4a !important;
+}
+
+/* Hover + Active */
+.menu__item:hover > .menu__link,
 .menu__item--active > .menu__link {
-  background-color: var(--wmrn-navy) !important;
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
+}
+
+/* Dropdown background */
+.menu__sub-list {
+  background-color: #1c2d4a !important;
+}
+
+/* Dropdown links */
+.menu__sub-list .menu__link {
   color: #ffffff !important;
 }
 
 /* Dropdown hover */
 .menu__sub-list .menu__link:hover {
-  background-color: var(--wmrn-navy) !important;
+  background-color: #0f1f36 !important;
   color: #ffffff !important;
 }
 
-/* Pagination */
-.pagination__item--active {
-  border-color: var(--wmrn-navy) !important;
-  color: var(--wmrn-navy) !important;
+/* =========================================
+   TAGLINE — FORCE NAVY
+   ========================================= */
+
+.logo__description {
+  color: #1c2d4a !important;
 }
