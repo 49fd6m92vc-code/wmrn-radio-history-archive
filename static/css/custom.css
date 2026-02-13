@@ -1150,44 +1150,15 @@ body {
     max-width: 340px !important;
   }
 
-/* =====================================================
-   FINAL — DESTROY ALL MAINROAD RED ACCENT
-   ===================================================== */
+/* ===== FORCE SUBMENU HOVER NAVY ===== */
 
-/* Desktop nav stripe override */
-@media screen and (min-width: 767px) {
-  .menu {
-    border-bottom: 5px solid #1c2d4a !important;
-  }
+.menu__sub-list .menu__link:hover,
+.menu__sub-list .menu__item--active > .menu__link {
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
 }
 
-/* Mobile nav stripe override */
-@media screen and (max-width: 766px) {
-  .menu {
-    border-bottom: 5px solid #1c2d4a !important;
-  }
-}
-
-/* Remove any red border-top */
+/* Remove any red border on dropdown */
 .menu__sub-list {
-  border-top: 5px solid #1c2d4a !important;
-}
-
-/* Main nav hover */
-.menu__link:hover {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
-}
-
-/* Active menu item */
-.menu__item--active > .menu__link {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
-}
-
-/* Kill any remaining red in nav */
-.menu,
-.menu::before,
-.menu::after {
-  box-shadow: none !important;
+  border-top: 3px solid #1c2d4a !important;
 }
