@@ -1150,3 +1150,13 @@ body {
   }
 
 }
+
+.logo__title::after {
+  content: "Preserving the broadcast legacy of WMRN-AM (1490) and WMRN-FM — Marion, Ohio.";
+  display: block;
+  font-size: 0.85rem;
+  font-weight: normal;
+  margin-top: 6px;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+}
