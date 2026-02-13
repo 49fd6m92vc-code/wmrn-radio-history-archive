@@ -1162,33 +1162,32 @@ body {
   }
 }
 
-/* FINAL podcast badge sizing override */
+/* =========================
+   IMAGE DISPLAY – ARCHIVAL SAFE
+   ========================= */
 
-.content .podcast-platforms img,
-.entry__content .podcast-platforms img,
-.post__content .podcast-platforms img {
-  width: 220px;
-  max-width: 100%;
+/* Exclude podcast badges completely */
+.entry__content img:not(.podcast-badge),
+.post__content img:not(.podcast-badge),
+.content img:not(.podcast-badge) {
+  width: 100%;
+  height: auto;
+  max-height: 480px;
+  object-fit: contain;
+  display: block;
+  margin: 1.75rem 0;
+  background: #f5f5f5;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 2px;
 }
 
-/* MOBILE – FORCE STACKED PODCAST BADGES */
-@media (max-width: 768px) {
-
-  .content .podcast-platforms {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 14px !important;
-  }
-
-  .content .podcast-platforms img,
-  .entry__content .podcast-platforms img,
-  .post__content .podcast-platforms img {
-    width: 80% !important;
-    max-width: 300px !important;
-  }
-}
-
-body {
-  background: red !important;
+/* Podcast badges are independent */
+.podcast-badge {
+  width: 220px !important;
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+  border: none !important;
 }
