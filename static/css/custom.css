@@ -22,9 +22,9 @@ body {
    IMAGE DISPLAY – ARCHIVAL SAFE
    ========================= */
 
-.entry__content img,
-.post__content img,
-.content img {
+.entry__content img:not(.podcast-badge),
+.post__content img:not(.podcast-badge),
+.content img:not(.podcast-badge) {
   width: 100%;
   height: auto;
   max-height: 480px;
