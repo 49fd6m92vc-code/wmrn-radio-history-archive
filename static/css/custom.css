@@ -148,6 +148,13 @@ body {
   .menu__link {
     font-size: 0.83rem;
     padding: 0.45rem 0.55rem;
+    color: #1c2d4a;
+  }
+
+  .menu__item > .menu__link:hover,
+  .menu__item--active > .menu__link {
+    background-color: #1c2d4a;
+    color: #ffffff;
   }
 }
 
@@ -172,8 +179,8 @@ body {
   top: 100%;
   left: 0;
   min-width: 220px;
-  background: #222;
-  border-top: 2px solid #1c2d4a;
+  background: #1c2d4a;
+  border-top: 3px solid #1c2d4a;
   z-index: 1000;
 }
 
@@ -184,11 +191,12 @@ body {
 .menu__sub-list .menu__link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #fff;
+  color: #ffffff;
 }
 
 .menu__sub-list .menu__link:hover {
-  background: #1cb2d4a;
+  background: #0f1f36;
+  color: #ffffff;
 }
 
 /* =========================
@@ -213,7 +221,6 @@ body {
     overflow-x: hidden;
   }
 
-  /* Header stack */
   .header__container {
     flex-direction: column;
     gap: 0.75rem;
@@ -232,16 +239,15 @@ body {
     max-width: 70vw;
   }
 
-  /* Hide checkbox but keep functionality */
   .menu__toggle {
     position: absolute;
     opacity: 0;
     pointer-events: none;
   }
 
-  /* Stock MENU bar */
+  /* Navy mobile bar */
   .menu {
-    background: #2a2a2a;
+    background: #1c2d4a;
   }
 
   .menu__btn {
@@ -250,7 +256,7 @@ body {
     padding: 0.9rem 1rem;
     text-align: right;
     cursor: pointer;
-    background: #2a2a2a;
+    background: #1c2d4a;
   }
 
   .menu__btn-title {
@@ -260,18 +266,15 @@ body {
     text-transform: uppercase;
   }
 
-  /* Menu closed by default */
   .menu__list {
     display: none;
-    background: #2a2a2a;
+    background: #1c2d4a;
   }
 
-  /* Open when toggled */
   .menu__toggle:checked ~ .menu__list {
     display: block;
   }
 
-  /* Links */
   .menu__link {
     display: block;
     padding: 1rem;
@@ -281,22 +284,49 @@ body {
 
   .menu__link:hover,
   .menu__link:focus {
-    background: #333333;
+    background: #0f1f36;
+    color: #ffffff;
   }
 
-  /* Submenus */
   .menu__sub-list {
-    background: #1f1f1f;
+    background: #0f1f36;
   }
 
   .menu__sub-list .menu__link {
     padding-left: 2rem;
-    color: #dddddd;
+    color: #ffffff;
   }
 
   .menu__sub-list .menu__link:hover {
     background: #1c2d4a;
     color: #ffffff;
+  }
+}
+
+/* =========================
+   MOBILE MENU BAR HEIGHT
+   ========================= */
+
+@media (max-width: 1023px) {
+
+  .menu {
+    height: auto;
+  }
+
+  .menu__btn {
+    padding: 0.55rem 1rem;
+    line-height: 1.2;
+  }
+
+  .menu__btn-title {
+    font-size: 0.75rem;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+  }
+
+  .menu__btn * {
+    margin: 0;
+    padding: 0;
   }
 }
 
