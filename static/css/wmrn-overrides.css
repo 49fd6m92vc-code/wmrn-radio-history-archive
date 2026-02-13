@@ -1,17 +1,23 @@
 /* =========================================
-   FORCE TAGLINE COLOR (HEADER)
+   REMOVE / RECOLOR RED NAV ACCENT STRIP
 ========================================= */
 
-.header .logo__link::after {
-  color: #1c2d4a !important;
+/* Kill the red pseudo-element bar */
+.menu__list::before {
+  background: #1c2d4a !important;  /* change to navy */
 }
+
+/* If you want it completely removed instead, use this instead:
+.menu__list::before {
+  display: none !important;
+}
+*/
 
 
 /* =========================================
-   FORCE NAVIGATION ACCENT COLOR
+   FIX ACTIVE MENU ITEM RED BACKGROUND
 ========================================= */
 
-/* Active menu item background */
 .menu__item--active > .menu__link {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
@@ -23,12 +29,7 @@
   color: #ffffff !important;
 }
 
-/* Remove red underline bar */
-.menu {
-  box-shadow: inset 0 -3px 0 #1c2d4a !important;
-}
-
-/* Dropdown active highlight */
+/* Remove any remaining red borders */
 .menu__item--active {
   border-color: #1c2d4a !important;
 }
