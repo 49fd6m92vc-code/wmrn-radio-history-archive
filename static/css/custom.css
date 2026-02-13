@@ -1267,37 +1267,32 @@ a:hover {
 }
 
 /* =========================================
-   HARD OVERRIDE — MAINROAD ACCENT COLOR
+   HARD MAINROAD NAV + TAGLINE OVERRIDE
 ========================================= */
 
-/* --- Navigation bar red underline --- */
-.menu__list {
+/* --- NAVIGATION RED LINE FIX --- */
+.nav__menu {
   border-bottom: 3px solid #1c2d4a !important;
 }
 
-/* Remove any red top borders */
-.header,
-.menu {
+/* Remove any inherited red borders */
+.nav,
+.menu,
+.header {
   border-bottom: none !important;
 }
 
-/* --- Navigation links --- */
-.menu__link {
+/* --- NAV LINKS --- */
+.nav__menu a,
+.nav__menu a:visited,
+.nav__menu a:hover,
+.nav__menu .active {
   color: #1c2d4a !important;
 }
 
-.menu__link:hover,
-.menu__item--active > .menu__link {
-  color: #1c2d4a !important;
-}
-
-/* --- Tagline under site title --- */
-.logo__title + .logo__text,
-.logo__title::after {
-  color: #1c2d4a !important;
-}
-
-/* If pseudo element is used */
+/* --- TAGLINE UNDER SITE TITLE --- */
+.logo__title,
+.logo__title::after,
 .logo__item::after {
   color: #1c2d4a !important;
 }
