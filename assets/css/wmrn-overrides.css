@@ -1150,52 +1150,45 @@ body {
   }
 
 /* =========================================
-   KILL ALL MAINROAD RED ACCENT
-   ========================================= */
+   MAINROAD NAV — HARD NAVY OVERRIDE
+========================================= */
 
 /* Remove red underline bar */
-.navbar,
-.menu,
-.header__menu,
-.nav {
+.menu {
   border-bottom: none !important;
   box-shadow: none !important;
 }
 
-/* Force navy underline */
-.navbar,
+/* Add navy bottom bar instead */
 .menu {
   border-bottom: 3px solid #1c2d4a !important;
 }
 
-/* Active menu background (the red block) */
-.menu__item--active > a,
-.menu__item--active > .menu__link {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
+/* Main nav links default */
+.menu__link,
+.menu__link:visited {
+  color: #ffffff !important; /* keep white on dark background */
 }
 
 /* Hover state */
-.menu__item > a:hover,
 .menu__link:hover {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* Dropdown hover */
-.menu__sub-list a:hover {
+/* Active menu item */
+.menu__item--active > .menu__link {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* =========================================
-   TAGLINE COLOR FIX
-   ========================================= */
+/* Dropdown background */
+.menu__sub-list {
+  border-top: 3px solid #1c2d4a !important;
+}
 
-.logo__title,
-.logo__title a,
-.logo__description,
-.logo__link,
-.logo__link::after {
-  color: #1c2d4a !important;
+/* Dropdown hover */
+.menu__sub-list .menu__link:hover {
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
 }
