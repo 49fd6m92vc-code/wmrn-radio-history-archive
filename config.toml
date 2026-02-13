@@ -59,8 +59,9 @@ mainSections = [
   post_meta = ["author", "date"]
 
   customCSS = [
-    "css/wmrn-overrides.css"
-  ]
+  "css/custom.css",
+  "css/wmrn-overrides.css"
+]
 
   copyright = "© 2026 WMRN Radio History Archive"
 
