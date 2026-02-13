@@ -1205,15 +1205,11 @@ body {
 }
 
 /* =========================================
-   KILL MAINROAD RED STRIPE (REAL TARGET)
+   KILL MAINROAD RED NAV STRIPE — FINAL FIX
    ========================================= */
 
-/* Remove red bottom border from outer container */
-.container--outer {
-  border-bottom: none !important;
-}
-
-/* If you want navy instead */
-.container--outer {
-  border-bottom: 5px solid #1c2d4a !important;
+@media screen and (min-width: 767px) {
+  .menu {
+    border-bottom: 5px solid #1c2d4a !important;
+  }
 }
