@@ -1150,56 +1150,32 @@ body {
     max-width: 340px !important;
   }
 
-/* =====================================================
-   MAINROAD NAV — DIRECT HARD OVERRIDE (SPECIFIC)
-   ===================================================== */
+/* ==============================
+   MAINROAD NAV — REAL OVERRIDE
+   ============================== */
 
-/* Default nav link color */
-.menu__list > .menu__item > .menu__link {
-  color: #1c2d4a !important;
+/* Active menu item background */
+.menu__item--active {
+  background-color: #1c2d4a !important;
 }
 
-/* Hover state */
-.menu__list > .menu__item > .menu__link:hover {
+/* Hover background */
+.menu__item:hover {
   background-color: #1c2d4a !important;
+}
+
+/* Active link text */
+.menu__item--active > .menu__link {
   color: #ffffff !important;
 }
 
-/* Active page */
-.menu__list > .menu__item.menu__item--active > .menu__link {
-  background-color: #1c2d4a !important;
+/* Hover link text */
+.menu__item:hover > .menu__link {
   color: #ffffff !important;
 }
 
-/* Remove theme underline */
-.menu {
-  border-bottom: none !important;
-  box-shadow: none !important;
-}
-
-/* Add navy underline */
+/* Remove red underline strip */
 .menu {
   border-bottom: 3px solid #1c2d4a !important;
-}
-
-/* Dropdown top accent line */
-.menu__sub-list {
-  border-top: 3px solid #1c2d4a !important;
-}
-
-/* Dropdown link hover */
-.menu__sub-list .menu__link:hover {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
-}
-
-/* =====================================================
-   HEADER TITLE + TAGLINE COLOR
-   ===================================================== */
-
-.logo__title,
-.logo__title a,
-.logo__description,
-.logo__text {
-  color: #1c2d4a !important;
+  box-shadow: none !important;
 }
