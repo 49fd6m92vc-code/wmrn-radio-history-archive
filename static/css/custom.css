@@ -1152,3 +1152,10 @@ body {
     max-width: 420px;
   }
 }
+
+.podcast-platforms a {
+  background: none !important;
+  border: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
