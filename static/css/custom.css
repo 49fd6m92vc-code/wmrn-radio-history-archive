@@ -1167,3 +1167,22 @@ body {
   letter-spacing: 0.5px;
   opacity: 0.8;
 }
+
+/* ===== WMRN ARCHIVE ACCENT COLOR OVERRIDE ===== */
+
+a,
+a:hover,
+.menu__link:hover,
+.menu__item--active > .menu__link,
+.post__footer a,
+.pagination__item--active {
+  color: #1c2d4a !important;
+}
+
+.menu {
+  border-bottom: 3px solid #1c2d4a !important;
+}
+
+.pagination__item--active {
+  border-color: #1c2d4a !important;
+}
