@@ -1151,8 +1151,15 @@ body {
 
 }
 
-.logo__title::after {
-  content: "Preserving the broadcast legacy of WMRN-AM (1490) and WMRN-FM — Marion, Ohio.";
+/* ===== Header Tagline Under Site Title ===== */
+
+.logo__link {
+  display: inline-block;
+  text-align: center;
+}
+
+.logo__link::after {
+  content: "Preserving the Broadcast Legacy of WMRN-AM (1490) and WMRN-FM — Marion, Ohio.";
   display: block;
   font-size: 0.85rem;
   font-weight: normal;
