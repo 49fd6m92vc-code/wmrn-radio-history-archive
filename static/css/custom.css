@@ -1134,17 +1134,27 @@ body {
   display: block;
 }
 
-/* Portrait Mobile — FORCE ONE COLUMN */
-@media (max-width: 600px) {
+/* ===== FORCE TRUE MOBILE STACK (NO WRAP EVER) ===== */
+
+@media screen and (max-width: 768px) {
 
   .podcast-platforms {
-    grid-template-columns: 1fr !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    gap: 18px !important;
+  }
+
+  .podcast-platforms a {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
   }
 
   .podcast-badge {
-    width: 85% !important;
-    max-width: 320px !important;
-    margin: 0 auto;
+    width: 88% !important;
+    max-width: 340px !important;
   }
 
 }
