@@ -1171,31 +1171,21 @@ body {
   max-width: 100%;
 }
 
-/* HARD MOBILE STACK FIX – podcast badges */
-
+/* MOBILE – FORCE STACKED PODCAST BADGES */
 @media (max-width: 768px) {
 
-  .content .podcast-platforms,
-  .entry__content .podcast-platforms,
-  .post__content .podcast-platforms {
+  .content .podcast-platforms {
     display: flex !important;
     flex-direction: column !important;
-    flex-wrap: nowrap !important;
     align-items: center !important;
-  }
-
-  .content .podcast-platforms a,
-  .entry__content .podcast-platforms a,
-  .post__content .podcast-platforms a {
-    width: 100% !important;
-    display: flex !important;
-    justify-content: center !important;
+    gap: 14px !important;
   }
 
   .content .podcast-platforms img,
   .entry__content .podcast-platforms img,
   .post__content .podcast-platforms img {
-    width: 85% !important;
-    max-width: 320px !important;
+    width: 80% !important;
+    max-width: 300px !important;
   }
+
 }
