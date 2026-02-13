@@ -64,6 +64,9 @@ mainSections = [
 
   images = ["images/wmrn-radio-history-archive-social.png"]
 
+  # 🔥 KILL ALL RED ACCENTS HERE
+  highlightColor = "#1c2d4a"
+
 # ------------------------
 # Search (Lunr)
 # ------------------------
