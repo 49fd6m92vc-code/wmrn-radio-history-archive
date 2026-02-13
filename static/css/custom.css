@@ -1117,61 +1117,36 @@ body {
 }
 
 /* =========================
-   PODCAST PLATFORM BADGES — GRID RESET
+   PODCAST PLATFORM BADGES — CLEAN GRID + SCALE FIX
    ========================= */
 
 .podcast-platforms {
   display: grid;
-  grid-template-columns: repeat(2, 220px);
-  justify-content: center;
-  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  justify-items: center;
   margin: 2rem 0 3rem 0;
 }
 
-.podcast-badge {
-  width: 220px;
-  height: auto;
+/* Scale SVG badges larger (they are 160x40 by default) */
+.podcast-platforms img {
+  width: 320px !important;
+  max-width: 100% !important;
+  height: auto !important;
   display: block;
 }
 
-/* ===== TRUE MOBILE FIX – FORCE FULL WIDTH ROWS ===== */
+/* ===== TRUE MOBILE STACK ===== */
 
 @media screen and (max-width: 768px) {
 
   .podcast-platforms {
-    display: flex !important;
-    flex-direction: column !important;
-    flex-wrap: nowrap !important;
-    width: 100% !important;
+    grid-template-columns: 1fr;
   }
 
-  .podcast-platforms a {
-    flex: 0 0 100% !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    display: block !important;
+  .podcast-platforms img {
+    width: 88% !important;
+    max-width: 340px !important;
   }
 
-  .podcast-badge {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-}
-
-/* ===== KILL GLOBAL IMAGE CONSTRAINT FOR PODCAST BADGES ===== */
-
-.content img.podcast-badge,
-.entry__content img.podcast-badge,
-.post__content img.podcast-badge {
-  width: 100% !important;
-  max-width: 100% !important;
-  height: auto !important;
-  max-height: none !important;
-  object-fit: initial !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  border: none !important;
-  background: none !important;
 }
