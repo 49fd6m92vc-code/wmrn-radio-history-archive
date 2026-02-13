@@ -1150,32 +1150,30 @@ body {
     max-width: 340px !important;
   }
 
-/* =========================
-   KILL ALL MAINROAD RED
-   ========================= */
+/* =====================================================
+   FORCE NAV + SUBMENU NAVY (FINAL OVERRIDE)
+   ===================================================== */
 
-/* Desktop underline */
-@media screen and (min-width: 767px) {
-  .menu {
-    border-bottom: 3px solid #1c2d4a !important;
-  }
-}
-
-/* Mobile active menu underline */
-.menu__list--active,
-.menu__list-active {
-  border-bottom: 3px solid #1c2d4a !important;
-}
-
-/* Submenu hover (both systems) */
-.menu__sub-list .menu__link:hover,
-.menu__list .menu__link:hover {
+/* Main nav hover + active */
+.menu__item > .menu__link:hover,
+.menu__item--active > .menu__link {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* Remove any leftover red borders */
-.menu,
+/* Submenu hover */
+.menu__sub-list .menu__item > .menu__link:hover {
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
+}
+
+/* Submenu active */
+.menu__sub-list .menu__item--active > .menu__link {
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
+}
+
+/* Remove any red accent borders */
 .menu__sub-list {
-  border-top: none !important;
+  border-top: 3px solid #1c2d4a !important;
 }
