@@ -1203,3 +1203,18 @@ body {
 .logo__title + p {
   color: #1c2d4a !important;
 }
+
+/* =======================================================
+   FINAL MAINROAD NAV ACCENT OVERRIDE
+   ======================================================= */
+
+/* Remove theme red border */
+.nav,
+.menu {
+  border-bottom: none !important;
+}
+
+/* Add navy border */
+.nav {
+  border-bottom: 5px solid #1c2d4a !important;
+}
