@@ -1310,3 +1310,60 @@ a:hover {
 .logo__link::after {
   color: #1c2d4a !important;
 }
+
+/* =====================================================
+   WMRN NAVIGATION — HARD NAVY OVERRIDE (FINAL)
+   ===================================================== */
+
+/* Remove ALL existing red underline / accent bars */
+.header,
+.menu,
+.menu::before,
+.menu::after {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Add navy underline bar */
+.menu {
+  border-bottom: 3px solid #1c2d4a !important;
+}
+
+/* Default nav links */
+.menu__link,
+.menu__link:visited {
+  color: #1c2d4a !important;
+}
+
+/* Hover state */
+.menu__link:hover {
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
+}
+
+/* Active page state */
+.menu__item--active > .menu__link {
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
+}
+
+/* Dropdown menu background accent strip */
+.menu__sub-list {
+  border-top: 3px solid #1c2d4a !important;
+}
+
+/* Dropdown hover */
+.menu__sub-list .menu__link:hover {
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
+}
+
+/* =====================================================
+   HEADER TAGLINE COLOR FIX
+   ===================================================== */
+
+.logo__title,
+.logo__link,
+.logo__description {
+  color: #1c2d4a !important;
+}
