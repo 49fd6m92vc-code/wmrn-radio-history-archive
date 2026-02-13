@@ -1151,63 +1151,37 @@ body {
   }
 
 /* =====================================================
-   WMRN NAVIGATION — TRUE HARD OVERRIDE
+   MAINROAD NAV — TRUE ACCENT REMOVAL
    ===================================================== */
 
-/* Kill ALL accent bars */
-.header,
-.menu,
+/* Remove theme pseudo accent bars */
+.menu__list::before,
+.menu__list::after,
 .menu::before,
-.menu::after,
-.main-nav,
-.main-nav::before,
-.main-nav::after {
-  border: none !important;
-  box-shadow: none !important;
-  background-image: none !important;
+.menu::after {
+  display: none !important;
+  content: none !important;
 }
 
-/* Add navy bottom bar */
-.menu,
-.main-nav {
+/* Add navy underline manually */
+.menu__list {
   border-bottom: 3px solid #1c2d4a !important;
 }
 
-/* Force nav link color */
+/* Force nav link colors */
 .menu__link,
-.menu__link:visited,
-.main-nav__link,
-.main-nav__link:visited {
+.menu__link:visited {
   color: #1c2d4a !important;
 }
 
-/* Hover state */
-.menu__link:hover,
-.main-nav__link:hover {
+/* Hover */
+.menu__link:hover {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* Active page */
-.menu__item--active > .menu__link,
-.main-nav__item--active > .main-nav__link {
+/* Active */
+.menu__item--active > .menu__link {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
-}
-
-/* Dropdown hover */
-.menu__sub-list .menu__link:hover,
-.main-nav__sub-list .main-nav__link:hover {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
-}
-
-/* =====================================================
-   HEADER TAGLINE COLOR
-   ===================================================== */
-
-.logo__title,
-.logo__description,
-.logo__link {
-  color: #1c2d4a !important;
 }
