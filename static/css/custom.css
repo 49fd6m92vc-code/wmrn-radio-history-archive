@@ -135,40 +135,20 @@ body {
 
 @media (min-width: 1024px) {
 
-  /* FORCE white nav bar */
-  .menu,
-  nav.menu,
-  .header .menu {
-    background: #ffffff !important;
-    border-bottom: 3px solid #1c2d4a !important;
-  }
-
   .menu__list {
     display: flex;
     align-items: center;
-    background: #ffffff !important;
   }
 
   .menu__item {
     white-space: nowrap;
   }
 
-  /* Default link = black */
   .menu__link {
     font-size: 0.83rem;
     padding: 0.45rem 0.55rem;
-    color: #000000 !important;
-    background: transparent !important;
-  }
-
-  /* Hover + active = navy background, white text */
-  .menu__item > .menu__link:hover,
-  .menu__item--active > .menu__link {
-    background-color: #1c2d4a !important;
-    color: #ffffff !important;
   }
 }
-
 
 /* =========================
    DESKTOP DROPDOWNS
@@ -185,15 +165,14 @@ body {
   opacity: 0.7;
 }
 
-/* White dropdown */
 .menu__sub-list {
   display: none;
   position: absolute;
   top: 100%;
   left: 0;
   min-width: 220px;
-  background: #ffffff !important;
-  border-top: 3px solid #1c2d4a !important;
+  background: #222;
+  border-top: 2px solid #e22d30;
   z-index: 1000;
 }
 
@@ -201,20 +180,15 @@ body {
   display: block;
 }
 
-/* Default dropdown link = black */
 .menu__sub-list .menu__link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #000000 !important;
-  background: #ffffff !important;
+  color: #fff;
 }
 
-/* Dropdown hover = navy background, white text */
 .menu__sub-list .menu__link:hover {
-  background: #1c2d4a !important;
-  color: #ffffff !important;
+  background: #e22d30;
 }
-
 
 /* =========================
    FOUNDING RECORD BOX
@@ -227,9 +201,8 @@ body {
   background: #fafafa;
 }
 
-
 /* =========================
-   MOBILE NAV
+   MOBILE — STOCK MAINROAD MENU
    ========================= */
 
 @media (max-width: 1023px) {
@@ -239,9 +212,35 @@ body {
     overflow-x: hidden;
   }
 
-  .menu,
-  nav.menu {
-    background: #ffffff !important;
+  /* Header stack */
+  .header__container {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+
+  .header__tools {
+    width: 100%;
+    justify-content: center;
+    border-left: none;
+    padding-left: 0;
+  }
+
+  .header__tools input {
+    width: 160px;
+    max-width: 70vw;
+  }
+
+  /* Hide checkbox but keep functionality */
+  .menu__toggle {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  /* Stock MENU bar */
+  .menu {
+    background: #2a2a2a;
   }
 
   .menu__btn {
@@ -250,53 +249,53 @@ body {
     padding: 0.9rem 1rem;
     text-align: right;
     cursor: pointer;
-    background: #ffffff !important;
+    background: #2a2a2a;
   }
 
   .menu__btn-title {
-    color: #000000 !important;
+    color: #ffffff;
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
   }
 
+  /* Menu closed by default */
   .menu__list {
     display: none;
-    background: #ffffff !important;
+    background: #2a2a2a;
   }
 
+  /* Open when toggled */
   .menu__toggle:checked ~ .menu__list {
     display: block;
   }
 
-  /* Default mobile link = black */
+  /* Links */
   .menu__link {
     display: block;
     padding: 1rem;
-    color: #000000 !important;
-    border-top: 1px solid rgba(0,0,0,0.08);
-    background: #ffffff !important;
+    color: #ffffff;
+    border-top: 1px solid rgba(255,255,255,0.08);
   }
 
-  /* Mobile hover = navy */
   .menu__link:hover,
   .menu__link:focus {
-    background: #1c2d4a !important;
-    color: #ffffff !important;
+    background: #333333;
   }
 
+  /* Submenus */
   .menu__sub-list {
-    background: #ffffff !important;
+    background: #1f1f1f;
   }
 
   .menu__sub-list .menu__link {
     padding-left: 2rem;
-    color: #000000 !important;
+    color: #dddddd;
   }
 
   .menu__sub-list .menu__link:hover {
-    background: #1c2d4a !important;
-    color: #ffffff !important;
+    background: #e22d30;
+    color: #ffffff;
   }
 }
 
