@@ -1204,17 +1204,16 @@ body {
   color: #1c2d4a !important;
 }
 
-/* =======================================================
-   FINAL MAINROAD NAV ACCENT OVERRIDE
-   ======================================================= */
+/* =========================================
+   KILL MAINROAD RED STRIPE (REAL TARGET)
+   ========================================= */
 
-/* Remove theme red border */
-.nav,
-.menu {
+/* Remove red bottom border from outer container */
+.container--outer {
   border-bottom: none !important;
 }
 
-/* Add navy border */
-.nav {
+/* If you want navy instead */
+.container--outer {
   border-bottom: 5px solid #1c2d4a !important;
 }
