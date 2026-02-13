@@ -1152,103 +1152,55 @@ body {
 
 }
 
-/* =====================================================
-   MAINROAD NAV — TRUE SPECIFIC OVERRIDE
-   ===================================================== */
+/* =========================================
+   WMRN NAVIGATION — FINAL HARD OVERRIDE
+========================================= */
 
-/* Remove red underline bar */
-.header__menu {
-  border-bottom: none !important;
+/* Kill all accent variables */
+:root {
+  --accent-color: #1c2d4a !important;
+  --color-accent: #1c2d4a !important;
 }
 
-.header__menu::after {
-  display: none !important;
+/* Remove red bar completely */
+.header,
+.menu,
+.menu::before,
+.menu::after {
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
 /* Add navy underline */
-.header__menu {
-  box-shadow: inset 0 -3px 0 #1c2d4a !important;
+.menu {
+  border-bottom: 3px solid #1c2d4a !important;
 }
 
-/* Default links */
-.header__menu .menu__link {
-  color: #1c2d4a !important;
+/* FORCE all nav links */
+.menu__link,
+.menu__link:link,
+.menu__link:visited,
+.menu__link:hover,
+.menu__link:focus,
+.menu__link:active {
+  color: #ffffff !important;
+  background: transparent !important;
 }
 
-/* Hover */
-.header__menu .menu__link:hover {
+/* ACTIVE PAGE */
+.menu__item--active > .menu__link {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* Active page */
-.header__menu .menu__item--active > .menu__link {
+/* HOVER STATE */
+.menu__item > .menu__link:hover {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
-}
-
-/* Dropdown strip */
-.header__menu .menu__sub-list {
-  border-top: 3px solid #1c2d4a !important;
 }
 
 /* Dropdown hover */
-.header__menu .menu__sub-list .menu__link:hover {
+.menu__sub-list .menu__link:hover {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
-}
-
-/* Tagline color */
-.logo__description {
-  color: #1c2d4a !important;
-}
-/* =====================================================
-   MAINROAD NAV — TRUE SPECIFIC OVERRIDE
-   ===================================================== */
-
-/* Remove red underline bar */
-.header__menu {
-  border-bottom: none !important;
-}
-
-.header__menu::after {
-  display: none !important;
-}
-
-/* Add navy underline */
-.header__menu {
-  box-shadow: inset 0 -3px 0 #1c2d4a !important;
-}
-
-/* Default links */
-.header__menu .menu__link {
-  color: #1c2d4a !important;
-}
-
-/* Hover */
-.header__menu .menu__link:hover {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
-}
-
-/* Active page */
-.header__menu .menu__item--active > .menu__link {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
-}
-
-/* Dropdown strip */
-.header__menu .menu__sub-list {
-  border-top: 3px solid #1c2d4a !important;
-}
-
-/* Dropdown hover */
-.header__menu .menu__sub-list .menu__link:hover {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
-}
-
-/* Tagline color */
-.logo__description {
-  color: #1c2d4a !important;
 }
