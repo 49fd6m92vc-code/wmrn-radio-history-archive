@@ -1,44 +1,50 @@
-/* ========================================
-   HARD NAV OVERRIDE – FINAL
-   ======================================== */
+/* =========================================
+   KILL ALL MAINROAD RED ACCENT
+   ========================================= */
 
-/* Remove Mainroad red bottom stripe */
+/* Remove red underline bar */
+.navbar,
 .menu,
-.menu::before,
-.menu::after {
+.header__menu,
+.nav {
   border-bottom: none !important;
   box-shadow: none !important;
-  background-image: none !important;
 }
 
-/* Add navy bottom stripe */
+/* Force navy underline */
+.navbar,
 .menu {
   border-bottom: 3px solid #1c2d4a !important;
 }
 
-/* Fix active tab (red background) */
+/* Active menu background (the red block) */
+.menu__item--active > a,
 .menu__item--active > .menu__link {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* Fix hover */
+/* Hover state */
+.menu__item > a:hover,
 .menu__link:hover {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* Fix dropdown hover */
-.menu__sub-list .menu__link:hover {
+/* Dropdown hover */
+.menu__sub-list a:hover {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* ========================================
+/* =========================================
    TAGLINE COLOR FIX
-   ======================================== */
+   ========================================= */
 
-.logo__title + .logo__link,
+.logo__title,
+.logo__title a,
+.logo__description,
+.logo__link,
 .logo__link::after {
   color: #1c2d4a !important;
 }
