@@ -1150,66 +1150,52 @@ body {
     max-width: 340px !important;
   }
 
-/* =========================================================
-   WMRN NAVIGATION — COMPLETE ACCENT REPLACEMENT
-   This overrides Mainroad's gradient + pseudo-element stripe
-   ========================================================= */
+/* =======================================================
+   WMRN — REMOVE ALL MAINROAD RED (GLOBAL ACCENT OVERRIDE)
+   ======================================================= */
 
-/* Remove theme gradient stripe entirely */
-.menu {
-  background-image: none !important;
-  box-shadow: none !important;
-  border-bottom: 3px solid #1c2d4a !important; /* Navy stripe */
+/* Replace ALL instances of Mainroad red */
+:root {
+  --wmrn-navy: #1c2d4a;
 }
 
-/* Remove any pseudo element accent */
-.menu::before,
-.menu::after {
-  display: none !important;
-  content: none !important;
-}
-
-/* Default nav link color */
-.menu__link,
-.menu__link:visited {
-  color: #ffffff !important;
-}
-
-/* Hover = navy background */
-.menu__link:hover {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
-}
-
-/* Active page */
-.menu__item--active > .menu__link {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
-}
-
-/* Dropdown strip */
-.menu__sub-list {
-  border-top: 3px solid #1c2d4a !important;
-}
-
-/* Dropdown hover */
-.menu__sub-list .menu__link:hover {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
-}
-
-/* Remove red tagline */
-.logo__description,
-.logo__title + p {
-  color: #1c2d4a !important;
-}
-
-/* =========================================
-   KILL MAINROAD RED NAV STRIPE — FINAL FIX
-   ========================================= */
-
+/* Kill hard-coded red border stripe */
 @media screen and (min-width: 767px) {
   .menu {
-    border-bottom: 5px solid #1c2d4a !important;
+    border-bottom: 5px solid var(--wmrn-navy) !important;
   }
+}
+
+/* Kill red dropdown top border */
+.menu__sub-list {
+  border-top: 3px solid var(--wmrn-navy) !important;
+}
+
+/* Kill red hover background */
+.menu__link:hover,
+.menu__item--active > .menu__link {
+  background-color: var(--wmrn-navy) !important;
+  color: #ffffff !important;
+}
+
+/* Kill red anywhere it appears */
+[style*="#e22d30"],
+[style*="#E22D30"] {
+  color: var(--wmrn-navy) !important;
+  border-color: var(--wmrn-navy) !important;
+  background-color: var(--wmrn-navy) !important;
+}
+
+/* Override theme accent globally */
+.menu,
+.menu::before,
+.menu::after {
+  box-shadow: none !important;
+}
+
+/* Force all anchor accents */
+a,
+a:visited,
+a:hover {
+  color: var(--wmrn-navy) !important;
 }
