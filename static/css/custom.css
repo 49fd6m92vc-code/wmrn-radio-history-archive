@@ -1151,37 +1151,36 @@ body {
   }
 
 /* =====================================================
-   MAINROAD NAV — TRUE ACCENT REMOVAL
+   ABSOLUTE NAV COLOR OVERRIDE — NO MORE RED
    ===================================================== */
 
-/* Remove theme pseudo accent bars */
-.menu__list::before,
-.menu__list::after,
-.menu::before,
-.menu::after {
+/* Remove all pseudo accent bars */
+.header::after,
+.menu::after,
+.menu__list::after {
   display: none !important;
   content: none !important;
+  background: none !important;
 }
 
-/* Add navy underline manually */
-.menu__list {
+/* Replace underline */
+.header .menu__list {
   border-bottom: 3px solid #1c2d4a !important;
 }
 
-/* Force nav link colors */
-.menu__link,
-.menu__link:visited {
+/* Default links */
+.header .menu__item > .menu__link {
   color: #1c2d4a !important;
 }
 
 /* Hover */
-.menu__link:hover {
+.header .menu__item > .menu__link:hover {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
 /* Active */
-.menu__item--active > .menu__link {
+.header .menu__item--active > .menu__link {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
