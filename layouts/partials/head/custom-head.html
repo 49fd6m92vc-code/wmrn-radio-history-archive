@@ -1,31 +1,89 @@
 <style>
-/* =========================
-   OVERRIDE MAINROAD NAV STYLES
-   ========================= */
+/* =========================================
+   WMRN NAVIGATION — FULL NAVY OVERRIDE
+   ========================================= */
 
+/* Remove theme accent stripe */
+.header,
+.menu,
+.menu::before,
+.menu::after {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Add navy bottom stripe */
+.menu {
+  border-bottom: 3px solid #1c2d4a !important;
+}
+
+/* =====================
+   TOP-LEVEL NAV LINKS
+   ===================== */
+
+.menu__link,
+.menu__link:visited {
+  color: #ffffff !important;
+}
+
+/* Hover — ALL BUTTONS NAVY */
+.menu__link:hover {
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
+}
+
+/* Active page */
+.menu__item--active > .menu__link {
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
+}
+
+/* =====================
+   DROPDOWN MENU
+   ===================== */
+
+/* Dropdown container */
+.menu__sub-list {
+  border-top: 3px solid #1c2d4a !important;
+}
+
+/* Dropdown default */
 .menu__sub-list .menu__link {
-  display: block;
-  padding: 0.5rem 1rem;
-  color: #eee;
-  background: transparent;
+  color: #e6e6e6 !important;
 }
 
-/* Hover (now beats theme CSS) */
+/* Dropdown hover */
 .menu__sub-list .menu__link:hover {
-  background-color: #2b2b2b;
-  color: #ffffff;
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
 }
 
-/* Active submenu page */
+/* Dropdown active */
 .menu__sub-item--active > .menu__link {
-  background-color: #9c1d1d;
-  color: #ffffff;
-  font-weight: 600;
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
 }
 
-/* Indicator */
-.menu__sub-item--active > .menu__link::before {
-  content: "› ";
-  opacity: 0.8;
+/* =====================
+   REMOVE ALL RED LINKS GLOBALLY
+   ===================== */
+
+a,
+a:visited {
+  color: #1c2d4a !important;
+}
+
+a:hover {
+  color: #0f1f36 !important;
+}
+
+/* =====================
+   HEADER TAGLINE COLOR
+   ===================== */
+
+.logo__title,
+.logo__link,
+.logo__description {
+  color: #1c2d4a !important;
 }
 </style>
