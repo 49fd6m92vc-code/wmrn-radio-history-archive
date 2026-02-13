@@ -1154,9 +1154,9 @@ body {
 
 /* Mobile adjustment */
 @media (max-width: 768px) {
-  .podcast-platforms {
-    flex-direction: column;
-    gap: 16px;
+  .podcast-platforms img {
+    width: 40% !important;
+  }
   }
 
   .podcast-platforms img {
