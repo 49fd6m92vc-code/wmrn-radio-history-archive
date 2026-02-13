@@ -1161,3 +1161,22 @@ body {
     max-width: 300px !important;
   }
 }
+
+/* FORCE podcast badge sizing (must be last rule in file) */
+
+.content .podcast-platforms img,
+.entry__content .podcast-platforms img,
+.post__content .podcast-platforms img {
+  width: 220px !important;
+  max-width: 220px !important;
+}
+
+/* Mobile override */
+@media (max-width: 768px) {
+  .content .podcast-platforms img,
+  .entry__content .podcast-platforms img,
+  .post__content .podcast-platforms img {
+    width: 65% !important;
+    max-width: 300px !important;
+  }
+}
