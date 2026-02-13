@@ -1191,3 +1191,18 @@ body {
   background: none !important;
   border: none !important;
 }
+
+@media (max-width: 768px) {
+
+  .podcast-platforms {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .podcast-badge {
+    width: 85% !important;
+    max-width: 320px !important;
+  }
+}
