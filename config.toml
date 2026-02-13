@@ -82,7 +82,7 @@ mainSections = [
 # ------------------------
 
 [params.logo]
-  image = "images/site-logo.PNG"
+  image = "static/images/site-logo.PNG"
   title = "WMRN Radio History Archive"
 
 # ------------------------
