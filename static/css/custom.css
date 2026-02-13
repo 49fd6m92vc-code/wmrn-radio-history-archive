@@ -1136,14 +1136,11 @@ body {
 .podcast-platforms img {
   width: 220px;
   height: auto;
-
-  /* Override Mainroad image styling */
   background: none !important;
   padding: 0 !important;
   border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
-
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
 
@@ -1154,13 +1151,13 @@ body {
 
 /* Mobile adjustment */
 @media (max-width: 768px) {
-  .podcast-platforms img {
-    width: 40% !important;
-  }
+  .podcast-platforms {
+    flex-direction: column;
+    gap: 16px;
   }
 
   .podcast-platforms img {
-    width: 70%;
-    max-width: 320px;
+    width: 65% !important;
+    max-width: 300px !important;
   }
 }
