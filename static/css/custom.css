@@ -173,7 +173,7 @@ body {
   left: 0;
   min-width: 220px;
   background: #222;
-  border-top: 2px solid #e22d30;
+  border-top: 2px solid #1c2d4a;
   z-index: 1000;
 }
 
@@ -295,7 +295,7 @@ body {
   }
 
   .menu__sub-list .menu__link:hover {
-    background: #e22d30;
+    background: #1c2d4a;
     color: #ffffff;
   }
 }
@@ -569,7 +569,7 @@ body {
 .entry__content a[href*="collection"] {
   display: inline-block;
   margin-top: 0.35rem;
-  color: #e22d30;
+  color: #1c2d4a;
   font-weight: 600;
   text-decoration: none;
 }
