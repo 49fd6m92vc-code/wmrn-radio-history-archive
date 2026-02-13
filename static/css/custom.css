@@ -1119,8 +1119,8 @@ body {
 .podcast-platforms {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  margin: 2rem 0 3rem 0;
+  gap: 20px;
+  margin: 1rem 0 1rem 0;
   justify-content: center;
   align-items: center;
 }
@@ -1130,7 +1130,7 @@ body {
 }
 
 .podcast-platforms a img {
-  width: 250px;      /* Desktop size */
+  width: 240px;      /* Desktop size */
   height: auto;
   transition: transform 0.15s ease, opacity 0.15s ease;
 }
