@@ -1,35 +1,39 @@
 /* =========================================
-   FORCE WMRN NAV + TAGLINE COLOR
+   FORCE MAINROAD ACCENT COLOR OVERRIDE
 ========================================= */
 
-/* Kill red everywhere in header */
-.header,
-.menu,
-.menu__list,
-.menu__item,
-.menu__link {
-  color: #1c2d4a !important;
+/* Change active menu background */
+.menu__item--active > .menu__link {
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
 }
 
-/* Navigation underline / accent bar */
+/* Change hover background */
+.menu__link:hover {
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
+}
+
+/* Remove red border line */
 .menu {
-  border-bottom: none !important;
   box-shadow: inset 0 -3px 0 #1c2d4a !important;
 }
 
-/* Active menu item */
-.menu__item--active > .menu__link {
+/* Remove any red top border */
+.header,
+.menu,
+.menu__list {
+  border-color: #1c2d4a !important;
+}
+
+/* Fix tagline color */
+.logo__link::after {
   color: #1c2d4a !important;
 }
 
-/* Header tagline */
-.logo__link::after {
-  content: "Preserving the Broadcast Legacy of WMRN-AM (1490) and WMRN-FM — Marion, Ohio.";
-  display: block;
-  font-size: 0.85rem;
-  font-weight: 500;
-  margin-top: 6px;
-  letter-spacing: 0.5px;
+/* Fix link colors globally */
+a,
+a:visited,
+a:hover {
   color: #1c2d4a !important;
-  opacity: 1 !important;
 }
