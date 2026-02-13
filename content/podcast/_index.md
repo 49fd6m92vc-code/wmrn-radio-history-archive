@@ -46,7 +46,7 @@ All episodes are individually preserved within the archive and include historica
   </a>
 
   <a href="https://www.spreaker.com/show/6874929/episodes/feed" target="_blank" rel="noopener">
-    <img src="/images/rss-feedeed.svg" alt="Get the RSS Feed">
+    <img src="/images/rss-feed.svg" alt="Get the RSS Feed">
   </a>
 
 </div>
