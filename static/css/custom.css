@@ -1265,3 +1265,39 @@ a:hover {
   letter-spacing: 0.5px;
   color: #1c2d4a !important;
 }
+
+/* =========================================
+   HARD OVERRIDE — MAINROAD ACCENT COLOR
+========================================= */
+
+/* --- Navigation bar red underline --- */
+.menu__list {
+  border-bottom: 3px solid #1c2d4a !important;
+}
+
+/* Remove any red top borders */
+.header,
+.menu {
+  border-bottom: none !important;
+}
+
+/* --- Navigation links --- */
+.menu__link {
+  color: #1c2d4a !important;
+}
+
+.menu__link:hover,
+.menu__item--active > .menu__link {
+  color: #1c2d4a !important;
+}
+
+/* --- Tagline under site title --- */
+.logo__title + .logo__text,
+.logo__title::after {
+  color: #1c2d4a !important;
+}
+
+/* If pseudo element is used */
+.logo__item::after {
+  color: #1c2d4a !important;
+}
