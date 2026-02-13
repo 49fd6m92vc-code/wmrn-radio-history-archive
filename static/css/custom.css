@@ -1170,3 +1170,63 @@ body {
   width: 220px !important;
   max-width: 220px !important;
 }
+
+/* =========================================
+   GLOBAL NAVIGATION COLOR OVERRIDE — FINAL
+   White background
+   Black default text
+   Navy hover
+   White hover text
+========================================= */
+
+.menu,
+nav.menu,
+.header .menu {
+  background: #ffffff !important;
+}
+
+/* Desktop + Mobile bar */
+.menu__list {
+  background: #ffffff !important;
+}
+
+/* Default link state */
+.menu__link {
+  color: #000000 !important;
+  background: #ffffff !important;
+}
+
+/* Hover + Active state */
+.menu__link:hover,
+.menu__link:focus,
+.menu__item--active > .menu__link {
+  background: #1c2d4a !important;
+  color: #ffffff !important;
+}
+
+/* Dropdown background */
+.menu__sub-list {
+  background: #ffffff !important;
+  border-top: 3px solid #1c2d4a !important;
+}
+
+/* Dropdown default links */
+.menu__sub-list .menu__link {
+  color: #000000 !important;
+  background: #ffffff !important;
+}
+
+/* Dropdown hover */
+.menu__sub-list .menu__link:hover {
+  background: #1c2d4a !important;
+  color: #ffffff !important;
+}
+
+/* Mobile menu button bar */
+.menu__btn {
+  background: #ffffff !important;
+}
+
+.menu__btn-title {
+  color: #000000 !important;
+}
