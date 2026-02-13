@@ -1179,3 +1179,44 @@ body {
   color: #1c2d4a !important; /* force navy */
   opacity: 1;
 }
+
+/* =========================================
+   HARD ACCENT COLOR OVERRIDE — MAINROAD
+========================================= */
+
+/* Links */
+a,
+a:visited {
+  color: #1c2d4a !important;
+}
+
+a:hover {
+  color: #0f1f36 !important;
+}
+
+/* Active menu item */
+.menu__item--active > .menu__link,
+.menu__link:hover {
+  color: #1c2d4a !important;
+}
+
+/* Navigation underline bar */
+.menu {
+  box-shadow: inset 0 -3px 0 #1c2d4a !important;
+}
+
+/* Dropdown hover */
+.menu__sub-list .menu__link:hover {
+  background: #1c2d4a !important;
+}
+
+/* Pagination */
+.pagination__item--active {
+  border-color: #1c2d4a !important;
+  color: #1c2d4a !important;
+}
+
+/* Header tagline color */
+.logo__link::after {
+  color: #1c2d4a !important;
+}
