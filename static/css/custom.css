@@ -188,7 +188,7 @@ body {
 }
 
 .menu__sub-list .menu__link:hover {
-  background: #e22d30;
+  background: #1cb2d4a;
 }
 
 /* =========================
@@ -1149,31 +1149,3 @@ body {
     width: 88% !important;
     max-width: 340px !important;
   }
-
-/* =====================================================
-   FORCE NAV + SUBMENU NAVY (FINAL OVERRIDE)
-   ===================================================== */
-
-/* Main nav hover + active */
-.menu__item > .menu__link:hover,
-.menu__item--active > .menu__link {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
-}
-
-/* Submenu hover */
-.menu__sub-list .menu__item > .menu__link:hover {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
-}
-
-/* Submenu active */
-.menu__sub-list .menu__item--active > .menu__link {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
-}
-
-/* Remove any red accent borders */
-.menu__sub-list {
-  border-top: 3px solid #1c2d4a !important;
-}
