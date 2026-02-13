@@ -1,9 +1,9 @@
-baseURL = "https://wmrn-radio-history-archive.pages.dev/
+baseURL = "https://wmrn-radio-history-archive.pages.dev/"
 languageCode = "en-us"
 title = "WMRN Radio History Archive"
 theme = "mainroad"
 
-canonifyURLs = false
+canonifyURLs = true
 relativeURLs = false
 
 # ------------------------
@@ -65,8 +65,8 @@ mainSections = [
 
   copyright = "© 2026 WMRN Radio History Archive"
 
-  # 🔑 THIS is what generates og:image in Mainroad
-  images = ["images/social/wmrn-radio-history-archive-social.png"]
+  # og:image
+  images = ["images/wmrn-radio-history-archive-social.png"]
 
 # ------------------------
 # Search (Lunr)
@@ -82,8 +82,8 @@ mainSections = [
 # ------------------------
 
 [params.logo]
-  image = "/images/site-logo.png"
-  title = "WMRN Radio History Archive"
+  image = "images/site-logo.png"
+  title = false
 
 # ------------------------
 # Social Links
