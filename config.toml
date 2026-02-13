@@ -64,8 +64,10 @@ mainSections = [
 
   images = ["images/wmrn-radio-history-archive-social.png"]
 
-  # 🔥 KILL ALL RED ACCENTS HERE
-  highlightColor = "#1c2d4a"
+  # CORRECT accent override location
+  [params.style]
+    [params.style.vars]
+      highlightColor = "#1c2d4a"
 
 # ------------------------
 # Search (Lunr)
