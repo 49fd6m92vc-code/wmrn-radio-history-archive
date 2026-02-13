@@ -82,8 +82,9 @@ mainSections = [
 # ------------------------
 
 [params.logo]
-  image = "images/site-logo.png"
+  image = "/images/site-logo.png"
   title = "WMRN Radio History Archive"
+  subtitle = "Preserving the Broadcast Legacy of WMRN-AM (1490) and WMRN-FM — Marion, Ohio."
 
 # ------------------------
 # Social Links
