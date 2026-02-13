@@ -59,7 +59,6 @@ mainSections = [
   post_meta = ["author", "date"]
 
   customCSS = [
-    "css/custom.css",
     "css/wmrn-overrides.css"
   ]
 
