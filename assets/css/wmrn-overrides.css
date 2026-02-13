@@ -1150,45 +1150,50 @@ body {
   }
 
 /* =========================================
-   MAINROAD NAV — HARD NAVY OVERRIDE
-========================================= */
+   FINAL NAVY ACCENT OVERRIDE — LAST WORD
+   ========================================= */
 
-/* Remove red underline bar */
+:root {
+  --wmrn-navy: #1c2d4a;
+}
+
+/* Tagline */
+.logo__description {
+  color: var(--wmrn-navy) !important;
+}
+
+/* Links */
+a,
+a:visited {
+  color: var(--wmrn-navy) !important;
+}
+
+a:hover {
+  color: #0f1f36 !important;
+}
+
+/* Remove Mainroad red bar */
 .menu {
   border-bottom: none !important;
   box-shadow: none !important;
+  border-bottom: 3px solid var(--wmrn-navy) !important;
 }
 
-/* Add navy bottom bar instead */
-.menu {
-  border-bottom: 3px solid #1c2d4a !important;
-}
-
-/* Main nav links default */
-.menu__link,
-.menu__link:visited {
-  color: #ffffff !important; /* keep white on dark background */
-}
-
-/* Hover state */
-.menu__link:hover {
-  background-color: #1c2d4a !important;
-  color: #ffffff !important;
-}
-
-/* Active menu item */
+/* Top nav hover + active */
+.menu__item > .menu__link:hover,
 .menu__item--active > .menu__link {
-  background-color: #1c2d4a !important;
+  background-color: var(--wmrn-navy) !important;
   color: #ffffff !important;
-}
-
-/* Dropdown background */
-.menu__sub-list {
-  border-top: 3px solid #1c2d4a !important;
 }
 
 /* Dropdown hover */
 .menu__sub-list .menu__link:hover {
-  background-color: #1c2d4a !important;
+  background-color: var(--wmrn-navy) !important;
   color: #ffffff !important;
+}
+
+/* Pagination */
+.pagination__item--active {
+  border-color: var(--wmrn-navy) !important;
+  color: var(--wmrn-navy) !important;
 }
