@@ -1,35 +1,45 @@
-/* =========================================
-   REMOVE / RECOLOR RED NAV ACCENT STRIP
-========================================= */
+/* ========================================
+   MAINROAD ACCENT COLOR FULL OVERRIDE
+   ======================================== */
 
-/* Kill the red pseudo-element bar */
-.menu__list::before {
-  background: #1c2d4a !important;  /* change to navy */
+/* 1️⃣ Kill the red underline bar */
+.menu {
+  border-bottom: none !important;
+  box-shadow: none !important;
 }
 
-/* If you want it completely removed instead, use this instead:
-.menu__list::before {
-  display: none !important;
+/* Add navy underline instead */
+.menu::after {
+  content: "";
+  display: block;
+  height: 3px;
+  background: #1c2d4a;
 }
-*/
 
-
-/* =========================================
-   FIX ACTIVE MENU ITEM RED BACKGROUND
-========================================= */
-
+/* 2️⃣ Active navigation tab background */
 .menu__item--active > .menu__link {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* Hover state */
+/* 3️⃣ Hover state */
 .menu__link:hover {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* Remove any remaining red borders */
+/* 4️⃣ Dropdown hover */
+.menu__sub-list .menu__link:hover {
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
+}
+
+/* 5️⃣ Remove red accent stripe (Mainroad uses this) */
 .menu__item--active {
-  border-color: #1c2d4a !important;
+  border-bottom: none !important;
+}
+
+/* 6️⃣ Fix tagline color */
+.logo__link::after {
+  color: #1c2d4a !important;
 }
