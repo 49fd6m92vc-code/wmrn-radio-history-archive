@@ -1151,36 +1151,55 @@ body {
   }
 
 /* =====================================================
-   ABSOLUTE NAV COLOR OVERRIDE — NO MORE RED
+   MAINROAD NAV — DIRECT HARD OVERRIDE (SPECIFIC)
    ===================================================== */
 
-/* Remove all pseudo accent bars */
-.header::after,
-.menu::after,
-.menu__list::after {
-  display: none !important;
-  content: none !important;
-  background: none !important;
-}
-
-/* Replace underline */
-.header .menu__list {
-  border-bottom: 3px solid #1c2d4a !important;
-}
-
-/* Default links */
-.header .menu__item > .menu__link {
+/* Default nav link color */
+.menu__list > .menu__item > .menu__link {
   color: #1c2d4a !important;
 }
 
-/* Hover */
-.header .menu__item > .menu__link:hover {
+/* Hover state */
+.menu__list > .menu__item > .menu__link:hover {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* Active */
-.header .menu__item--active > .menu__link {
+/* Active page */
+.menu__list > .menu__item.menu__item--active > .menu__link {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
+}
+
+/* Remove theme underline */
+.menu {
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+
+/* Add navy underline */
+.menu {
+  border-bottom: 3px solid #1c2d4a !important;
+}
+
+/* Dropdown top accent line */
+.menu__sub-list {
+  border-top: 3px solid #1c2d4a !important;
+}
+
+/* Dropdown link hover */
+.menu__sub-list .menu__link:hover {
+  background-color: #1c2d4a !important;
+  color: #ffffff !important;
+}
+
+/* =====================================================
+   HEADER TITLE + TAGLINE COLOR
+   ===================================================== */
+
+.logo__title,
+.logo__title a,
+.logo__description,
+.logo__text {
+  color: #1c2d4a !important;
 }
