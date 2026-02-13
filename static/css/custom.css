@@ -1150,57 +1150,64 @@ body {
     max-width: 340px !important;
   }
 
-}
+/* =====================================================
+   WMRN NAVIGATION — TRUE HARD OVERRIDE
+   ===================================================== */
 
-/* =========================================
-   WMRN NAVIGATION — FINAL HARD OVERRIDE
-========================================= */
-
-/* Kill all accent variables */
-:root {
-  --accent-color: #1c2d4a !important;
-  --color-accent: #1c2d4a !important;
-}
-
-/* Remove red bar completely */
+/* Kill ALL accent bars */
 .header,
 .menu,
 .menu::before,
-.menu::after {
-  border-bottom: none !important;
+.menu::after,
+.main-nav,
+.main-nav::before,
+.main-nav::after {
+  border: none !important;
   box-shadow: none !important;
+  background-image: none !important;
 }
 
-/* Add navy underline */
-.menu {
+/* Add navy bottom bar */
+.menu,
+.main-nav {
   border-bottom: 3px solid #1c2d4a !important;
 }
 
-/* FORCE all nav links */
+/* Force nav link color */
 .menu__link,
-.menu__link:link,
 .menu__link:visited,
-.menu__link:hover,
-.menu__link:focus,
-.menu__link:active {
-  color: #ffffff !important;
-  background: transparent !important;
+.main-nav__link,
+.main-nav__link:visited {
+  color: #1c2d4a !important;
 }
 
-/* ACTIVE PAGE */
-.menu__item--active > .menu__link {
+/* Hover state */
+.menu__link:hover,
+.main-nav__link:hover {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
-/* HOVER STATE */
-.menu__item > .menu__link:hover {
+/* Active page */
+.menu__item--active > .menu__link,
+.main-nav__item--active > .main-nav__link {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
 }
 
 /* Dropdown hover */
-.menu__sub-list .menu__link:hover {
+.menu__sub-list .menu__link:hover,
+.main-nav__sub-list .main-nav__link:hover {
   background-color: #1c2d4a !important;
   color: #ffffff !important;
+}
+
+/* =====================================================
+   HEADER TAGLINE COLOR
+   ===================================================== */
+
+.logo__title,
+.logo__description,
+.logo__link {
+  color: #1c2d4a !important;
 }
