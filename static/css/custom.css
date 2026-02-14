@@ -1194,23 +1194,14 @@ body {
 }
 
 /* =========================
-   FORCE LIST ITEM SPACING
+   FORCE SEPARATORS + SPACING
    ========================= */
 
-.main .list__item {
+.main .post {
   padding: 2rem 0 !important;
-  border-bottom: 1px solid #dcdcdc !important;
+  border-bottom: 1px solid #d9d9d9 !important;
 }
 
-.main .list__item:last-child {
+.main .post:last-of-type {
   border-bottom: none !important;
-}
-
-.main .list__header {
-  margin-bottom: 0.75rem !important;
-}
-
-.main .list__meta {
-  margin-bottom: 0.75rem !important;
-  opacity: 0.65;
 }
