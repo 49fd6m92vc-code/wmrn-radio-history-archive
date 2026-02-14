@@ -1181,11 +1181,9 @@ body {
   }
 
   .podcast-platforms img {
-.content .podcast-platforms img,
-.entry__content .podcast-platforms img,
-.post__content .podcast-platforms img {
-  width: 85% !important;
-  max-width: 320px !important;
-  height: auto;
-}
+    width: 92% !important;      /* increased from 85% */
+    max-width: 420px !important; /* increased from 320px */
+    height: auto;
+  }
+
 }
