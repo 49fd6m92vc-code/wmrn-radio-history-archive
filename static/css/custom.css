@@ -1,5 +1,3 @@
-
-
 /* =========================
    BASE TYPOGRAPHY
    ========================= */
@@ -1163,16 +1161,18 @@ body {
   opacity: 0.92;
 }
 
-/* Mobile adjustment */
+/* Mobile adjustment — FIXED (NO PERCENTAGES) */
 @media (max-width: 768px) {
   .podcast-platforms {
     flex-direction: column;
-    gap: 16px;
+    align-items: center;
+    gap: 18px;
   }
 
   .podcast-platforms img {
-    width: 65% !important;
-    max-width: 300px !important;
+    width: 220px !important;
+    max-width: 90vw !important;
+    height: auto !important;
   }
 }
 
