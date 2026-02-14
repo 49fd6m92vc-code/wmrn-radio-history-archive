@@ -1005,6 +1005,8 @@ body {
   .post__content,
   .page__content {
     font-size: 19px;
+  }
+}
     
 /* Tighten main navigation spacing */
 .menu__list > li > a {
