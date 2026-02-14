@@ -1216,3 +1216,19 @@ body {
     object-fit: contain !important;
   }
 }
+
+/* FINAL LISTEN ON BADGE CONTROL */
+
+.podcast-platforms img {
+  width: 220px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .podcast-platforms img {
+    width: 80% !important;
+    max-width: 280px !important;
+    height: auto !important;
+  }
+}
