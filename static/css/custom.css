@@ -1089,11 +1089,11 @@ body {
   color: #ffffff;
 }
 
- .archive-list {
+ .-list {
   margin-top: 2rem;
 }
 
-.archive-item {
+.-item {
   padding: 2rem 0;
   border-top: 1px solid #e5e5e5;
 }
@@ -1106,10 +1106,11 @@ body {
 
 .archive-title a {
   text-decoration: none;
-  color: #990000;
+  color: #1c2d4a;
 }
 
 .archive-title a:hover {
+  color: #1c2d4a;
   text-decoration: underline;
 }
 
