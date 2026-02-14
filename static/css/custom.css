@@ -1,4 +1,5 @@
 
+
 /* =========================
    BASE TYPOGRAPHY
    ========================= */
@@ -1189,35 +1190,31 @@ body {
 }
 
 /* =========================
-   LISTEN BADGES — STABLE SCALING
+   LISTEN ON BADGES — MOBILE PORTRAIT FIX
    ========================= */
 
-.podcast-platforms {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-}
-
-.podcast-platforms img {
-  width: 100%;
-  max-width: 220px;     /* desktop cap */
-  height: auto;
-  flex: 0 1 220px;      /* prevents flex from stretching */
-}
-
-/* Tablet */
-@media (max-width: 1024px) {
-  .podcast-platforms img {
-    max-width: 200px;
-    flex: 0 1 200px;
-  }
-}
-
-/* Mobile portrait */
 @media (max-width: 768px) {
+
+  .podcast-platforms {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 18px !important;
+    width: 100% !important;
+  }
+
+  .podcast-platforms a {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+  }
+
   .podcast-platforms img {
-    max-width: 90%;
-    flex: 0 1 90%;
+    width: 75% !important;
+    max-width: 280px !important;
+    height: auto !important;
+    display: block !important;
+    object-fit: contain !important;
   }
 }
