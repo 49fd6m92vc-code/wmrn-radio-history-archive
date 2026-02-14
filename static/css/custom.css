@@ -1187,3 +1187,20 @@ body {
   }
 
 }
+
+/* =========================
+   ABSOLUTE FINAL MOBILE BADGE SIZE OVERRIDE
+   ========================= */
+
+@media (max-width: 768px) {
+
+  body .content .podcast-platforms img,
+  body .entry__content .podcast-platforms img,
+  body .post__content .podcast-platforms img,
+  body .page__content .podcast-platforms img {
+    width: 100% !important;
+    max-width: 420px !important;
+    height: auto !important;
+  }
+
+}
