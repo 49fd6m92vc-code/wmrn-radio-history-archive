@@ -1,25 +1,26 @@
 <div class="archive-list">
   {{ range (where .Site.RegularPages "Section" "podcast").ByDate.Reverse }}
     {{ if not .Params.draft }}
-      <div class="archive-item">
+      <div class="catalog-card">
 
-        {{ $year := findRE "[0-9]{4}" .Title 1 }}
-        {{ with index $year 0 }}
-          <div class="archive-year">
-            {{ . }}
-          </div>
-        {{ end }}
-
-        <h3 class="archive-title">
+        <h3 class="catalog-title">
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </h3>
 
-        <div class="archive-meta">
-          Published: {{ .Date.Format "January 2, 2006" }}
+        <div class="catalog-metadata">
+          {{ with .Params.recording_date }}
+            <div><strong>Recording Date:</strong> {{ . }}</div>
+          {{ end }}
+
+          {{ with .Params.location }}
+            <div><strong>Location:</strong> {{ . }}</div>
+          {{ end }}
+
+          <div><strong>Published:</strong> {{ .Date.Format "January 2, 2006" }}</div>
         </div>
 
         {{ with .Summary }}
-          <p class="archive-summary">{{ . }}</p>
+          <p class="catalog-summary">{{ . }}</p>
         {{ end }}
 
       </div>
