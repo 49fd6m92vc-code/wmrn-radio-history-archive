@@ -1193,51 +1193,37 @@ body {
 
 }
 
-/* =========================
-   CATALOG STYLE ARCHIVE
-   ========================= */
-
-.archive-item {
-  padding: 2.25rem 0;
+.catalog-card {
+  padding: 2.5rem 0;
   border-bottom: 1px solid #d8d8d8;
 }
 
-.archive-item:last-child {
+.catalog-card:last-child {
   border-bottom: none;
 }
 
-/* Large year anchor */
-.archive-year {
-  font-size: 1.6rem;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  color: #333;
-  margin-bottom: 0.4rem;
-}
-
-/* Title refinement */
-.archive-title {
-  margin: 0 0 0.5rem 0;
+.catalog-title {
+  margin: 0 0 1rem 0;
   font-weight: 500;
+  line-height: 1.4;
 }
 
-.archive-title a {
+.catalog-title a {
   text-decoration: none;
 }
 
-.archive-title a:hover {
+.catalog-title a:hover {
   text-decoration: underline;
 }
 
-/* Subdued publish date */
-.archive-meta {
+.catalog-metadata {
   font-size: 0.9rem;
-  opacity: 0.6;
-  margin-bottom: 0.8rem;
+  opacity: 0.75;
+  margin-bottom: 1rem;
+  line-height: 1.6;
 }
 
-/* Summary breathing room */
-.archive-summary {
+.catalog-summary {
   margin: 0;
-  line-height: 1.6;
+  line-height: 1.7;
 }
