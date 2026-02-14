@@ -3,6 +3,12 @@ title: "THE WMRN ARCHIVES: 2006 — Buckeye Chuck Forecast Voiced by Terry Cole"
 date: 2026-02-10
 summary: "A preserved Buckeye Chuck forecast announcement voiced by Terry Cole, reflecting WMRN’s longstanding Groundhog Day tradition."
 draft: false
+
+recording_year: 2006
+recording_date: February 2, 2006
+location: Marion, Ohio
+record_type: Special Announcement / Groundhog Day Forecast
+collection: WMRN Radio History Archive Podcast
 ---
 
 This episode presents a preserved Buckeye Chuck forecast announcement voiced by longtime WMRN broadcaster Terry Cole.
