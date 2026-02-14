@@ -1189,61 +1189,7 @@ body {
 
 }
 
-/* =========================
-   PODCAST PLATFORM BADGES — CONTROLLED + PROFESSIONAL
-   ========================= */
-
-.podcast-platforms {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  margin: 2rem 0 3rem 0;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Kill any background/border containers */
-.podcast-platforms a {
-  display: block;
-  background: none !important;
+.content .podcast-platforms {
   border: none !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-}
-
-/* CONTROL SIZE — prevents zoom explosion */
-.podcast-platforms img {
-  width: 100%;
-  max-width: 320px;   /* hard cap */
-  height: auto;
-  border: none !important;
-  box-shadow: none !important;
-  border-radius: 0 !important;
-  transition: transform 0.15s ease, opacity 0.15s ease;
-}
-
-.podcast-platforms img:hover {
-  transform: translateY(-2px);
-  opacity: 0.95;
-}
-
-/* Mobile stacking */
-@media (max-width: 768px) {
-  .podcast-platforms {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .podcast-platforms img {
-    max-width: 280px;  /* smaller cap for mobile */
-  }
-}
-
-/* Remove gray card container around platform section */
-.podcast-platforms,
-.podcast-platforms a,
-.podcast-platforms img {
   background: transparent !important;
-  border: none !important;
-  box-shadow: none !important;
 }
