@@ -1181,7 +1181,11 @@ body {
   }
 
   .podcast-platforms img {
-    width: 100%;              /* proportional, prevents explosion */
-    max-width: 300px;        /* hard ceiling */
-  }
+.content .podcast-platforms img,
+.entry__content .podcast-platforms img,
+.post__content .podcast-platforms img {
+  width: 85% !important;
+  max-width: 320px !important;
+  height: auto;
+}
 }
