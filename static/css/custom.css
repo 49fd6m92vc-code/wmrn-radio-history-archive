@@ -1194,33 +1194,50 @@ body {
 }
 
 /* =========================
-   PODCAST ARCHIVE POLISH
+   CATALOG STYLE ARCHIVE
    ========================= */
 
-/* Add spacing + separator between entries */
 .archive-item {
-  padding: 2rem 0;
-  border-bottom: 1px solid #dcdcdc;
+  padding: 2.25rem 0;
+  border-bottom: 1px solid #d8d8d8;
 }
 
-/* Remove line from last item */
 .archive-item:last-child {
   border-bottom: none;
 }
 
-/* Tighten title spacing */
-.archive-title {
+/* Large year anchor */
+.archive-year {
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: #333;
   margin-bottom: 0.4rem;
 }
 
-/* Soften date */
-.archive-meta {
-  margin-bottom: 0.75rem;
-  opacity: 0.65;
-  font-size: 0.9rem;
+/* Title refinement */
+.archive-title {
+  margin: 0 0 0.5rem 0;
+  font-weight: 500;
 }
 
-/* Slight breathing room under summary */
+.archive-title a {
+  text-decoration: none;
+}
+
+.archive-title a:hover {
+  text-decoration: underline;
+}
+
+/* Subdued publish date */
+.archive-meta {
+  font-size: 0.9rem;
+  opacity: 0.6;
+  margin-bottom: 0.8rem;
+}
+
+/* Summary breathing room */
 .archive-summary {
-  margin-top: 0.5rem;
+  margin: 0;
+  line-height: 1.6;
 }
