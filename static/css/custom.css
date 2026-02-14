@@ -1175,20 +1175,39 @@ body {
 }
 
 /* =========================
-   PODCAST BADGES — ZOOM SAFE
+   PODCAST PLATFORM BADGES — MOBILE PORTRAIT FIX
    ========================= */
 
 .podcast-platforms {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 24px;
-  max-width: 100%;
+  gap: 20px;
+}
+
+.podcast-platforms a {
+  flex: 1 1 320px;        /* forces intelligent wrapping */
+  max-width: 420px;
+  display: flex;
+  justify-content: center;
 }
 
 .podcast-platforms img {
-  width: clamp(160px, 22vw, 240px);
+  width: 100%;
   height: auto;
-  max-width: 100%;
-  flex-shrink: 1;
+  max-width: 420px;
+  display: block;
+}
+
+/* Force single-column stack earlier */
+@media (max-width: 1024px) {
+  .podcast-platforms {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .podcast-platforms a {
+    width: 100%;
+    max-width: 420px;
+  }
 }
