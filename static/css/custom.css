@@ -1181,7 +1181,7 @@ body {
   }
 
   .podcast-platforms img {
-    width: 95% !important;     /* increased size */
+    width: 80% !important;     /* increased size */
     max-width: 460px !important; /* larger but still professional */
     height: auto;
   }
