@@ -1151,7 +1151,7 @@ body {
 
 /* Badge sizing — stable and zoom-safe */
 .podcast-platforms img {
-  width: 240px;              /* slightly tighter than 220 */
+  width: 240px;              /* desktop size */
   max-width: 100%;
   height: auto;
   display: block;
@@ -1169,33 +1169,21 @@ body {
 }
 
 /* =========================
-   MOBILE TIGHTENING
+   MOBILE BADGE SIZE ONLY
    ========================= */
 
 @media (max-width: 768px) {
 
   .podcast-platforms {
     flex-direction: column;
-    gap: 12px;               /* tighter vertical gap */
-    margin: 1rem 0 1.5rem 0; /* reduce surrounding space */
+    gap: 12px;
+    margin: 1rem 0 1.5rem 0;
   }
 
   .podcast-platforms img {
-    width: 92% !important;      /* increased from 85% */
-    max-width: 420px !important; /* increased from 320px */
+    width: 95% !important;     /* increased size */
+    max-width: 460px !important; /* larger but still professional */
     height: auto;
   }
 
-}
-
-/* FINAL OVERRIDE — MOBILE BADGE SIZE (MUST BE LAST) */
-@media (max-width: 768px) {
-  .content .podcast-platforms img,
-  .entry__content .podcast-platforms img,
-  .post__content .podcast-platforms img,
-  .page__content .podcast-platforms img {
-    width: 92% !important;
-    max-width: 420px !important;
-    height: auto !important;
-  }
 }
