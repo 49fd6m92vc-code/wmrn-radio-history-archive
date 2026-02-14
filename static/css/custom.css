@@ -1194,28 +1194,27 @@ body {
 }
 
 /* =========================
-   POST LIST REFINEMENT
+   MAINROAD LIST SPACING FIX
    ========================= */
 
-/* Target each post in list view */
-.post,
-.list__item,
-.entry,
-.archive__item {
-  padding: 1.75rem 0;
-  border-bottom: 1px solid #e6e6e6;
+/* Add vertical spacing and separator */
+.list__item {
+  padding: 2rem 0;
+  border-bottom: 1px solid #e3e3e3;
 }
 
 /* Remove separator from last item */
-.post:last-child,
-.list__item:last-child,
-.entry:last-child,
-.archive__item:last-child {
+.list__item:last-child {
   border-bottom: none;
 }
 
-/* Add extra breathing room for summaries */
-.post__summary,
-.entry__content {
-  margin-top: 0.5rem;
+/* Add breathing room between title and summary */
+.list__title {
+  margin-bottom: 0.5rem;
+}
+
+/* Make date slightly lighter and tighter */
+.list__meta {
+  margin-bottom: 0.75rem;
+  opacity: 0.7;
 }
