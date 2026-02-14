@@ -1219,3 +1219,7 @@ body {
 .entry__content {
   margin-top: 0.5rem;
 }
+
+body {
+  background: #ff0000 !important;
+}
