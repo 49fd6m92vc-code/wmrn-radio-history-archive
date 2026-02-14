@@ -1187,3 +1187,15 @@ body {
   }
 
 }
+
+/* FINAL OVERRIDE — MOBILE BADGE SIZE (MUST BE LAST) */
+@media (max-width: 768px) {
+  .content .podcast-platforms img,
+  .entry__content .podcast-platforms img,
+  .post__content .podcast-platforms img,
+  .page__content .podcast-platforms img {
+    width: 92% !important;
+    max-width: 420px !important;
+    height: auto !important;
+  }
+}
