@@ -135,9 +135,14 @@ body {
 
 @media (min-width: 1024px) {
 
+  .menu {
+    background: #ffffff;
+  }
+
   .menu__list {
     display: flex;
     align-items: center;
+    background: #ffffff;
   }
 
   .menu__item {
@@ -147,6 +152,15 @@ body {
   .menu__link {
     font-size: 0.83rem;
     padding: 0.45rem 0.55rem;
+    color: #000000;
+    background: #ffffff;
+  }
+
+  .menu__link:hover,
+  .menu__link:focus,
+  .menu__item--active > .menu__link {
+    background: #1c2d4a;
+    color: #ffffff;
   }
 }
 
@@ -171,8 +185,8 @@ body {
   top: 100%;
   left: 0;
   min-width: 220px;
-  background: #222;
-  border-top: 2px solid #e22d30;
+  background: #ffffff;
+  border-top: 2px solid #1c2d4a;
   z-index: 1000;
 }
 
@@ -183,11 +197,13 @@ body {
 .menu__sub-list .menu__link {
   display: block;
   padding: 0.5rem 1rem;
-  color: #fff;
+  color: #000000;
+  background: #ffffff;
 }
 
 .menu__sub-list .menu__link:hover {
-  background: #e22d30;
+  background: #1c2d4a;
+  color: #ffffff;
 }
 
 /* =========================
@@ -212,7 +228,6 @@ body {
     overflow-x: hidden;
   }
 
-  /* Header stack */
   .header__container {
     flex-direction: column;
     gap: 0.75rem;
@@ -231,16 +246,14 @@ body {
     max-width: 70vw;
   }
 
-  /* Hide checkbox but keep functionality */
   .menu__toggle {
     position: absolute;
     opacity: 0;
     pointer-events: none;
   }
 
-  /* Stock MENU bar */
   .menu {
-    background: #2a2a2a;
+    background: #ffffff;
   }
 
   .menu__btn {
@@ -249,52 +262,50 @@ body {
     padding: 0.9rem 1rem;
     text-align: right;
     cursor: pointer;
-    background: #2a2a2a;
+    background: #ffffff;
   }
 
   .menu__btn-title {
-    color: #ffffff;
+    color: #000000;
     font-weight: 700;
     letter-spacing: 0.06em;
     text-transform: uppercase;
   }
 
-  /* Menu closed by default */
   .menu__list {
     display: none;
-    background: #2a2a2a;
+    background: #ffffff;
   }
 
-  /* Open when toggled */
   .menu__toggle:checked ~ .menu__list {
     display: block;
   }
 
-  /* Links */
   .menu__link {
     display: block;
     padding: 1rem;
-    color: #ffffff;
-    border-top: 1px solid rgba(255,255,255,0.08);
+    color: #000000;
+    background: #ffffff;
+    border-top: 1px solid rgba(0,0,0,0.08);
   }
 
   .menu__link:hover,
   .menu__link:focus {
-    background: #333333;
+    background: #1c2d4a;
+    color: #ffffff;
   }
 
-  /* Submenus */
   .menu__sub-list {
-    background: #1f1f1f;
+    background: #ffffff;
   }
 
   .menu__sub-list .menu__link {
     padding-left: 2rem;
-    color: #dddddd;
+    color: #000000;
   }
 
   .menu__sub-list .menu__link:hover {
-    background: #e22d30;
+    background: #1c2d4a;
     color: #ffffff;
   }
 }
