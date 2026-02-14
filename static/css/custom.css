@@ -1180,10 +1180,12 @@ body {
     margin: 1rem 0 1.5rem 0;
   }
 
-  .podcast-platforms img {
-    width: 92% !important;     /* increased size */
-    max-width: 460px !important; /* larger but still professional */
-    height: auto;
+  /* Force SVG + IMG to truly scale */
+  .podcast-platforms img,
+  .podcast-platforms svg {
+    width: 100% !important;
+    max-width: none !important;   /* remove clamp */
+    height: auto !important;
   }
 
 }
@@ -1194,12 +1196,10 @@ body {
 
 @media (max-width: 768px) {
 
-  body .content .podcast-platforms img,
-  body .entry__content .podcast-platforms img,
-  body .post__content .podcast-platforms img,
-  body .page__content .podcast-platforms img {
+  body .podcast-platforms img,
+  body .podcast-platforms svg {
     width: 100% !important;
-    max-width: 420px !important;
+    max-width: none !important;
     height: auto !important;
   }
 
