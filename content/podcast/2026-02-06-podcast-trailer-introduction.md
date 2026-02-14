@@ -3,6 +3,12 @@ title: "About the WMRN Radio History Archive — Trailer"
 date: 2026-02-06
 summary: "An introduction to the WMRN Radio History Archive Podcast and its mission."
 draft: false
+
+recording_year: 2026
+recording_date: February 6, 2026
+location: Marion, Ohio
+record_type: Trailer / Introductory Episode
+collection: WMRN Radio History Archive Podcast
 ---
 
 This introductory episode outlines the purpose and mission of the WMRN Radio History Archive Podcast.
