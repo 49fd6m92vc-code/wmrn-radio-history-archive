@@ -1194,8 +1194,9 @@ body {
 }
 
 .catalog-card {
-  padding: 2.75rem 0;
+  padding: 2.75rem 0 2.75rem 1.5rem; /* added left padding */
   border-bottom: 1px solid #e2e2e2;
+  border-left: 3px solid #e5e5e5; /* subtle archival accent */
 }
 
 .catalog-card:last-child {
