@@ -1133,25 +1133,30 @@ body {
 .podcast-platforms {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
-  margin: 2rem 0 3rem 0;
   justify-content: center;
   align-items: center;
+  gap: 16px;                 /* tighter desktop spacing */
+  margin: 1.25rem 0 2rem 0;  /* reduce vertical whitespace */
 }
 
+/* Remove any leftover spacing from theme wrappers */
 .podcast-platforms a {
   display: block;
+  margin: 0;                 /* kill extra white space */
+  padding: 0;
   background: none !important;
   border: none !important;
-  padding: 0 !important;
   box-shadow: none !important;
 }
 
+/* Badge sizing — stable and zoom-safe */
 .podcast-platforms img {
-  width: 220px;
+  width: 200px;              /* slightly tighter than 220 */
+  max-width: 100%;
   height: auto;
+  display: block;
+  margin: 0;
   background: none !important;
-  padding: 0 !important;
   border: none !important;
   box-shadow: none !important;
   border-radius: 0 !important;
@@ -1164,40 +1169,19 @@ body {
 }
 
 /* =========================
-   PODCAST PLATFORM BADGES — CLEAN + STABLE
+   MOBILE TIGHTENING
    ========================= */
 
-/* Remove flex behavior entirely */
-.podcast-platforms {
-  display: block !important;
-  margin: 2rem 0 3rem 0;
-  text-align: center;
-  border: none !important;
-  background: none !important;
-}
+@media (max-width: 768px) {
 
-/* Each badge link behaves independently */
-.podcast-platforms a {
-  display: inline-block;
-  margin: 12px 16px;
-  border: none !important;
-  background: none !important;
-  padding: 0 !important;
-  box-shadow: none !important;
-}
+  .podcast-platforms {
+    flex-direction: column;
+    gap: 12px;               /* tighter vertical gap */
+    margin: 1rem 0 1.5rem 0; /* reduce surrounding space */
+  }
 
-/* Stable, professional sizing */
-.podcast-platforms img {
-  width: 220px !important;
-  max-width: 90% !important;
-  height: auto;
-  border: none !important;
-  box-shadow: none !important;
-  background: none !important;
-}
-
-/* Subtle hover only */
-.podcast-platforms img:hover {
-  opacity: 0.92;
-  transform: none;
+  .podcast-platforms img {
+    width: 75%;              /* proportional, prevents explosion */
+    max-width: 260px;        /* hard ceiling */
+  }
 }
