@@ -1194,14 +1194,33 @@ body {
 }
 
 /* =========================
-   FORCE SEPARATORS + SPACING
+   PODCAST ARCHIVE POLISH
    ========================= */
 
-.main .post {
-  padding: 2rem 0 !important;
-  border-bottom: 1px solid #d9d9d9 !important;
+/* Add spacing + separator between entries */
+.archive-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid #dcdcdc;
 }
 
-.main .post:last-of-type {
-  border-bottom: none !important;
+/* Remove line from last item */
+.archive-item:last-child {
+  border-bottom: none;
+}
+
+/* Tighten title spacing */
+.archive-title {
+  margin-bottom: 0.4rem;
+}
+
+/* Soften date */
+.archive-meta {
+  margin-bottom: 0.75rem;
+  opacity: 0.65;
+  font-size: 0.9rem;
+}
+
+/* Slight breathing room under summary */
+.archive-summary {
+  margin-top: 0.5rem;
 }
