@@ -2,15 +2,23 @@
   {{ range (where .Site.RegularPages "Section" "podcast").ByDate.Reverse }}
     {{ if not .Params.draft }}
       <div class="archive-item">
+
+        <div class="archive-year">
+          {{ .Date.Format "2006" }}
+        </div>
+
         <h3 class="archive-title">
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
         </h3>
+
         <div class="archive-meta">
-          {{ .Date.Format "January 2, 2006" }}
+          Published: {{ .Date.Format "January 2, 2006" }}
         </div>
+
         {{ with .Summary }}
           <p class="archive-summary">{{ . }}</p>
         {{ end }}
+
       </div>
     {{ end }}
   {{ end }}
