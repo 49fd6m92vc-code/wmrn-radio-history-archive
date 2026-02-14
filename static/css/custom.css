@@ -1163,35 +1163,41 @@ body {
   opacity: 0.92;
 }
 
-/* Mobile adjustment — FIXED (NO PERCENTAGES) */
-@media (max-width: 768px) {
-  .podcast-platforms {
-    flex-direction: column;
-    align-items: center;
-    gap: 18px;
-  }
+/* =========================
+   PODCAST PLATFORM BADGES — CLEAN + STABLE
+   ========================= */
 
-  .podcast-platforms img {
-    width: 220px !important;
-    max-width: 90vw !important;
-    height: auto !important;
-  }
-}
-
-/* FORCE podcast badge sizing — DESKTOP ONLY */
-
-@media (min-width: 769px) {
-
-  .content .podcast-platforms img,
-  .entry__content .podcast-platforms img,
-  .post__content .podcast-platforms img {
-    width: 220px !important;
-    max-width: 220px !important;
-  }
-
-}
-
-.content .podcast-platforms {
+/* Remove flex behavior entirely */
+.podcast-platforms {
+  display: block !important;
+  margin: 2rem 0 3rem 0;
+  text-align: center;
   border: none !important;
-  background: transparent !important;
+  background: none !important;
+}
+
+/* Each badge link behaves independently */
+.podcast-platforms a {
+  display: inline-block;
+  margin: 12px 16px;
+  border: none !important;
+  background: none !important;
+  padding: 0 !important;
+  box-shadow: none !important;
+}
+
+/* Stable, professional sizing */
+.podcast-platforms img {
+  width: 220px !important;
+  max-width: 90% !important;
+  height: auto;
+  border: none !important;
+  box-shadow: none !important;
+  background: none !important;
+}
+
+/* Subtle hover only */
+.podcast-platforms img:hover {
+  opacity: 0.92;
+  transform: none;
 }
