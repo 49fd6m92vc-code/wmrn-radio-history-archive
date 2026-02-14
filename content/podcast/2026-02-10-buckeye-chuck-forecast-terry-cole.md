@@ -1,5 +1,5 @@
 ---
-title: "FROM THE WMRN ARCHIVES: Buckeye Chuck Forecast Voiced by Terry Cole (circa 2006)"
+title: "THE WMRN ARCHIVES: 2006 — Buckeye Chuck Forecast Voiced by Terry Cole"
 date: 2026-02-10
 summary: "A preserved Buckeye Chuck forecast announcement voiced by Terry Cole, reflecting WMRN’s longstanding Groundhog Day tradition."
 draft: false
