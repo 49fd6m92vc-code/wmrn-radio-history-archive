@@ -3,6 +3,12 @@ title: "THE WMRN ARCHIVES: 1960 — 20th Anniversary Address by Robert T. Mason"
 date: 2026-02-12
 summary: "A preserved recording of Robert T. Mason’s 20th Anniversary Address, delivered December 23, 1960, marking two decades of WMRN broadcasting."
 draft: false
+
+recording_year: 1960
+recording_date: December 23, 1960
+location: Marion, Ohio
+record_type: Anniversary Address
+collection: WMRN Radio History Archive Podcast
 ---
 
 This episode presents a preserved recording of Robert T. Mason’s 20th Anniversary Address, delivered on December 23, 1960.
