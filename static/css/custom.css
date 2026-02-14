@@ -1174,14 +1174,16 @@ body {
   }
 }
 
-/* FORCE podcast badge sizing (must be last rule in file) */
+/* FORCE podcast badge sizing — DESKTOP ONLY */
 
-.content .podcast-platforms img,
-.entry__content .podcast-platforms img,
-.post__content .podcast-platforms img {
-  width: 220px !important;
-  max-width: 220px !important;
-}
+@media (min-width: 769px) {
+
+  .content .podcast-platforms img,
+  .entry__content .podcast-platforms img,
+  .post__content .podcast-platforms img {
+    width: 220px !important;
+    max-width: 220px !important;
+  }
 
 /* =========================
    LISTEN ON BADGES — MOBILE PORTRAIT FIX
