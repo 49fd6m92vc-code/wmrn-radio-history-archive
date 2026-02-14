@@ -1194,32 +1194,23 @@ body {
 }
 
 /* =========================
-   POST LIST REFINEMENT
+   FORCE LIST ITEM SPACING
    ========================= */
 
-/* Target each post in list view */
-.post,
-.list__item,
-.entry,
-.archive__item {
-  padding: 1.75rem 0;
-  border-bottom: 1px solid #e6e6e6;
+.main .list__item {
+  padding: 2rem 0 !important;
+  border-bottom: 1px solid #dcdcdc !important;
 }
 
-/* Remove separator from last item */
-.post:last-child,
-.list__item:last-child,
-.entry:last-child,
-.archive__item:last-child {
-  border-bottom: none;
+.main .list__item:last-child {
+  border-bottom: none !important;
 }
 
-/* Add extra breathing room for summaries */
-.post__summary,
-.entry__content {
-  margin-top: 0.5rem;
+.main .list__header {
+  margin-bottom: 0.75rem !important;
 }
 
-body {
-  background: #ff0000 !important;
+.main .list__meta {
+  margin-bottom: 0.75rem !important;
+  opacity: 0.65;
 }
