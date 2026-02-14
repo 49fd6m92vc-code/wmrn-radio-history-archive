@@ -1,4 +1,4 @@
-baseURL = "https://wmrn-radio-history-archive.pages.dev/"
+baseURL = "https://wmrnhistory.com/"
 languageCode = "en-us"
 title = "WMRN Radio History Archive"
 theme = "mainroad"
