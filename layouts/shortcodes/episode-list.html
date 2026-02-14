@@ -3,9 +3,12 @@
     {{ if not .Params.draft }}
       <div class="archive-item">
 
-        <div class="archive-year">
-          {{ .Date.Format "2006" }}
-        </div>
+        {{ $year := findRE "[0-9]{4}" .Title 1 }}
+        {{ with index $year 0 }}
+          <div class="archive-year">
+            {{ . }}
+          </div>
+        {{ end }}
 
         <h3 class="archive-title">
           <a href="{{ .RelPermalink }}">{{ .Title }}</a>
