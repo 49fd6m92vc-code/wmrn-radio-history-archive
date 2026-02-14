@@ -1151,7 +1151,7 @@ body {
 
 /* Badge sizing — stable and zoom-safe */
 .podcast-platforms img {
-  width: 260px;              /* slightly tighter than 220 */
+  width: 240px;              /* slightly tighter than 220 */
   max-width: 100%;
   height: auto;
   display: block;
@@ -1181,7 +1181,7 @@ body {
   }
 
   .podcast-platforms img {
-    width: 85%;              /* proportional, prevents explosion */
+    width: 100%;              /* proportional, prevents explosion */
     max-width: 300px;        /* hard ceiling */
   }
 }
