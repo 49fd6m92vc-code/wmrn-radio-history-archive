@@ -1,5 +1,5 @@
 ---
-title: "About the WMRN Radio History Archive — Trailer"
+title: "About the WMRN Radio History Archive - Trailer"
 date: 2026-02-06
 summary: "An introduction to the WMRN Radio History Archive Podcast and its mission."
 draft: false
