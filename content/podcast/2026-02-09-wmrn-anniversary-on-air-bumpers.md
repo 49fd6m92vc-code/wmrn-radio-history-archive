@@ -11,6 +11,8 @@ record_type: Station Bumpers / Anniversary Elements
 collection: WMRN Radio History Archive Podcast
 ---
 
+# THE WMRN ARCHIVES: Station Anniversary On-Air Bumpers
+
 This episode features preserved on-air anniversary bumpers commemorating a milestone year in WMRN’s history.
 
 These production elements highlight the station’s longevity and continued service to the Marion community.
