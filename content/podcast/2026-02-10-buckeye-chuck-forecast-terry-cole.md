@@ -11,6 +11,8 @@ record_type: Special Announcement / Groundhog Day Forecast
 collection: WMRN Radio History Archive Podcast
 ---
 
+# THE WMRN ARCHIVES: 2006 - Buckeye Chuck Forecast Voiced by Terry Cole
+
 This episode presents a preserved Buckeye Chuck forecast announcement voiced by longtime WMRN broadcaster Terry Cole.
 
 Buckeye Chuck, Ohio’s official weather prognosticating groundhog, has forecasted from the WMRN studios in Marion for decades. This recording reflects the station’s deep connection to the annual Groundhog Day tradition.
