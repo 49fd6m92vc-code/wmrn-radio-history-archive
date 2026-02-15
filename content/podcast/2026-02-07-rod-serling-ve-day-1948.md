@@ -11,6 +11,8 @@ record_type: Historical Broadcast
 collection: WMRN Radio History Archive Podcast
 ---
 
+# THE WMRN ARCHIVES: 1948 - Rod Serling on VE Day
+
 This episode features a preserved broadcast of Rod Serling during his early years in Marion, Ohio, commemorating Victory in Europe Day.
 
 Long before national recognition as the creator of *The Twilight Zone*, Serling contributed to local broadcast programming at WMRN.
