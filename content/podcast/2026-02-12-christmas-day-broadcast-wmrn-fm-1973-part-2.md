@@ -11,7 +11,7 @@ record_type: Holiday Broadcast
 collection: WMRN Radio History Archive Podcast
 ---
 
-# Welcome to the WMRN Radio History Archive
+# THE WMRN ARCHIVES: 1973 - Christmas Day Broadcast, WMRN-FM (Part 2)
 
 This episode continues the preserved Christmas Day broadcast from WMRN-FM, originally aired on December 25, 1973.
 
