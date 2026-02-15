@@ -156,11 +156,12 @@ body {
     background: #ffffff;
   }
 
-  /* Hover state */
+  /* Hover state — FORCE NAVY */
   .menu__link:hover,
-  .menu__link:focus {
-    background: #1c2d4a;
-    color: #ffffff;
+  .menu__link:focus,
+  .menu__item:hover > .menu__link {
+    background: #1c2d4a !important;
+    color: #ffffff !important;
   }
 
   /* ACTIVE / SELECTED PAGE — FORCE NAVY */
@@ -210,9 +211,10 @@ body {
   background: #ffffff;
 }
 
-.menu__sub-list .menu__link:hover {
-  background: #1c2d4a;
-  color: #ffffff;
+.menu__sub-list .menu__link:hover,
+.menu__sub-list .menu__link:focus {
+  background: #1c2d4a !important;
+  color: #ffffff !important;
 }
 
 /* =========================
@@ -298,11 +300,12 @@ body {
     border-top: 1px solid rgba(0,0,0,0.08);
   }
 
-  /* Mobile hover */
+  /* Mobile hover — FORCE NAVY */
   .menu__link:hover,
-  .menu__link:focus {
-    background: #1c2d4a;
-    color: #ffffff;
+  .menu__link:focus,
+  .menu__item:hover > .menu__link {
+    background: #1c2d4a !important;
+    color: #ffffff !important;
   }
 
   /* Mobile ACTIVE page — FORCE NAVY */
@@ -323,9 +326,10 @@ body {
     color: #000000;
   }
 
-  .menu__sub-list .menu__link:hover {
-    background: #1c2d4a;
-    color: #ffffff;
+  .menu__sub-list .menu__link:hover,
+  .menu__sub-list .menu__link:focus {
+    background: #1c2d4a !important;
+    color: #ffffff !important;
   }
 }
 
