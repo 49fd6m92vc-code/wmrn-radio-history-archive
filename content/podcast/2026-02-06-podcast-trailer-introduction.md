@@ -11,6 +11,8 @@ record_type: Trailer / Introductory Episode
 collection: WMRN Radio History Archive Podcast
 ---
 
+# About the WMRN Radio History Archive - Trailer
+
 This introductory episode outlines the purpose and mission of the WMRN Radio History Archive Podcast.
 
 The podcast serves as an interpretive extension of the archive, presenting preserved recordings, contextual analysis, and historical documentation related to WMRN’s legacy in Marion, Ohio.
