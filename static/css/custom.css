@@ -1267,14 +1267,14 @@ body {
 }
 
 /* ========================================
-   FULL MAINROAD DARK MODE (FOR REAL)
+   FULL MAINROAD DARK MODE — PURE BLACK
    Auto: follows system preference
    ======================================== */
 @media (prefers-color-scheme: dark) {
 
   /* --- Global canvas --- */
   html, body {
-    background: #0f141a !important;
+    background: #000000 !important;
     color: #e6e6e6 !important;
   }
 
@@ -1287,14 +1287,14 @@ body {
   .main,
   .primary,
   .secondary {
-    background: #0f141a !important;
+    background: #000000 !important;
   }
 
   /* --- Header --- */
   .header,
   .header__container {
-    background: #111821 !important;
-    border-bottom: 1px solid #1c2d4a !important;
+    background: #000000 !important;
+    border-bottom: 1px solid #222 !important;
   }
 
   .logo__title,
@@ -1302,14 +1302,16 @@ body {
     color: #ffffff !important;
   }
 
-  /* --- Navigation --- */
+  /* --- Navigation (Desktop + Mobile) --- */
   .menu,
-  .menu__list {
-    background: #111821 !important;
+  .menu__list,
+  .menu__btn,
+  .menu__sub-list {
+    background: #000000 !important;
   }
 
   .menu__link {
-    background: #111821 !important;
+    background: #000000 !important;
     color: #e6e6e6 !important;
   }
 
@@ -1319,24 +1321,32 @@ body {
   .menu__item--current > .menu__link,
   .menu__item--ancestor > .menu__link,
   .menu__link[aria-current="page"] {
-    background: #1c2d4a !important;
+    background: #111111 !important;
     color: #ffffff !important;
-  }
-
-  /* Dropdowns */
-  .menu__sub-list {
-    background: #111821 !important;
-    border-top: 2px solid #1c2d4a !important;
   }
 
   .menu__sub-list .menu__link {
-    background: #111821 !important;
-    color: #e6e6e6 !important;
+    background: #000000 !important;
   }
 
-  .menu__sub-list .menu__link:hover {
-    background: #1c2d4a !important;
-    color: #ffffff !important;
+  /* MOBILE NAV FIX — kill white bar */
+  @media (max-width: 1023px) {
+
+    .menu {
+      background: #000000 !important;
+    }
+
+    .menu__btn {
+      background: #000000 !important;
+    }
+
+    .menu__btn-title {
+      color: #ffffff !important;
+    }
+
+    .menu__link {
+      border-top: 1px solid #111 !important;
+    }
   }
 
   /* --- Content surfaces --- */
@@ -1349,8 +1359,8 @@ body {
   .sidebar,
   .post__content,
   .entry__content {
-    background: #151e28 !important;
-    border-color: #1f2a36 !important;
+    background: #0a0a0a !important;
+    border-color: #1a1a1a !important;
     color: #e6e6e6 !important;
   }
 
@@ -1364,12 +1374,12 @@ body {
 
   /* Body text */
   p, li, dt, dd, blockquote {
-    color: #d6d6d6 !important;
+    color: #d0d0d0 !important;
   }
 
   /* Links */
   a {
-    color: #7ea4ff !important;
+    color: #8fb3ff !important;
   }
 
   a:hover {
@@ -1378,15 +1388,15 @@ body {
 
   /* Dividers */
   hr {
-    border-color: #1f2a36 !important;
+    border-color: #1a1a1a !important;
   }
 
   /* Images */
   .entry__content img,
   .post__content img,
   .content img {
-    background: #0f141a !important;
-    border: 1px solid #1f2a36 !important;
+    background: #000000 !important;
+    border: 1px solid #1a1a1a !important;
   }
 
   figure,
@@ -1398,66 +1408,48 @@ body {
 
   /* Tables */
   table {
-    background: #151e28 !important;
+    background: #0a0a0a !important;
     color: #e6e6e6 !important;
-    border-color: #1f2a36 !important;
+    border-color: #1a1a1a !important;
   }
 
   th, td {
-    border-color: #1f2a36 !important;
+    border-color: #1a1a1a !important;
   }
 
   /* Forms */
   input,
   textarea,
   select {
-    background: #1a2430 !important;
+    background: #111111 !important;
     color: #ffffff !important;
-    border: 1px solid #243142 !important;
+    border: 1px solid #222 !important;
   }
 
-  /* --- Founding Record Shortcode Fix --- */
+  /* --- Founding Record Shortcode --- */
   .founding-record-box {
-    background: #151e28 !important;
-    border: 1px solid #243142 !important;
+    background: #0a0a0a !important;
+    border: 1px solid #222 !important;
     color: #e6e6e6 !important;
   }
 
-  .founding-record-box h3 {
-    color: #ffffff !important;
-  }
-
+  .founding-record-box h3,
   .founding-record-box strong {
     color: #ffffff !important;
   }
 
   .founding-record-box li {
-    color: #d6d6d6 !important;
+    color: #d0d0d0 !important;
   }
 
-  /* Footer */
-  .footer {
-    background: #0d1218 !important;
-    color: #999 !important;
-    border-top: 1px solid #1c2d4a !important;
-  }
-
-  .footer a {
-    color: #7ea4ff !important;
-  }
-
-  .footer a:hover {
-    color: #ffffff !important;
-  }
-  
-    /* --- Podcast Archive Cards --- */
+  /* --- Podcast Archive Cards --- */
   .catalog-card {
-    background: #151e28 !important;
-    border: 1px solid #243142 !important;
+    background: #0a0a0a !important;
+    border: 1px solid #222 !important;
   }
 
   .catalog-title a {
-    color: #7ea4ff !important;
+    color: #8fb3ff !important;
   }
 
   .catalog-title a:hover {
@@ -1465,10 +1457,25 @@ body {
   }
 
   .catalog-metadata {
-    color: #9fb3c8 !important;
+    color: #9a9a9a !important;
   }
 
   .catalog-summary {
-    color: #d6d6d6 !important;
+    color: #d0d0d0 !important;
+  }
+
+  /* Footer */
+  .footer {
+    background: #000000 !important;
+    color: #888 !important;
+    border-top: 1px solid #222 !important;
+  }
+
+  .footer a {
+    color: #8fb3ff !important;
+  }
+
+  .footer a:hover {
+    color: #ffffff !important;
   }
 }
