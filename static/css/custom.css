@@ -1278,7 +1278,7 @@ body {
     color: #e6e6e6 !important;
   }
 
-  /* Mainroad wrappers (these are the usual offenders) */
+  /* Mainroad wrappers */
   .container,
   .container__outer,
   .container__inner,
@@ -1290,7 +1290,7 @@ body {
     background: #0f141a !important;
   }
 
-  /* --- Header / top chrome --- */
+  /* --- Header --- */
   .header,
   .header__container {
     background: #111821 !important;
@@ -1339,7 +1339,7 @@ body {
     color: #ffffff !important;
   }
 
-  /* --- Content surfaces (posts, pages, lists) --- */
+  /* --- Content surfaces --- */
   .post,
   .page,
   .entry,
@@ -1354,7 +1354,7 @@ body {
     color: #e6e6e6 !important;
   }
 
-  /* Titles / headings */
+  /* Headings */
   .post__title,
   .entry__title,
   .page__title,
@@ -1371,6 +1371,7 @@ body {
   a {
     color: #7ea4ff !important;
   }
+
   a:hover {
     color: #ffffff !important;
   }
@@ -1380,15 +1381,14 @@ body {
     border-color: #1f2a36 !important;
   }
 
-  /* --- YOUR IMAGE STYLING (this is the big one) --- */
+  /* Images */
   .entry__content img,
   .post__content img,
   .content img {
-    background: #0f141a !important;   /* was #f5f5f5 */
+    background: #0f141a !important;
     border: 1px solid #1f2a36 !important;
   }
 
-  /* If any image wrapper is forcing light surfaces */
   figure,
   .entry__image,
   .post__thumbnail,
@@ -1402,17 +1402,37 @@ body {
     color: #e6e6e6 !important;
     border-color: #1f2a36 !important;
   }
+
   th, td {
     border-color: #1f2a36 !important;
   }
 
-  /* Forms / search */
+  /* Forms */
   input,
   textarea,
   select {
     background: #1a2430 !important;
     color: #ffffff !important;
     border: 1px solid #243142 !important;
+  }
+
+  /* --- Founding Record Shortcode Fix --- */
+  .founding-record-box {
+    background: #151e28 !important;
+    border: 1px solid #243142 !important;
+    color: #e6e6e6 !important;
+  }
+
+  .founding-record-box h3 {
+    color: #ffffff !important;
+  }
+
+  .founding-record-box strong {
+    color: #ffffff !important;
+  }
+
+  .founding-record-box li {
+    color: #d6d6d6 !important;
   }
 
   /* Footer */
@@ -1425,41 +1445,8 @@ body {
   .footer a {
     color: #7ea4ff !important;
   }
+
   .footer a:hover {
     color: #ffffff !important;
-    
-    /* Founding Record Card — Dark Mode Fix */
-
-.founding-record-box {
-  background: #151e28 !important;
-  border: 1px solid #1f2a36 !important;
-  color: #e6e6e6 !important;
-}
-
-.founding-record-box h3 {
-  color: #ffffff !important;
-}
-
-.founding-record-box strong {
-  color: #ffffff !important;
-}
-
-.founding-record-box ul li {
-  color: #d6d6d6 !important;
-}
-
-/* DEBUG — FORCE DARK FOUNDING BOX */
-.founding-record-box {
-  background: #151e28 !important;
-  border: 1px solid #1f2a36 !important;
-  color: #e6e6e6 !important;
-}
-
-.founding-record-box h3,
-.founding-record-box strong {
-  color: #ffffff !important;
-}
-
-.founding-record-box ul li {
-  color: #d6d6d6 !important;
+  }
 }
