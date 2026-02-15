@@ -1267,167 +1267,77 @@ body {
 }
 
 /* ========================================
-   FULL MAINROAD DARK MODE (FOR REAL)
-   Auto: follows system preference
+   FULL MAINROAD DARK MODE (TOGGLE VERSION)
    ======================================== */
-@media (prefers-color-scheme: dark) {
 
-  /* --- Global canvas --- */
-  html, body {
-    background: #0f141a !important;
-    color: #e6e6e6 !important;
-  }
+html.dark-mode,
+html.dark-mode body {
+  background: #0f141a !important;
+  color: #e6e6e6 !important;
+}
 
-  /* Mainroad wrappers (these are the usual offenders) */
-  .container,
-  .container__outer,
-  .container__inner,
-  .wrapper,
-  .content,
-  .main,
-  .primary,
-  .secondary {
-    background: #0f141a !important;
-  }
+/* Header */
+html.dark-mode .header,
+html.dark-mode .header__container {
+  background: #111821 !important;
+  border-bottom: 1px solid #1c2d4a !important;
+}
 
-  /* --- Header / top chrome --- */
-  .header,
-  .header__container {
-    background: #111821 !important;
-    border-bottom: 1px solid #1c2d4a !important;
-  }
+html.dark-mode .logo__title,
+html.dark-mode .logo__tagline {
+  color: #ffffff !important;
+}
 
-  .logo__title,
-  .logo__tagline {
-    color: #ffffff !important;
-  }
+/* Navigation */
+html.dark-mode .menu,
+html.dark-mode .menu__list {
+  background: #111821 !important;
+}
 
-  /* --- Navigation --- */
-  .menu,
-  .menu__list {
-    background: #111821 !important;
-  }
+html.dark-mode .menu__link {
+  background: #111821 !important;
+  color: #e6e6e6 !important;
+}
 
-  .menu__link {
-    background: #111821 !important;
-    color: #e6e6e6 !important;
-  }
+html.dark-mode .menu__link:hover,
+html.dark-mode .menu__item--active > .menu__link,
+html.dark-mode .menu__item--current > .menu__link,
+html.dark-mode .menu__item--ancestor > .menu__link {
+  background: #1c2d4a !important;
+  color: #ffffff !important;
+}
 
-  .menu__link:hover,
-  .menu__link:focus,
-  .menu__item--active > .menu__link,
-  .menu__item--current > .menu__link,
-  .menu__item--ancestor > .menu__link,
-  .menu__link[aria-current="page"] {
-    background: #1c2d4a !important;
-    color: #ffffff !important;
-  }
+/* Content surfaces */
+html.dark-mode .post,
+html.dark-mode .page,
+html.dark-mode .entry,
+html.dark-mode .content,
+html.dark-mode .container {
+  background: #151e28 !important;
+  color: #e6e6e6 !important;
+}
 
-  /* Dropdowns */
-  .menu__sub-list {
-    background: #111821 !important;
-    border-top: 2px solid #1c2d4a !important;
-  }
+/* Images */
+html.dark-mode .entry__content img,
+html.dark-mode .post__content img,
+html.dark-mode .content img {
+  background: #0f141a !important;
+  border: 1px solid #1f2a36 !important;
+}
 
-  .menu__sub-list .menu__link {
-    background: #111821 !important;
-    color: #e6e6e6 !important;
-  }
+/* Forms */
+html.dark-mode input,
+html.dark-mode textarea,
+html.dark-mode select {
+  background: #1a2430 !important;
+  color: #ffffff !important;
+  border: 1px solid #243142 !important;
+}
 
-  .menu__sub-list .menu__link:hover {
-    background: #1c2d4a !important;
-    color: #ffffff !important;
-  }
-
-  /* --- Content surfaces (posts, pages, lists) --- */
-  .post,
-  .page,
-  .entry,
-  .list__item,
-  .card,
-  .widget,
-  .sidebar,
-  .post__content,
-  .entry__content {
-    background: #151e28 !important;
-    border-color: #1f2a36 !important;
-    color: #e6e6e6 !important;
-  }
-
-  /* Titles / headings */
-  .post__title,
-  .entry__title,
-  .page__title,
-  h1, h2, h3, h4, h5, h6 {
-    color: #ffffff !important;
-  }
-
-  /* Body text */
-  p, li, dt, dd, blockquote {
-    color: #d6d6d6 !important;
-  }
-
-  /* Links */
-  a {
-    color: #7ea4ff !important;
-  }
-  a:hover {
-    color: #ffffff !important;
-  }
-
-  /* Dividers */
-  hr {
-    border-color: #1f2a36 !important;
-  }
-
-  /* --- YOUR IMAGE STYLING (this is the big one) --- */
-  .entry__content img,
-  .post__content img,
-  .content img {
-    background: #0f141a !important;   /* was #f5f5f5 */
-    border: 1px solid #1f2a36 !important;
-  }
-
-  /* If any image wrapper is forcing light surfaces */
-  figure,
-  .entry__image,
-  .post__thumbnail,
-  .post__image {
-    background: transparent !important;
-  }
-
-  /* Tables */
-  table {
-    background: #151e28 !important;
-    color: #e6e6e6 !important;
-    border-color: #1f2a36 !important;
-  }
-  th, td {
-    border-color: #1f2a36 !important;
-  }
-
-  /* Forms / search */
-  input,
-  textarea,
-  select {
-    background: #1a2430 !important;
-    color: #ffffff !important;
-    border: 1px solid #243142 !important;
-  }
-
-  /* Footer */
-  .footer {
-    background: #0d1218 !important;
-    color: #999 !important;
-    border-top: 1px solid #1c2d4a !important;
-  }
-
-  .footer a {
-    color: #7ea4ff !important;
-  }
-  .footer a:hover {
-    color: #ffffff !important;
-  }
+/* Footer */
+html.dark-mode .footer {
+  background: #0d1218 !important;
+  border-top: 1px solid #1c2d4a !important;
 }
 
 /* =========================
