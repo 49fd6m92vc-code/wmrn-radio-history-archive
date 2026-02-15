@@ -1449,4 +1449,26 @@ body {
   .footer a:hover {
     color: #ffffff !important;
   }
+  
+    /* --- Podcast Archive Cards --- */
+  .catalog-card {
+    background: #151e28 !important;
+    border: 1px solid #243142 !important;
+  }
+
+  .catalog-title a {
+    color: #7ea4ff !important;
+  }
+
+  .catalog-title a:hover {
+    color: #ffffff !important;
+  }
+
+  .catalog-metadata {
+    color: #9fb3c8 !important;
+  }
+
+  .catalog-summary {
+    color: #d6d6d6 !important;
+  }
 }
