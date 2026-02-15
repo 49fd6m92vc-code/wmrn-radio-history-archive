@@ -1462,3 +1462,51 @@ body.dark-mode #dark-mode-toggle {
   color: #ffffff;
   border-color: #1c2d4a;
 }
+
+/* =========================
+   DARK MODE TOGGLE — RESET + STYLE
+   ========================= */
+
+/* Remove native button styling */
+#dark-mode-toggle {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0 6px 0 0;
+}
+
+/* Toggle track */
+#dark-mode-toggle {
+  width: 42px;
+  height: 22px;
+  border-radius: 999px;
+  background: #cccccc;
+  position: relative;
+  transition: background 0.2s ease-in-out;
+}
+
+/* Toggle knob */
+#dark-mode-toggle::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #ffffff;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* When dark mode is active */
+body.dark-mode #dark-mode-toggle {
+  background: #1c2d4a;
+}
+
+body.dark-mode #dark-mode-toggle::after {
+  transform: translateX(20px);
+}
