@@ -1,5 +1,5 @@
 ---
-title: "THE WMRN ARCHIVES: 2010 — 70th Anniversary Celebration Broadcast"
+title: "THE WMRN ARCHIVES: 2010 - 70th Anniversary Celebration Broadcast"
 date: 2026-02-08
 summary: "A preserved broadcast commemorating WMRN’s 70th anniversary and its decades of service to Marion, Ohio."
 draft: false
