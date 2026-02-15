@@ -29,4 +29,45 @@
     </div>
 
   </div>
+
+  <!-- =========================
+       DARK MODE TOGGLE SCRIPT
+       ========================= -->
+
+  <script>
+    (function () {
+      const root = document.documentElement;
+      const toggle = document.getElementById('dark-mode-toggle');
+
+      function applyTheme(theme) {
+        if (theme === 'dark') {
+          root.classList.add('dark-mode');
+        } else {
+          root.classList.remove('dark-mode');
+        }
+      }
+
+      function getPreferredTheme() {
+        const stored = localStorage.getItem('theme');
+        if (stored) return stored;
+        return window.matchMedia('(prefers-color-scheme: dark)').matches
+          ? 'dark'
+          : 'light';
+      }
+
+      const currentTheme = getPreferredTheme();
+      applyTheme(currentTheme);
+
+      if (toggle) {
+        toggle.checked = currentTheme === 'dark';
+
+        toggle.addEventListener('change', function () {
+          const newTheme = toggle.checked ? 'dark' : 'light';
+          localStorage.setItem('theme', newTheme);
+          applyTheme(newTheme);
+        });
+      }
+    })();
+  </script>
+
 </footer>
