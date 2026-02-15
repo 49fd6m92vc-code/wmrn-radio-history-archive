@@ -1266,109 +1266,110 @@ body {
   line-height: 1.75;
 }
 
-/* =========================
-   FULL DARK MODE — REFINED
-   ========================= */
+/* ========================================
+   FULL MAINROAD DARK MODE
+   ======================================== */
 
 @media (prefers-color-scheme: dark) {
 
   body {
-    background: #0d1117;
-    color: #e6edf3;
+    background: #0f141a;
+    color: #e6e6e6;
   }
 
-  .container,
-  .container--outer,
-  .main,
-  .content,
-  .post,
-  .entry,
-  .list__item {
-    background: #161b22 !important;
-    color: #e6edf3 !important;
-  }
-
-  /* Keep hero banner natural */
-  .entry__header,
-  .entry__image {
-    background: transparent !important;
-  }
-
-  /* Section headings */
-  h1, h2, h3, h4 {
-    color: #ffffff;
-  }
-
-  /* Divider lines */
-  hr,
-  .list__item,
-  .widget,
-  .entry__meta {
-    border-color: #2a2f36 !important;
+  .container {
+    background: #121922;
   }
 
   /* Header */
   .header {
-    background: #0d1117 !important;
-    border-bottom: 1px solid #222;
+    background: #111821;
+    border-bottom: 1px solid #1c2d4a;
+  }
+
+  .logo__title,
+  .logo__tagline {
+    color: #ffffff;
   }
 
   /* Navigation */
-  .menu,
-  .menu__list {
-    background: #0d1117 !important;
+  .menu {
+    background: #111821;
   }
 
   .menu__link {
-    color: #e6edf3 !important;
-    background: transparent !important;
+    background: #111821;
+    color: #e6e6e6;
   }
 
   .menu__link:hover,
-  .menu__item--active > .menu__link,
-  .menu__item--current > .menu__link,
-  .menu__item--ancestor > .menu__link {
-    background: #1c2d4a !important;
-    color: #ffffff !important;
+  .menu__link:focus {
+    background: #1c2d4a;
+    color: #ffffff;
   }
 
-  /* Dropdown */
-  .menu__sub-list {
-    background: #161b22 !important;
+  /* Content area */
+  .main,
+  .content,
+  .post,
+  .page {
+    background: #121922;
   }
 
-  .menu__sub-list .menu__link {
-    color: #e6edf3 !important;
+  /* Section blocks */
+  .entry,
+  .list__item,
+  .card,
+  .widget {
+    background: #151e28;
+    border: 1px solid #1f2a36;
   }
 
-  .menu__sub-list .menu__link:hover {
-    background: #1c2d4a !important;
-    color: #ffffff !important;
+  /* Headings */
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
   }
 
-  /* Footer */
-  .footer {
-    background: #0d1117 !important;
-    color: #c9d1d9 !important;
-    border-top: 1px solid #222;
+  /* Paragraph text */
+  p, li {
+    color: #d6d6d6;
   }
 
   /* Links */
   a {
-    color: #8ab4ff;
+    color: #7ea4ff;
   }
 
   a:hover {
     color: #ffffff;
   }
 
-  /* Forms */
+  /* Dividers */
+  hr {
+    border-color: #1f2a36;
+  }
+
+  /* Footer */
+  .footer {
+    background: #0d1218;
+    color: #999;
+    border-top: 1px solid #1c2d4a;
+  }
+
+  .footer a {
+    color: #7ea4ff;
+  }
+
+  .footer a:hover {
+    color: #ffffff;
+  }
+
+  /* Search box */
   input,
-  textarea,
-  select {
-    background: #1c2128 !important;
-    color: #e6edf3 !important;
-    border: 1px solid #2a2f36 !important;
+  textarea {
+    background: #1a2430;
+    color: #ffffff;
+    border: 1px solid #243142;
   }
 
 }
