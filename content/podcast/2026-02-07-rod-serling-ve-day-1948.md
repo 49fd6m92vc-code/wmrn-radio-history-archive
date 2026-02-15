@@ -1,5 +1,5 @@
 ---
-title: "THE WMRN ARCHIVES: 1948 — Rod Serling on VE Day"
+title: "THE WMRN ARCHIVES: 1948 - Rod Serling on VE Day"
 date: 2026-02-07
 summary: "A preserved broadcast featuring Rod Serling commemorating VE Day during his early radio career in Marion, Ohio."
 draft: false
