@@ -11,6 +11,8 @@ record_type: Anniversary Address
 collection: WMRN Radio History Archive Podcast
 ---
 
+# THE WMRN ARCHIVES: 1960 - 20th Anniversary Address by Robert T. Mason
+
 This episode presents a preserved recording of Robert T. Mason’s 20th Anniversary Address, delivered on December 23, 1960.
 
 In this address, Mason reflects on the founding of WMRN on December 23, 1940, and the station’s growth over two decades of service to the Marion, Ohio community.
