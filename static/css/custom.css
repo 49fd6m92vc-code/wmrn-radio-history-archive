@@ -1420,3 +1420,44 @@ body.dark-mode #dark-mode-toggle {
 body.dark-mode #dark-mode-toggle::after {
   transform: translateX(20px);
 }
+
+/* ========================================
+   FINAL DARK MODE SURFACE LOCK
+   ======================================== */
+
+html.dark-mode .container__outer,
+html.dark-mode .container__inner,
+html.dark-mode .main,
+html.dark-mode .primary,
+html.dark-mode .post,
+html.dark-mode .page,
+html.dark-mode .entry,
+html.dark-mode .list__item,
+html.dark-mode .catalog-card,
+html.dark-mode .accession-card,
+html.dark-mode .accession-card .acc-body {
+  background: #151e28 !important;
+  border-color: #1f2a36 !important;
+}
+
+/* Hero strip should stay light (intentional contrast) */
+html.dark-mode .site-hero {
+  background: #ffffff !important;
+}
+
+/* Fix subtle divider lines */
+html.dark-mode hr,
+html.dark-mode .post hr,
+html.dark-mode .entry hr {
+  border-color: #1f2a36 !important;
+}
+
+/* Ensure headings are clean white */
+html.dark-mode h1,
+html.dark-mode h2,
+html.dark-mode h3,
+html.dark-mode h4,
+html.dark-mode h5,
+html.dark-mode h6 {
+  color: #ffffff !important;
+}
