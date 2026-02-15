@@ -1447,4 +1447,19 @@ body {
 .founding-record-box ul li {
   color: #d6d6d6 !important;
 }
+
+/* DEBUG — FORCE DARK FOUNDING BOX */
+.founding-record-box {
+  background: #151e28 !important;
+  border: 1px solid #1f2a36 !important;
+  color: #e6e6e6 !important;
+}
+
+.founding-record-box h3,
+.founding-record-box strong {
+  color: #ffffff !important;
+}
+
+.founding-record-box ul li {
+  color: #d6d6d6 !important;
 }
