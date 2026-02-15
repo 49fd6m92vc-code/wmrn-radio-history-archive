@@ -1,5 +1,5 @@
 ---
-title: "THE WMRN ARCHIVES: 1960 — 20th Anniversary Address by Robert T. Mason"
+title: "THE WMRN ARCHIVES: 1960 - 20th Anniversary Address by Robert T. Mason"
 date: 2026-02-12
 summary: "A preserved recording of Robert T. Mason’s 20th Anniversary Address, delivered December 23, 1960, marking two decades of WMRN broadcasting."
 draft: false
