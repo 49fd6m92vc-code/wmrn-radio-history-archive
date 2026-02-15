@@ -1265,3 +1265,172 @@ body {
   margin: 0;
   line-height: 1.75;
 }
+
+/* =====================================================
+   WMRN RADIO HISTORY ARCHIVE — FULL DARK MODE
+   ===================================================== */
+
+@media (prefers-color-scheme: dark) {
+
+  /* =========================
+     GLOBAL
+     ========================= */
+
+  html,
+  body {
+    background: #0f1114 !important;
+    color: #e6e6e6 !important;
+  }
+
+  a {
+    color: #9fb3d1;
+  }
+
+  a:hover {
+    color: #ffffff;
+  }
+
+  hr {
+    border-color: #2a2f36;
+  }
+
+  /* =========================
+     CONTAINERS
+     ========================= */
+
+  .container,
+  .container--outer,
+  .content,
+  .entry,
+  .post,
+  .page,
+  .page__content {
+    background: #14171c !important;
+  }
+
+  /* =========================
+     HEADER
+     ========================= */
+
+  .header {
+    background: #14171c !important;
+    border-bottom: 1px solid #2a2f36;
+  }
+
+  .logo__title {
+    color: #ffffff !important;
+  }
+
+  .logo__tagline {
+    color: #aab4c2 !important;
+  }
+
+  /* Search field */
+  .header__tools input {
+    background: #0f1114 !important;
+    border: 1px solid #2a2f36 !important;
+    color: #e6e6e6 !important;
+  }
+
+  /* =========================
+     NAVIGATION
+     ========================= */
+
+  .menu,
+  .menu__list {
+    background: #14171c !important;
+  }
+
+  .menu__link {
+    background: #14171c !important;
+    color: #e6e6e6 !important;
+  }
+
+  .menu__link:hover,
+  .menu__link:focus,
+  .menu__item--active > .menu__link,
+  .menu__item--current > .menu__link,
+  .menu__item--ancestor > .menu__link,
+  .menu__link[aria-current="page"] {
+    background: #1c2d4a !important;
+    color: #ffffff !important;
+  }
+
+  /* Dropdown */
+  .menu__sub-list {
+    background: #1a1f26 !important;
+    border-top: 2px solid #1c2d4a !important;
+  }
+
+  .menu__sub-list .menu__link {
+    background: #1a1f26 !important;
+    color: #e6e6e6 !important;
+  }
+
+  .menu__sub-list .menu__link:hover {
+    background: #1c2d4a !important;
+    color: #ffffff !important;
+  }
+
+  /* =========================
+     HERO IMAGE AREA
+     ========================= */
+
+  .entry__image img {
+    filter: brightness(0.85) contrast(1.05);
+  }
+
+  /* =========================
+     HEADINGS
+     ========================= */
+
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff !important;
+  }
+
+  /* =========================
+     POST META
+     ========================= */
+
+  .meta,
+  .post__meta {
+    color: #9aa5b5 !important;
+  }
+
+  /* =========================
+     PODCAST PLAYER WRAPPER
+     ========================= */
+
+  .podcast-player {
+    background: #1a1f26;
+    border: 1px solid #2a2f36;
+  }
+
+  /* =========================
+     LISTS / ARCHIVAL BLOCKS
+     ========================= */
+
+  .founding-record-box {
+    background: #1a1f26 !important;
+    border: 1px solid #2a2f36 !important;
+  }
+
+  /* =========================
+     FOOTER
+     ========================= */
+
+  .footer {
+    background: #0b0d10 !important;
+    border-top: 1px solid #2a2f36;
+    color: #aab4c2 !important;
+  }
+
+  .footer a {
+    color: #9fb3d1 !important;
+  }
+
+  .footer a:hover {
+    color: #ffffff !important;
+  }
+
+}
