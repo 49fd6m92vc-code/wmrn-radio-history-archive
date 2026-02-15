@@ -151,3 +151,8 @@ mainSections = [
     name = "Contribute"
     pageRef = "/contribute-materials/"
     weight = 1
+
+  [[menu.footer]]
+    name = "Access & Use Policy"
+    pageRef = "/access-and-use/"
+    weight = 1
