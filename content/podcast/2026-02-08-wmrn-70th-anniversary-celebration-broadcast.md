@@ -11,6 +11,8 @@ record_type: Anniversary Broadcast
 collection: WMRN Radio History Archive Podcast
 ---
 
+# THE WMRN ARCHIVES: 2010 - 70th Anniversary Celebration Broadcast
+
 This episode presents a preserved broadcast commemorating the 70th anniversary of WMRN.
 
 The program reflects on the station’s history, community impact, and decades of local service.
