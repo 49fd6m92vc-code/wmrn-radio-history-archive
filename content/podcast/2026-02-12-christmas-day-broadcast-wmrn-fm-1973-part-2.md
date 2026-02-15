@@ -1,5 +1,5 @@
 ---
-title: "THE WMRN ARCHIVES: 1973 — Christmas Day Broadcast, WMRN-FM (Part 2)"
+title: "THE WMRN ARCHIVES: 1973 - Christmas Day Broadcast, WMRN-FM (Part 2)"
 date: 2026-02-12
 summary: "The continuation of WMRN-FM’s Christmas Day 1973 broadcast, preserving holiday programming from Marion, Ohio."
 draft: false
