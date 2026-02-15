@@ -1315,18 +1315,30 @@ body {
     color: #e6e6e6 !important;
   }
 
+  /* Hover */
   .menu__link:hover,
-  .menu__link:focus,
+  .menu__link:focus {
+    background: #1c2d4a !important;
+    color: #ffffff !important;
+  }
+
+  /* Active page */
   .menu__item--active > .menu__link,
   .menu__item--current > .menu__link,
   .menu__item--ancestor > .menu__link,
   .menu__link[aria-current="page"] {
-    background: #111111 !important;
+    background: #1c2d4a !important;
     color: #ffffff !important;
   }
 
+  /* Dropdown links */
   .menu__sub-list .menu__link {
     background: #000000 !important;
+  }
+
+  .menu__sub-list .menu__link:hover {
+    background: #1c2d4a !important;
+    color: #ffffff !important;
   }
 
   /* MOBILE NAV FIX — kill white bar */
