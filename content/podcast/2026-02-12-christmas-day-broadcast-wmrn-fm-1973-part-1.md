@@ -11,6 +11,8 @@ record_type: Holiday Broadcast
 collection: WMRN Radio History Archive Podcast
 ---
 
+# THE WMRN ARCHIVES: 1973 - Christmas Day Broadcast, WMRN-FM (Part 1)
+
 This episode presents a preserved recording of WMRN-FM’s Christmas Day broadcast, originally aired on December 25, 1973.
 
 The recording reflects the style and sound of FM holiday programming during the early 1970s, offering a glimpse into seasonal music, station presentation, and the atmosphere of Christmas in Marion, Ohio.
