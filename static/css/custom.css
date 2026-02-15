@@ -1429,3 +1429,78 @@ body {
     color: #ffffff !important;
   }
 }
+
+/* ========================================
+   DARK MODE TOGGLE — STYLING ONLY
+   ======================================== */
+
+/* Toggle wrapper alignment */
+.dark-toggle {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+/* Hide default checkbox */
+.dark-toggle input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Switch track */
+.dark-toggle label {
+  position: relative;
+  width: 46px;
+  height: 24px;
+  background: #d6d6d6;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+/* Switch knob */
+.dark-toggle label::after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+  border-radius: 50%;
+  transition: transform 0.25s ease, background 0.25s ease;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
+}
+
+/* ON state */
+.dark-toggle input:checked + label {
+  background: #1c2d4a;
+}
+
+.dark-toggle input:checked + label::after {
+  transform: translateX(22px);
+  background: #ffffff;
+}
+
+/* Subtle hover */
+.dark-toggle label:hover {
+  opacity: 0.85;
+}
+
+/* Mobile sizing refinement */
+@media (max-width: 768px) {
+  .dark-toggle label {
+    width: 42px;
+    height: 22px;
+  }
+
+  .dark-toggle label::after {
+    width: 16px;
+    height: 16px;
+  }
+
+  .dark-toggle input:checked + label::after {
+    transform: translateX(20px);
+  }
+}
