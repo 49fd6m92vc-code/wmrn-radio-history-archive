@@ -32,11 +32,12 @@ The promo reflects the station’s role in delivering timely results, civic repo
 
 <div class="podcast-player">
   <iframe
-    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-election-coverage-promo-wmrn-amfm-terry-cole-date-unknown-322898392"
+    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-election-coverage-promo-wmrn-amfm-terry-cole-date-unknown-322898392?app=listen&embed=true"
     width="100%"
     height="200"
-    title="Election Coverage Promo, WMRN-AM/FM"
+    title="THE WMRN ARCHIVES: Election Coverage Promo, WMRN-AM/FM (Terry Cole, Date Unknown)"
     frameborder="0"
-    scrolling="no">
+    scrolling="no"
+    allow="autoplay">
   </iframe>
 </div>
