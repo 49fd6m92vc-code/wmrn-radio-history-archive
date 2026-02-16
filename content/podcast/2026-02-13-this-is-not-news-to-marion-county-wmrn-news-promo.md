@@ -32,11 +32,13 @@ The promo emphasizes familiarity, immediacy, and WMRN’s role in delivering new
 
 <div class="podcast-player">
   <iframe
-    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-this-is-not-news-to-marion-county-wmrn-news-promo-date-unknown-322898321"
+    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-this-is-not-news-to-marion-county-wmrn-news-promo-date-unknown-322898321?app=listen&embed=true"
     width="100%"
     height="200"
-    title="This Is NOT News to Marion County - WMRN News Promo"
+    title="THE WMRN ARCHIVES: “This Is NOT News to Marion County” - WMRN News Promo"
     frameborder="0"
-    scrolling="no">
+    scrolling="no"
+    allow="autoplay">
   </iframe>
 </div>
+
