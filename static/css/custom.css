@@ -1496,18 +1496,19 @@ body {
    WMRN ARCHIVE PORTAL
    ======================================== */
 
+
 /* ----------------------------------------
    HERO
 ---------------------------------------- */
 
 .portal-hero {
-  padding: 3rem 1.5rem 2.5rem;
+  padding: 3.5rem 1.5rem 3rem;
   text-align: center;
   border-bottom: 1px solid #ddd;
 }
 
 .portal-title {
-  font-size: 2rem;
+  font-size: 2.1rem;
   margin-bottom: 0.75rem;
 }
 
@@ -1516,6 +1517,7 @@ body {
   margin: 0 auto;
   font-size: 1rem;
   color: #555;
+  line-height: 1.6;
 }
 
 
@@ -1525,22 +1527,22 @@ body {
 
 .portal-record {
   max-width: 900px;
-  margin: 2.5rem auto;
+  margin: 3.5rem auto;
   padding: 0 1.5rem;
 }
 
 .portal-record-title {
-  font-size: 1.4rem;
-  margin-bottom: 1.25rem;
-  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid #ddd;
 }
 
 .portal-record-grid {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  row-gap: 0.75rem;
-  column-gap: 1.5rem;
+  grid-template-columns: 200px 1fr;
+  column-gap: 2rem;
+  row-gap: 1rem;
 }
 
 .portal-record-label {
@@ -1548,7 +1550,55 @@ body {
 }
 
 .portal-record-value {
-  opacity: 0.9;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+
+/* ----------------------------------------
+   STATION TIMELINE
+---------------------------------------- */
+
+.portal-timeline {
+  max-width: 900px;
+  margin: 3.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.timeline {
+  border-left: 2px solid #ddd;
+  padding-left: 1.75rem;
+  margin-top: 2rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.25rem;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+.timeline-year {
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-content {
+  line-height: 1.65;
+  opacity: 0.95;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -1.95rem;
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  background: #1c2d4a;
+  border-radius: 50%;
 }
 
 
@@ -1558,14 +1608,14 @@ body {
 
 .portal-access {
   max-width: 1100px;
-  margin: 3rem auto;
+  margin: 4rem auto;
   padding: 0 1.5rem;
 }
 
 .portal-section-title {
-  font-size: 1.4rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.75rem;
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid #ddd;
 }
 
@@ -1577,7 +1627,7 @@ body {
 .portal-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  gap: 1.75rem;
   margin: 2rem 0;
 }
 
@@ -1589,12 +1639,18 @@ body {
   text-decoration: none;
   color: inherit;
   transition: all 0.2s ease;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
 .portal-card h3 {
   margin-top: 0;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+}
+
+.portal-card p {
+  line-height: 1.6;
+  margin-bottom: 0;
 }
 
 .portal-card:hover {
@@ -1610,7 +1666,7 @@ body {
 
 .portal-institutional {
   max-width: 900px;
-  margin: 3rem auto;
+  margin: 4rem auto 2rem;
   padding: 0 1.5rem;
 }
 
@@ -1622,23 +1678,26 @@ body {
 
 
 /* ========================================
-   MOBILE FIXES
-   (Fixes the “Institutional Record looks off” issue)
+   MOBILE REFINEMENT
 ======================================== */
 
 @media (max-width: 640px) {
 
   .portal-record-grid {
     grid-template-columns: 1fr;
-    row-gap: 0.5rem;
+    row-gap: 0.75rem;
   }
 
   .portal-record-label {
-    margin-top: 0.75rem;
+    margin-top: 1rem;
   }
 
-  .portal-record-value {
-    margin-bottom: 0.5rem;
+  .timeline {
+    padding-left: 1.25rem;
+  }
+
+  .timeline-item::before {
+    left: -1.45rem;
   }
 
 }
@@ -1664,7 +1723,15 @@ body {
   }
 
   .portal-record-value {
-    opacity: 0.85;
+    opacity: 0.9;
+  }
+
+  .timeline {
+    border-left: 2px solid #333;
+  }
+
+  .timeline-item::before {
+    background: #3a5f8c;
   }
 
   .portal-card {
