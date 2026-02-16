@@ -1548,3 +1548,29 @@ body {
   margin: 2rem auto 3rem;
   padding: 0 1.5rem;
 }
+
+.portal-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.portal-card {
+  border: 1px solid #2f2f2f;
+  padding: 1.5rem;
+  background-color: #111;
+  transition: all 0.2s ease;
+}
+
+.portal-card:hover {
+  border-color: #3a5f8c;
+  background-color: #151515;
+}
+
+.portal-meta {
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+  padding: 1rem 0;
+  margin: 2rem 0;
+}
