@@ -1496,6 +1496,8 @@ body {
    WMRN ARCHIVE PORTAL
    ======================================== */
 
+/* ---------- HERO ---------- */
+
 .portal-hero {
   padding: 3rem 1.5rem 2.5rem;
   text-align: center;
@@ -1514,14 +1516,27 @@ body {
   color: #555;
 }
 
-.portal-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  padding: 2.5rem 1.5rem;
-  max-width: 1100px;
-  margin: 0 auto;
+/* ---------- META STRIP ---------- */
+
+.portal-meta {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 0;
+  margin: 2rem 0;
 }
+
+/* ---------- GRID ---------- */
+
+.portal-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+/* ========================================
+   LIGHT MODE (DEFAULT)
+   ======================================== */
 
 .portal-card {
   display: block;
@@ -1530,7 +1545,7 @@ body {
   background: #fafafa;
   text-decoration: none;
   color: inherit;
-  transition: all 0.15s ease;
+  transition: all 0.2s ease;
 }
 
 .portal-card h2 {
@@ -1543,34 +1558,24 @@ body {
   background: #f0f3f9;
 }
 
-.portal-body {
-  max-width: 900px;
-  margin: 2rem auto 3rem;
-  padding: 0 1.5rem;
+/* ========================================
+   DARK MODE OVERRIDES
+   ======================================== */
+
+body.dark .portal-meta {
+  border-color: #333;
 }
 
-.portal-card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
+body.dark .portal-description {
+  color: #bbb;
 }
 
-.portal-card {
+body.dark .portal-card {
   border: 1px solid #2f2f2f;
-  padding: 1.5rem;
   background-color: #111;
-  transition: all 0.2s ease;
 }
 
-.portal-card:hover {
+body.dark .portal-card:hover {
   border-color: #3a5f8c;
   background-color: #151515;
-}
-
-.portal-meta {
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
-  padding: 1rem 0;
-  margin: 2rem 0;
 }
