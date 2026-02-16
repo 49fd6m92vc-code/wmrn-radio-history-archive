@@ -156,7 +156,7 @@ mainSections = [
   [[menu.main]]
     name = "Portal"
     pageRef = "/portal/"
-    weight = 2
+    weight = 6
 
   [[menu.footer]]
     name = "Access & Use Policy"
