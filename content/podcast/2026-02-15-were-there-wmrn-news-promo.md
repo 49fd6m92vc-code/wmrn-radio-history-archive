@@ -32,11 +32,12 @@ The piece reinforces WMRN’s identity as an on-the-scene news source, emphasizi
 
 <div class="podcast-player">
   <iframe
-    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-were-there-wmrn-news-promo-terry-cole-date-unknown-322899179"
+    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-were-there-wmrn-news-promo-terry-cole-date-unknown-322899179?app=listen&embed=true"
     width="100%"
     height="200"
-    title="We're There - WMRN News Promo"
+    title="THE WMRN ARCHIVES: “We’re There” - WMRN News Promo (Terry Cole, Date Unknown)"
     frameborder="0"
-    scrolling="no">
+    scrolling="no"
+    allow="autoplay">
   </iframe>
 </div>
