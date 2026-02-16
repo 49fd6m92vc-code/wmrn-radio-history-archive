@@ -34,13 +34,12 @@ Branded as “Marion’s Home of the Tribe — 1490 WMRN,” the promo highlight
 
 <div class="podcast-player">
   <iframe
-    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-1997-cleveland-indians-promo-wmrn-am-1490-322900839"
+    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-1997-cleveland-indians-promo-wmrn-am-1490-322900839?app=listen&embed=true"
     width="100%"
     height="200"
-    title="1997 Cleveland Indians Promo, WMRN-AM 1490"
+    title="THE WMRN ARCHIVES: 1997 - Cleveland Indians Promo, WMRN-AM 1490"
     frameborder="0"
-    scrolling="no">
+    scrolling="no"
+    allow="autoplay">
   </iframe>
 </div>
-
-
