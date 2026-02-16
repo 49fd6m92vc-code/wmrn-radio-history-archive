@@ -32,13 +32,12 @@ The piece reflects the station’s role in delivering timely information regardi
 
 <div class="podcast-player">
   <iframe
-    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-winter-weather-coverage-promo-wmrn-news-terry-cole-date-unknown-322900483"
+    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-winter-weather-coverage-promo-wmrn-news-terry-cole-date-unknown-322900483?app=listen&embed=true"
     width="100%"
     height="200"
-    title="Winter Weather Coverage - WMRN News"
+    title="THE WMRN ARCHIVES: Winter Weather Coverage - WMRN News (Terry Cole, Date Unknown)"
     frameborder="0"
-    scrolling="no">
+    scrolling="no"
+    allow="autoplay">
   </iframe>
 </div>
-
-
