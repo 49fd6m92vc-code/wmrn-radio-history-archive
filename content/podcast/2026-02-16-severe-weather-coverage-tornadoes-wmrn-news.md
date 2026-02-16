@@ -32,11 +32,12 @@ The piece reflects the station’s role as a primary source of urgent weather in
 
 <div class="podcast-player">
   <iframe
-    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-severe-weather-coverage-tornadoes-wmrn-news-terry-cole-date-unknown-322900091"
+    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-severe-weather-coverage-tornadoes-wmrn-news-terry-cole-date-unknown-322900091?app=listen&embed=true"
     width="100%"
     height="200"
-    title="Severe Weather Coverage - Tornadoes, WMRN News"
+    title="THE WMRN ARCHIVES: Severe Weather Coverage - Tornadoes, WMRN News (Terry Cole, Date Unknown)"
     frameborder="0"
-    scrolling="no">
+    scrolling="no"
+    allow="autoplay">
   </iframe>
 </div>
