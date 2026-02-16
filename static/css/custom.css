@@ -1559,23 +1559,32 @@ body {
 }
 
 /* ========================================
-   DARK MODE OVERRIDES
+   DARK MODE (SYSTEM)
    ======================================== */
 
-body.dark .portal-meta {
-  border-color: #333;
-}
+@media (prefers-color-scheme: dark) {
 
-body.dark .portal-description {
-  color: #bbb;
-}
+  .portal-hero {
+    border-bottom: 1px solid #333;
+  }
 
-body.dark .portal-card {
-  border: 1px solid #2f2f2f;
-  background-color: #111;
-}
+  .portal-description {
+    color: #bbb;
+  }
 
-body.dark .portal-card:hover {
-  border-color: #3a5f8c;
-  background-color: #151515;
+  .portal-meta {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+  }
+
+  .portal-card {
+    border: 1px solid #2f2f2f;
+    background-color: #111;
+  }
+
+  .portal-card:hover {
+    border-color: #3a5f8c;
+    background-color: #151515;
+  }
+
 }
