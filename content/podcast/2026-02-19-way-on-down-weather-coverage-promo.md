@@ -32,11 +32,12 @@ The promo highlights WMRN’s coverage of approaching weather systems and changi
 
 <div class="podcast-player">
   <iframe
-    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-way-on-down-severe-weather-coverage-promo-wmrn-news-terry-cole-date-unknown-322900832"
+    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-way-on-down-severe-weather-coverage-promo-wmrn-news-terry-cole-date-unknown-322900832?app=listen&embed=true"
     width="100%"
     height="200"
-    title="Way On Down - Weather Coverage Promo"
+    title="THE WMRN ARCHIVES: “Way On Down” - Severe Weather Coverage Promo, WMRN News (Terry Cole, Date Unknown)"
     frameborder="0"
-    scrolling="no">
+    scrolling="no"
+    allow="autoplay">
   </iframe>
 </div>
