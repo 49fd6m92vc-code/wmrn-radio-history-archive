@@ -1496,7 +1496,9 @@ body {
    WMRN ARCHIVE PORTAL
    ======================================== */
 
-/* ---------- HERO ---------- */
+/* ----------------------------------------
+   HERO
+---------------------------------------- */
 
 .portal-hero {
   padding: 3rem 1.5rem 2.5rem;
@@ -1516,89 +1518,10 @@ body {
   color: #555;
 }
 
-/* ---------- META STRIP ---------- */
 
-.portal-meta {
-  background: #f4f4f4;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  padding: 1.5rem;
-  margin: 2rem 0;
-  border-radius: 4px;
-}
-
-/* ---------- GRID ---------- */
-
-.portal-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
-  margin: 2rem 0;
-}
-
-/* ========================================
-   LIGHT MODE (DEFAULT)
-   ======================================== */
-
-.portal-card {
-  display: block;
-  padding: 1.75rem;
-  border: 1px solid #ddd;
-  background: #fafafa;
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.2s ease;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-}
-
-.portal-card h2 {
-  margin-top: 0;
-  font-size: 1.1rem;
-}
-
-.portal-card:hover {
-  border-color: #1c2d4a;
-  background: #f0f3f9;
-  transform: translateY(-2px);
-}
-
-/* ========================================
-   DARK MODE (SYSTEM)
-   ======================================== */
-
-@media (prefers-color-scheme: dark) {
-
-  .portal-hero {
-    border-bottom: 1px solid #333;
-  }
-
-  .portal-description {
-    color: #bbb;
-  }
-
-  .portal-meta {
-    background: #151515;
-    border-top: 1px solid #333;
-    border-bottom: 1px solid #333;
-  }
-
-  .portal-card {
-    border: 1px solid #2f2f2f;
-    background-color: #111;
-    box-shadow: none;
-  }
-
-  .portal-card:hover {
-    border-color: #3a5f8c;
-    background-color: #151515;
-    transform: translateY(-2px);
-  }
-
-}
-
-/* ========================================
+/* ----------------------------------------
    INSTITUTIONAL RECORD
-   ======================================== */
+---------------------------------------- */
 
 .portal-record {
   max-width: 900px;
@@ -1628,9 +1551,10 @@ body {
   opacity: 0.9;
 }
 
-/* ========================================
+
+/* ----------------------------------------
    ACCESS SECTION
-   ======================================== */
+---------------------------------------- */
 
 .portal-access {
   max-width: 1100px;
@@ -1645,9 +1569,44 @@ body {
   border-bottom: 1px solid #ddd;
 }
 
-/* ========================================
+
+/* ----------------------------------------
+   GRID PANELS
+---------------------------------------- */
+
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.portal-card {
+  display: block;
+  padding: 1.75rem;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.portal-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.portal-card:hover {
+  border-color: #1c2d4a;
+  background: #f0f3f9;
+  transform: translateY(-2px);
+}
+
+
+/* ----------------------------------------
    INSTITUTIONAL STATEMENT
-   ======================================== */
+---------------------------------------- */
 
 .portal-institutional {
   max-width: 900px;
@@ -1661,11 +1620,43 @@ body {
   padding: 0 1.5rem;
 }
 
+
 /* ========================================
-   DARK MODE EXTENSIONS
-   ======================================== */
+   MOBILE FIXES
+   (Fixes the “Institutional Record looks off” issue)
+======================================== */
+
+@media (max-width: 640px) {
+
+  .portal-record-grid {
+    grid-template-columns: 1fr;
+    row-gap: 0.5rem;
+  }
+
+  .portal-record-label {
+    margin-top: 0.75rem;
+  }
+
+  .portal-record-value {
+    margin-bottom: 0.5rem;
+  }
+
+}
+
+
+/* ========================================
+   DARK MODE
+======================================== */
 
 @media (prefers-color-scheme: dark) {
+
+  .portal-hero {
+    border-bottom: 1px solid #333;
+  }
+
+  .portal-description {
+    color: #bbb;
+  }
 
   .portal-record-title,
   .portal-section-title {
@@ -1674,6 +1665,17 @@ body {
 
   .portal-record-value {
     opacity: 0.85;
+  }
+
+  .portal-card {
+    border: 1px solid #2f2f2f;
+    background-color: #111;
+    box-shadow: none;
+  }
+
+  .portal-card:hover {
+    border-color: #3a5f8c;
+    background-color: #151515;
   }
 
 }
