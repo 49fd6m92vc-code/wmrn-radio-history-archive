@@ -1595,3 +1595,85 @@ body {
   }
 
 }
+
+/* ========================================
+   INSTITUTIONAL RECORD
+   ======================================== */
+
+.portal-record {
+  max-width: 900px;
+  margin: 2.5rem auto;
+  padding: 0 1.5rem;
+}
+
+.portal-record-title {
+  font-size: 1.4rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.portal-record-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  row-gap: 0.75rem;
+  column-gap: 1.5rem;
+}
+
+.portal-record-label {
+  font-weight: 600;
+}
+
+.portal-record-value {
+  opacity: 0.9;
+}
+
+/* ========================================
+   ACCESS SECTION
+   ======================================== */
+
+.portal-access {
+  max-width: 1100px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.portal-section-title {
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ========================================
+   INSTITUTIONAL STATEMENT
+   ======================================== */
+
+.portal-institutional {
+  max-width: 900px;
+  margin: 3rem auto;
+  padding: 0 1.5rem;
+}
+
+.portal-body {
+  max-width: 900px;
+  margin: 2rem auto 3rem;
+  padding: 0 1.5rem;
+}
+
+/* ========================================
+   DARK MODE EXTENSIONS
+   ======================================== */
+
+@media (prefers-color-scheme: dark) {
+
+  .portal-record-title,
+  .portal-section-title {
+    border-bottom: 1px solid #333;
+  }
+
+  .portal-record-value {
+    opacity: 0.85;
+  }
+
+}
