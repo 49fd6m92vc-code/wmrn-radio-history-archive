@@ -1,6 +1,6 @@
 ---
 title: "THE WMRN ARCHIVES: Winter Weather Coverage - WMRN News"
-date: 2026-02-17
+date: 2026-02-14
 summary: "A preserved WMRN News promotional announcement highlighting winter storm coverage."
 draft: false
 
@@ -40,3 +40,4 @@ The piece reflects the station’s role in delivering timely information regardi
     scrolling="no">
   </iframe>
 </div>
+
