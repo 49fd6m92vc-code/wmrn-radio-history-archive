@@ -17,7 +17,7 @@ This episode presents a preserved promotional announcement for Cleveland Indians
 
 The promo features audio from Albert Bell’s return to Cleveland following his departure from the Indians organization in November 1996. Capturing crowd reaction and commentary, the piece reflects one of the most memorable storylines in 1990s Cleveland baseball.
 
-Branded as “Marion’s Home of the Tribe — 1490 WMRN,” the promo highlights the station’s role as a regional affiliate carrying Cleveland Indians broadcasts.
+Branded as “Marion’s Home of the Tribe - 1490 WMRN,” the promo highlights the station’s role as a regional affiliate carrying Cleveland Indians broadcasts.
 
 ---
 
