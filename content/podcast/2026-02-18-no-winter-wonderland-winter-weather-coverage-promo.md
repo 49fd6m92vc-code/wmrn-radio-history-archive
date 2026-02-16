@@ -32,11 +32,12 @@ The promo reflects how WMRN framed winter conditions for listeners, emphasizing 
 
 <div class="podcast-player">
   <iframe
-    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-no-winter-wonderland-winter-weather-coverage-promo-wmrn-news-terry-cole-date-unknown-322900828"
+    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-no-winter-wonderland-winter-weather-coverage-promo-wmrn-news-terry-cole-date-unknown-322900828?app=listen&embed=true"
     width="100%"
     height="200"
-    title="No Winter Wonderland - Winter Weather Coverage Promo"
+    title="THE WMRN ARCHIVES: “No Winter Wonderland” - Winter Weather Coverage Promo (Terry Cole, Date Unknown)"
     frameborder="0"
-    scrolling="no">
+    scrolling="no"
+    allow="autoplay">
   </iframe>
 </div>
