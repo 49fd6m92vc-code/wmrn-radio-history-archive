@@ -2,13 +2,42 @@
 
 <section class="portal">
 
-  <header class="portal-header">
-    <h1 class="portal-title">{{ .Title }}</h1>
-    {{ with .Params.description }}
-      <p class="portal-description">{{ . }}</p>
-    {{ end }}
-  </header>
+  <!-- HERO -->
+  <div class="portal-hero">
+    <div class="portal-hero-inner">
+      <h1 class="portal-title">{{ .Title }}</h1>
+      {{ with .Params.description }}
+        <p class="portal-description">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
 
+  <!-- PRIMARY PANELS -->
+  <div class="portal-grid">
+
+    <a href="/browse-the-archive/" class="portal-card">
+      <h2>Browse the Archive</h2>
+      <p>Access documented materials, collections, and preserved broadcast history.</p>
+    </a>
+
+    <a href="/podcast/archive/" class="portal-card">
+      <h2>Podcast Archive</h2>
+      <p>Listen to preserved recordings and archival broadcast audio.</p>
+    </a>
+
+    <a href="/founding-of-wmrn/" class="portal-card">
+      <h2>Founding Record</h2>
+      <p>Official station origin details, documentation, and historical verification.</p>
+    </a>
+
+    <a href="/contribute-materials/" class="portal-card">
+      <h2>Contribute Materials</h2>
+      <p>Submit recordings, documents, photographs, and historical information.</p>
+    </a>
+
+  </div>
+
+  <!-- BODY CONTENT -->
   <div class="portal-body">
     {{ .Content }}
   </div>
