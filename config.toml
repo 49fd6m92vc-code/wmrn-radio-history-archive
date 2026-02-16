@@ -153,6 +153,11 @@ mainSections = [
     pageRef = "/contribute-materials/"
     weight = 1
 
+  [[menu.main]]
+    name = "Portal"
+    pageRef = "/portal/"
+    weight = 2
+
   [[menu.footer]]
     name = "Access & Use Policy"
     pageRef = "/access-and-use/"
