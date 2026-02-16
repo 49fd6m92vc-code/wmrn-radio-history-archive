@@ -5,6 +5,7 @@ theme = "mainroad"
 
 canonifyURLs = false
 relativeURLs = false
+buildFuture = true
 
 # ------------------------
 # Core Hugo Settings
