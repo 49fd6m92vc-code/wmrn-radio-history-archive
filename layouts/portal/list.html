@@ -12,60 +12,76 @@
     </div>
   </div>
 
-  <!-- ARCHIVE SNAPSHOT -->
-  <div class="portal-snapshot">
-    <div class="snapshot-item">
-      <strong>Founded:</strong> December 23, 1940
+  <!-- INSTITUTIONAL RECORD -->
+  <section class="portal-record">
+
+    <h2 class="portal-record-title">Institutional Record</h2>
+
+    <div class="portal-record-grid">
+
+      <div class="portal-record-label">Founded</div>
+      <div class="portal-record-value">December 23, 1940</div>
+
+      <div class="portal-record-label">AM Frequency</div>
+      <div class="portal-record-value">1490 kHz</div>
+
+      <div class="portal-record-label">Original FM Frequency</div>
+      <div class="portal-record-value">106.9 MHz</div>
+
+      <div class="portal-record-label">Location</div>
+      <div class="portal-record-value">Marion, Ohio</div>
+
+      <div class="portal-record-label">Archive Status</div>
+      <div class="portal-record-value">Independent Historical Preservation Initiative</div>
+
     </div>
-    <div class="snapshot-item">
-      <strong>AM:</strong> 1490 kHz
+
+  </section>
+
+  <!-- PRIMARY ACCESS PANELS -->
+  <section class="portal-access">
+
+    <h2 class="portal-section-title">Research & Access</h2>
+
+    <div class="portal-grid">
+
+      <a href="/browse-the-archive/" class="portal-card">
+        <h3>Browse the Archive</h3>
+        <p>Access documented materials, collections, and preserved broadcast history.</p>
+      </a>
+
+      <a href="/podcast/archive/" class="portal-card">
+        <h3>Podcast Archive</h3>
+        <p>Listen to preserved recordings and archival broadcast audio.</p>
+      </a>
+
+      <a href="/founding-of-wmrn/" class="portal-card">
+        <h3>Founding Record</h3>
+        <p>Official station origin documentation and verification.</p>
+      </a>
+
+      <a href="/contribute-materials/" class="portal-card">
+        <h3>Contribute Materials</h3>
+        <p>Submit recordings, documents, photographs, and historical information.</p>
+      </a>
+
     </div>
-    <div class="snapshot-item">
-      <strong>FM:</strong> 106.9 MHz (Original)
-    </div>
-    <div class="snapshot-item">
-      <strong>Status:</strong> Independent Historical Archive
-    </div>
-  </div>
 
-  <!-- PRIMARY PANELS -->
-  <div class="portal-grid">
-
-    <a href="/browse-the-archive/" class="portal-card">
-      <h2>Browse the Archive</h2>
-      <p>Access documented materials, collections, and preserved broadcast history.</p>
-    </a>
-
-    <a href="/podcast/archive/" class="portal-card">
-      <h2>Podcast Archive</h2>
-      <p>Listen to preserved recordings and archival broadcast audio.</p>
-    </a>
-
-    <a href="/founding-of-wmrn/" class="portal-card">
-      <h2>Founding Record</h2>
-      <p>Official station origin documentation and verification.</p>
-    </a>
-
-    <a href="/contribute-materials/" class="portal-card">
-      <h2>Contribute Materials</h2>
-      <p>Submit recordings, documents, photographs, and historical information.</p>
-    </a>
-
-  </div>
+  </section>
 
   <!-- INSTITUTIONAL STATEMENT -->
-  <div class="portal-institutional">
-    <h2>Institutional Statement</h2>
+  <section class="portal-institutional">
+    <h2 class="portal-section-title">Institutional Statement</h2>
     <p>
       The WMRN Radio History Archive exists to preserve, document, and provide structured access to the broadcast legacy of WMRN-AM and WMRN-FM in Marion, Ohio.
       Materials are cataloged, described, and presented in accordance with archival standards and historical documentation practices.
     </p>
-  </div>
+  </section>
 
   <!-- BODY CONTENT -->
-  <div class="portal-body">
+  <section class="portal-body">
     {{ .Content }}
-  </div>
+  </section>
 
 </section>
 
