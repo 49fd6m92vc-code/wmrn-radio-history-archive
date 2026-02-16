@@ -1,6 +1,6 @@
 ---
 title: "THE WMRN ARCHIVES: 1997 - Cleveland Indians Promo, WMRN-AM 1490"
-date: 2026-02-20
+date: 2026-02-15
 summary: "A preserved 1997 promotional announcement for Cleveland Indians baseball, airing on WMRN-AM 1490 in Marion, Ohio."
 draft: false
 
@@ -42,3 +42,4 @@ Branded as “Marion’s Home of the Tribe — 1490 WMRN,” the promo highlight
     scrolling="no">
   </iframe>
 </div>
+
