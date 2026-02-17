@@ -27,7 +27,7 @@ Materials are collected from **public records** and **private collections** and 
 
 Ownership, call letters, format changes, regulatory milestones, and institutional developments from WMRN’s founding in 1940 through the present era.
 
-[Explore Station History →](/station-history/)
+<a href="/station-history/" class="home-button">Explore Station History</a>
 
 ---
 
@@ -37,7 +37,7 @@ Ownership, call letters, format changes, regulatory milestones, and institutiona
 
 Studios, transmission towers, engineering records, blueprints, photographs, and technical documentation related to WMRN’s physical broadcast infrastructure.
 
-[Explore Facilities & Equipment →](/facilities-equipment/)
+<a href="/facilities-equipment/" class="home-button">Explore Facilities & Equipment</a>
 
 ---
 
@@ -47,7 +47,7 @@ Studios, transmission towers, engineering records, blueprints, photographs, and 
 
 Air personalities, engineers, newsroom staff, programming eras, slogans, and defining broadcast moments that shaped WMRN on the air.
 
-[Explore People & Programming →](/people-programming/)
+<a href="/people-programming/" class="home-button">Explore People & Programming</a>
 
 ---
 
@@ -55,7 +55,7 @@ Air personalities, engineers, newsroom staff, programming eras, slogans, and def
 
 Individual archival records including photographs, audio recordings, documents, advertisements, and ephemera cataloged as discrete entries.
 
-[Browse Archival Records →](/browse-the-archive/)
+<a href="/browse-the-archive/" class="home-button">Browse Archival Records</a>
 
 ---
 
@@ -63,7 +63,7 @@ Individual archival records including photographs, audio recordings, documents, 
 
 Scope, collection policy, provenance standards, archival methodology, and project background.
 
-[Learn About the Archive →](/about/)
+<a href="/about/" class="home-button">Learn About the Archive</a>
 
 ---
 
@@ -79,4 +79,3 @@ WMRN-AM and WMRN-FM are referenced for historical documentation purposes. The WM
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-“
