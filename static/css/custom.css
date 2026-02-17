@@ -1548,20 +1548,24 @@ body {
 }
 
 /* =====================================================
-   PORTAL BASE STRUCTURE
-===================================================== */
+   WMRN RADIO HISTORY ARCHIVE – PORTAL SYSTEM
+   ===================================================== */
+
+/* -----------------------------------------------------
+   BASE LAYOUT
+----------------------------------------------------- */
 
 .portal {
   padding: 3rem 0 5rem 0;
 }
 
 .portal-inner {
-  max-width: 900px;
+  max-width: 950px;
   margin: 0 auto;
   padding: 0 1.5rem;
 }
 
-/* Section spacing rhythm */
+/* Section rhythm */
 
 .portal-section {
   padding: 3.5rem 0;
@@ -1572,13 +1576,13 @@ body {
   border-top: none;
 }
 
-/* =====================================================
+/* -----------------------------------------------------
    HERO
-===================================================== */
+----------------------------------------------------- */
 
 .portal-hero {
-  padding: 2rem 0 3rem 0;
   text-align: center;
+  padding: 2rem 0 3rem 0;
 }
 
 .portal-title {
@@ -1594,25 +1598,25 @@ body {
   line-height: 1.6;
 }
 
-/* =====================================================
-   SECTION TITLES
-===================================================== */
+/* -----------------------------------------------------
+   SECTION HEADINGS
+----------------------------------------------------- */
 
 .portal-section-title {
   font-size: 1.25rem;
-  margin-bottom: 2rem;
-  letter-spacing: 1px;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
   opacity: 0.85;
 }
 
-/* =====================================================
-   SNAPSHOT GRID
-===================================================== */
+/* -----------------------------------------------------
+   INSTITUTIONAL SNAPSHOT
+----------------------------------------------------- */
 
 .portal-record-grid {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 220px 1fr;
   row-gap: 1rem;
   column-gap: 2rem;
 }
@@ -1626,9 +1630,9 @@ body {
   opacity: 0.95;
 }
 
-/* =====================================================
+/* -----------------------------------------------------
    FOUNDING SECTION
-===================================================== */
+----------------------------------------------------- */
 
 .portal-lead {
   margin-bottom: 1.5rem;
@@ -1648,20 +1652,20 @@ body {
   opacity: 0.7;
 }
 
-/* =====================================================
-   TIMELINE
-===================================================== */
+/* -----------------------------------------------------
+   TIMELINE – CLEAN VERTICAL RULE SYSTEM
+----------------------------------------------------- */
 
 .portal-timeline {
   position: relative;
   margin-left: 1rem;
-  padding-left: 2rem;
+  padding-left: 2.5rem;
   border-left: 2px solid rgba(255,255,255,0.15);
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2.75rem;
 }
 
 .timeline-item:last-child {
@@ -1678,13 +1682,13 @@ body {
   line-height: 1.6;
 }
 
-/* Timeline bullet */
+/* Timeline node dot */
 
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -2.65rem;
-  top: 0.3rem;
+  left: -2.75rem;
+  top: 0.4rem;
   width: 10px;
   height: 10px;
   background: #3A5F8C;
@@ -1692,23 +1696,23 @@ body {
   border: 2px solid #111;
 }
 
-/* =====================================================
+/* -----------------------------------------------------
    RESEARCH & ACCESS GRID
-===================================================== */
+----------------------------------------------------- */
 
 .portal-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.75rem;
 }
 
 .portal-card {
   background: rgba(255,255,255,0.04);
-  padding: 1.5rem;
+  padding: 1.75rem;
   text-decoration: none;
   color: inherit;
-  border: 1px solid rgba(255,255,255,0.06);
-  transition: all 0.2s ease;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: all 0.25s ease;
 }
 
 .portal-card h3 {
@@ -1719,17 +1723,18 @@ body {
 .portal-card p {
   font-size: 0.9rem;
   opacity: 0.8;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 .portal-card:hover {
   background: rgba(255,255,255,0.08);
-  border-color: rgba(255,255,255,0.15);
+  border-color: rgba(255,255,255,0.2);
+  transform: translateY(-3px);
 }
 
-/* =====================================================
+/* -----------------------------------------------------
    INSTITUTIONAL STATEMENT
-===================================================== */
+----------------------------------------------------- */
 
 .portal-institutional p {
   margin-bottom: 1.25rem;
@@ -1737,9 +1742,9 @@ body {
   opacity: 0.85;
 }
 
-/* =====================================================
-   RESPONSIVE
-===================================================== */
+/* -----------------------------------------------------
+   MOBILE OPTIMIZATION
+----------------------------------------------------- */
 
 @media (max-width: 768px) {
 
@@ -1753,11 +1758,62 @@ body {
 
   .portal-timeline {
     margin-left: 0;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
   }
 
   .timeline-item::before {
     left: -2.2rem;
+  }
+
+}
+
+/* -----------------------------------------------------
+   BANNER COMPATIBILITY
+----------------------------------------------------- */
+
+.wmrn-banner {
+  background: #1c2d4a;
+  color: #ffffff;
+  font-size: 0.85rem;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.wmrn-banner-track {
+  display: inline-block;
+  padding: 0.6rem 0;
+  animation: banner-scroll 65s linear infinite;
+}
+
+@keyframes banner-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* -----------------------------------------------------
+   DARK MODE REFINEMENTS
+----------------------------------------------------- */
+
+@media (prefers-color-scheme: dark) {
+
+  .portal-section {
+    border-top: 1px solid rgba(255,255,255,0.05);
+  }
+
+  .portal-timeline {
+    border-left: 2px solid rgba(255,255,255,0.12);
+  }
+
+  .portal-card {
+    background: rgba(255,255,255,0.03);
+  }
+
+  .portal-card:hover {
+    background: rgba(255,255,255,0.06);
   }
 
 }
