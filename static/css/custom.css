@@ -1814,7 +1814,8 @@ body {
 }
 
 /* ========================================
-   VERTICAL RULE TIMELINE
+   WMRN BROADCAST TIMELINE
+   Archival Ledger Style
 ======================================== */
 
 .portal-timeline {
@@ -1823,62 +1824,84 @@ body {
   padding: 0 1.5rem;
 }
 
-.timeline {
-  position: relative;
-  margin-top: 2rem;
-  padding-left: 2rem;
+.portal-timeline .portal-section-title {
+  margin-bottom: 2rem;
 }
 
+/* Timeline Container */
+.timeline {
+  position: relative;
+  padding-left: 2.25rem;
+  margin-top: 1rem;
+}
+
+/* Vertical Rule */
 .timeline::before {
   content: "";
   position: absolute;
+  left: 0.75rem;
   top: 0;
-  left: 10px;
+  bottom: 0;
   width: 2px;
-  height: 100%;
-  background: #d4d4d4;
-}
-
-.timeline-item {
-  position: relative;
-  margin-bottom: 2rem;
-  padding-left: 1.5rem;
-}
-
-.timeline-marker {
-  position: absolute;
-  left: -2px;
-  top: 6px;
-  width: 14px;
-  height: 14px;
-  background: #1c2d4a;
-  border-radius: 50%;
-  border: 2px solid #fff;
-}
-
-.timeline-year {
-  font-weight: 700;
-  margin-bottom: 0.35rem;
-  font-size: 1rem;
-}
-
-.timeline-content p {
-  margin: 0;
-  line-height: 1.6;
+  background: #3a5f8c;
   opacity: 0.9;
 }
 
-/* ---------- DARK MODE ---------- */
+/* Timeline Item */
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.25rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Timeline Dot */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -0.15rem;
+  top: 0.35rem;
+  width: 10px;
+  height: 10px;
+  background: #3a5f8c;
+  border-radius: 50%;
+}
+
+/* Year Styling */
+.timeline-year {
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+}
+
+/* Content */
+.timeline-content {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  opacity: 0.95;
+}
+
+/* Remove extra bottom spacing on last item */
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+/* ========================================
+   DARK MODE
+======================================== */
 
 @media (prefers-color-scheme: dark) {
 
   .timeline::before {
-    background: #333;
+    background: #4a78b8;
   }
 
-  .timeline-marker {
-    background: #3a5f8c;
-    border: 2px solid #111;
+  .timeline-item::before {
+    background: #4a78b8;
+  }
+
+  .timeline-content {
+    opacity: 0.9;
   }
 
 }
