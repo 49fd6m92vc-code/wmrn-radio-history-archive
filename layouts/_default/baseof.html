@@ -42,7 +42,7 @@
 	{{- if hasPrefix $googleFontsLink "https://fonts.googleapis.com/" }}
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}>
 	{{- end }}
 
@@ -73,6 +73,15 @@
 
 <body class="body">
 
+	<!-- WMRN Broadcast Timeline Banner -->
+	<div class="wmrn-banner">
+		<div class="wmrn-banner-track">
+			<span>
+				WMRN-AM signed on December 23, 1940 • AM frequency moved to 1490 kHz in 1941 (NARBA) • WMRN-FM launched May 6, 1953 at 106.9 MHz • FM frequency changed to 94.3 MHz in 2008 • Preserving Marion’s broadcast legacy since 1940
+			</span>
+		</div>
+	</div>
+
 	<div class="container container--outer">
 
 		{{ block "header" . }}
@@ -84,12 +93,6 @@
 
 				{{ block "main" . }}
 				<main class="main" role="main">
-
-					{{/* 
-						IMPORTANT:
-						NO TITLE IS RENDERED HERE.
-						ALL PAGE TITLES MUST COME FROM MARKDOWN CONTENT ONLY.
-					*/}}
 
 					<div class="content main__content clearfix">
 						{{ .Content }}
