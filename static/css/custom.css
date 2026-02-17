@@ -1815,7 +1815,7 @@ body {
 
 /* ========================================
    WMRN BROADCAST TIMELINE
-   Archival Ledger Style
+   Clean Archival Ledger
 ======================================== */
 
 .portal-timeline {
@@ -1824,72 +1824,60 @@ body {
   padding: 0 1.5rem;
 }
 
-.portal-timeline .portal-section-title {
-  margin-bottom: 2rem;
-}
-
-/* Timeline Container */
 .timeline {
   position: relative;
-  padding-left: 2.25rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
+  padding-left: 2rem;
+  border-left: none; /* kill any old borders */
 }
 
-/* Vertical Rule */
+/* Single vertical rule */
 .timeline::before {
   content: "";
   position: absolute;
-  left: 0.75rem;
+  left: 0;
   top: 0;
   bottom: 0;
   width: 2px;
   background: #3a5f8c;
-  opacity: 0.9;
 }
 
-/* Timeline Item */
+/* Each timeline entry */
 .timeline-item {
   position: relative;
-  margin-bottom: 2.25rem;
-  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  padding-left: 1.5rem;
 }
 
-/* Timeline Dot */
+/* Dot marker */
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -0.15rem;
-  top: 0.35rem;
+  left: -7px;
+  top: 6px;
   width: 10px;
   height: 10px;
   background: #3a5f8c;
   border-radius: 50%;
 }
 
-/* Year Styling */
+/* Year */
 .timeline-year {
   font-weight: 700;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
 }
 
 /* Content */
 .timeline-content {
+  line-height: 1.6;
   font-size: 0.95rem;
-  line-height: 1.65;
-  opacity: 0.95;
 }
 
-/* Remove extra bottom spacing on last item */
 .timeline-item:last-child {
   margin-bottom: 0;
 }
 
-/* ========================================
-   DARK MODE
-======================================== */
-
+/* Dark Mode */
 @media (prefers-color-scheme: dark) {
 
   .timeline::before {
@@ -1898,10 +1886,6 @@ body {
 
   .timeline-item::before {
     background: #4a78b8;
-  }
-
-  .timeline-content {
-    opacity: 0.9;
   }
 
 }
