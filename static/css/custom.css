@@ -1852,10 +1852,10 @@ body {
 }
 
 /* =========================================
-   HOMEPAGE BUTTON LINKS
+   HOMEPAGE BUTTON LINKS (MAINROAD FIX)
 ========================================= */
 
-.home a[href^="/"] {
+.page a[href^="/"] {
   display: inline-block;
   margin-top: 1rem;
   padding: 0.7rem 1.4rem;
@@ -1868,17 +1868,17 @@ body {
   transition: all 0.25s ease;
 }
 
-.home a[href^="/"]:hover {
+.page a[href^="/"]:hover {
   background: #2c4a70;
   transform: translateY(-2px);
 }
 
 @media (prefers-color-scheme: dark) {
-  .home a[href^="/"] {
+  .page a[href^="/"] {
     background: #2c4a70;
   }
 
-  .home a[href^="/"]:hover {
+  .page a[href^="/"]:hover {
     background: #3A5F8C;
   }
 }
