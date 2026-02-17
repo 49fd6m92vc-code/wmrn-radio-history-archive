@@ -1764,7 +1764,7 @@ body {
 .wmrn-banner-track {
   display: flex;
   width: max-content;
-  animation: wmrn-scroll 40s linear infinite;
+  animation: wmrn-scroll 60s linear infinite;
 }
 
 .wmrn-banner-track span {
