@@ -1748,68 +1748,41 @@ body {
 }
 
 /* ========================================
-   WMRN SCROLLING BANNER
+   WMRN SCROLLING TIMELINE BANNER
 ======================================== */
 
 .wmrn-banner {
-  width: 100%;
-  overflow: hidden;
-  background: #1c2d4a;            /* archival navy */
+  background-color: #1c2d4a;   /* Official navy */
   color: #ffffff;
-  font-size: 0.85rem;
-  letter-spacing: 0.5px;
-  border-bottom: 1px solid #142033;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
 .wmrn-banner-track {
-  display: flex;
-  width: max-content;
+  display: inline-block;
+  padding: 0.6rem 0;
   animation: wmrn-scroll 40s linear infinite;
 }
 
-.wmrn-banner span {
-  white-space: nowrap;
-  padding: 0.75rem 2rem;
+.wmrn-banner-track span {
+  display: inline-block;
+  padding-left: 100%;
+  font-size: 0.9rem;
+  letter-spacing: 0.4px;
 }
 
-/* Smooth infinite scroll */
+/* Scroll animation */
 @keyframes wmrn-scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
 }
 
-/* Pause on hover */
-.wmrn-banner:hover .wmrn-banner-track {
-  animation-play-state: paused;
-}
-
-/* ========================================
-   MOBILE OPTIMIZATION
-======================================== */
-
-@media (max-width: 768px) {
-  .wmrn-banner {
-    font-size: 0.75rem;
-  }
-
-  .wmrn-banner span {
-    padding: 0.6rem 1.25rem;
-  }
-}
-
-/* ========================================
-   DARK MODE TUNING
-======================================== */
-
+/* Force same navy in dark mode */
 @media (prefers-color-scheme: dark) {
-
   .wmrn-banner {
-    background: #000000;
-    border-bottom: 1px solid #222;
+    background-color: #1c2d4a !important;
+    color: #ffffff !important;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
   }
-
 }
