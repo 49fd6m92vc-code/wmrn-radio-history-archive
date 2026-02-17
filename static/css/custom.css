@@ -1746,3 +1746,70 @@ body {
   }
 
 }
+
+/* ========================================
+   WMRN SCROLLING BANNER
+======================================== */
+
+.wmrn-banner {
+  width: 100%;
+  overflow: hidden;
+  background: #1c2d4a;            /* archival navy */
+  color: #ffffff;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  border-bottom: 1px solid #142033;
+}
+
+.wmrn-banner-track {
+  display: flex;
+  width: max-content;
+  animation: wmrn-scroll 40s linear infinite;
+}
+
+.wmrn-banner span {
+  white-space: nowrap;
+  padding: 0.75rem 2rem;
+}
+
+/* Smooth infinite scroll */
+@keyframes wmrn-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Pause on hover */
+.wmrn-banner:hover .wmrn-banner-track {
+  animation-play-state: paused;
+}
+
+/* ========================================
+   MOBILE OPTIMIZATION
+======================================== */
+
+@media (max-width: 768px) {
+  .wmrn-banner {
+    font-size: 0.75rem;
+  }
+
+  .wmrn-banner span {
+    padding: 0.6rem 1.25rem;
+  }
+}
+
+/* ========================================
+   DARK MODE TUNING
+======================================== */
+
+@media (prefers-color-scheme: dark) {
+
+  .wmrn-banner {
+    background: #000000;
+    border-bottom: 1px solid #222;
+  }
+
+}
