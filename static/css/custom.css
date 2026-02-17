@@ -1826,3 +1826,39 @@ body {
 .page-portal .portal-timeline {
   margin-top: 2rem;
 }
+
+/* ======================================
+   PORTAL MASTER SPACING SYSTEM
+====================================== */
+
+.portal {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4rem 2rem 5rem;
+}
+
+.portal-section {
+  margin-top: 6rem;
+}
+
+.portal-section:first-of-type {
+  margin-top: 4rem;
+}
+
+.portal-section-title {
+  font-size: 1.25rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.portal-section-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  background: #3a5f8c;
+  margin-top: 0.75rem;
+}
