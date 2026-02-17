@@ -1,6 +1,5 @@
 ---
 title: "WMRN Radio History Archive"
-layout: home
 searchable: true
 outputs:
   - HTML
