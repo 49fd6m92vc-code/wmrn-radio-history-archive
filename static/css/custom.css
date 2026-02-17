@@ -1665,33 +1665,34 @@ body {
 }
 
 /* =========================================
-   TIMELINE
+   TIMELINE – CLEAN ALIGNMENT FIX
 ========================================= */
 
 .timeline {
   position: relative;
-  padding-left: 2.75rem;
+  padding-left: 3rem;
 }
 
 .timeline::before {
   content: "";
   position: absolute;
-  left: 10px;
+  left: 12px;           /* PERFECT vertical alignment */
   top: 0;
   bottom: 0;
   width: 2px;
-  background: rgba(0,0,0,0.15);
+  background: rgba(0,0,0,0.18);
 }
 
 @media (prefers-color-scheme: dark) {
   .timeline::before {
-    background: rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.2);
   }
 }
 
 .timeline-item {
   position: relative;
   margin-bottom: 2.75rem;
+  padding-left: 1rem;
 }
 
 .timeline-item:last-child {
@@ -1700,8 +1701,8 @@ body {
 
 .timeline-marker {
   position: absolute;
-  left: -4px;
-  top: 5px;
+  left: -2px;           /* perfectly centered on line */
+  top: 6px;
   width: 12px;
   height: 12px;
   background: #3A5F8C;
@@ -1714,7 +1715,7 @@ body {
 }
 
 .timeline-content {
-  line-height: 1.75;
+  line-height: 1.7;
   opacity: 0.85;
 }
 
