@@ -3,19 +3,18 @@
 <section class="portal">
 
   <!-- HERO -->
-  <div class="portal-hero">
-    <div class="portal-hero-inner">
-      <h1 class="portal-title">{{ .Title }}</h1>
-      {{ with .Params.description }}
-        <p class="portal-description">{{ . }}</p>
-      {{ end }}
-    </div>
-  </div>
+  <section class="portal-hero">
+    <h1 class="portal-title">WMRN Radio History Archive Portal</h1>
+    <p class="portal-description">
+      Institutional access point for the WMRN Radio History Archive.
+      Research tools, documented records, and structured archival access.
+    </p>
+  </section>
 
-  <!-- INSTITUTIONAL RECORD -->
+  <!-- INSTITUTIONAL SNAPSHOT -->
   <section class="portal-record">
 
-    <h2 class="portal-record-title">Institutional Record</h2>
+    <h2 class="portal-section-title">Institutional Snapshot</h2>
 
     <div class="portal-record-grid">
 
@@ -23,10 +22,13 @@
       <div class="portal-record-value">December 23, 1940</div>
 
       <div class="portal-record-label">AM Frequency</div>
-      <div class="portal-record-value">1490 kHz</div>
+      <div class="portal-record-value">1490 kHz (since 1941)</div>
 
       <div class="portal-record-label">Original FM Frequency</div>
-      <div class="portal-record-value">106.9 MHz</div>
+      <div class="portal-record-value">106.9 MHz (1953)</div>
+
+      <div class="portal-record-label">Current FM Frequency</div>
+      <div class="portal-record-value">94.3 MHz (since January 6, 2008)</div>
 
       <div class="portal-record-label">Location</div>
       <div class="portal-record-value">Marion, Ohio</div>
@@ -36,9 +38,25 @@
 
     </div>
 
+  </section>
 
+  <!-- FOUNDING RECORD -->
+  <section class="portal-founding">
 
-<!-- STATION TIMELINE -->
+    <h2 class="portal-section-title">Founding of WMRN</h2>
+
+    <p>
+      Official documentation and historical verification of WMRN’s original
+      December 23, 1940 broadcast authorization and establishment in Marion, Ohio.
+    </p>
+
+    <a href="/founding-of-wmrn/" class="portal-primary-button">
+      View Founding Documentation
+    </a>
+
+  </section>
+
+<!-- BROADCAST TIMELINE -->
 <section class="portal-timeline">
 
   <h2 class="portal-section-title">WMRN Broadcast Timeline</h2>
@@ -46,55 +64,50 @@
   <div class="timeline">
 
     <div class="timeline-item">
-      <div class="timeline-year">1940</div>
+      <div class="timeline-marker"></div>
       <div class="timeline-content">
-        <strong>December 23:</strong> WMRN-AM signs on the air in Marion, Ohio.
-        Original frequency: <strong>1500 kilocycles</strong>.
-        First regular broadcast: <strong>1:15 p.m.</strong>
+        <div class="timeline-year">1940</div>
+        <p>December 23: WMRN-AM signs on at 1500 kilocycles. First broadcast at 1:15 p.m.</p>
       </div>
     </div>
 
     <div class="timeline-item">
-      <div class="timeline-year">1941</div>
+      <div class="timeline-marker"></div>
       <div class="timeline-content">
-        AM frequency changes to <strong>1490 kilocycles</strong> under the North American Regional Broadcasting Agreement (NARBA).
+        <div class="timeline-year">1941</div>
+        <p>AM frequency moves to 1490 kHz under NARBA realignment.</p>
       </div>
     </div>
 
     <div class="timeline-item">
-      <div class="timeline-year">1953</div>
+      <div class="timeline-marker"></div>
       <div class="timeline-content">
-        <strong>May 6:</strong> WMRN-FM signs on the air at <strong>6:30 a.m.</strong><br>
-        Original FM frequency: <strong>106.9 megacycles</strong> (Channel 295).
+        <div class="timeline-year">1953</div>
+        <p>May 6: WMRN-FM launches at 106.9 MHz (Channel 295).</p>
       </div>
     </div>
 
     <div class="timeline-item">
-      <div class="timeline-year">1960</div>
+      <div class="timeline-marker"></div>
       <div class="timeline-content">
-        <strong>December 23:</strong> 20th Anniversary Address reaffirms AM and FM dual-service operations.
+        <div class="timeline-year">2008</div>
+        <p>January 6: WMRN-FM frequency changes to 94.3 MHz.</p>
       </div>
     </div>
 
     <div class="timeline-item">
-      <div class="timeline-year">2008</div>
+      <div class="timeline-marker"></div>
       <div class="timeline-content">
-        WMRN-FM frequency changes from <strong>106.9 MHz</strong> to <strong>94.3 MHz</strong>, reflecting updated FCC authorization and modernization of FM transmission facilities.
+        <div class="timeline-year">Present</div>
+        <p>AM (1490 kHz) and FM broadcast history documented and preserved by the WMRN Radio History Archive.</p>
       </div>
     </div>
 
-    <div class="timeline-item">
-      <div class="timeline-year">Present</div>
-      <div class="timeline-content">
-        WMRN-AM (<strong>1490 kHz</strong>) and successor FM operations are documented and preserved by the WMRN Radio History Archive.
-      </div>
     </div>
-
-  </div>
 
   </section>
 
-  <!-- PRIMARY ACCESS PANELS -->
+  <!-- PRIMARY ACCESS -->
   <section class="portal-access">
 
     <h2 class="portal-section-title">Research & Access</h2>
@@ -103,22 +116,22 @@
 
       <a href="/browse-the-archive/" class="portal-card">
         <h3>Browse the Archive</h3>
-        <p>Access documented materials, collections, and preserved broadcast history.</p>
+        <p>Documented materials, collections, and preserved broadcast records.</p>
       </a>
 
-      <a href="/podcast/archive/" class="portal-card">
+      <a href="/podcast/" class="portal-card">
         <h3>Podcast Archive</h3>
-        <p>Listen to preserved recordings and archival broadcast audio.</p>
+        <p>Preserved broadcast recordings and archival audio.</p>
       </a>
 
-      <a href="/founding-of-wmrn/" class="portal-card">
-        <h3>Founding Record</h3>
-        <p>Official station origin documentation and verification.</p>
+      <a href="/facilities-equipment/" class="portal-card">
+        <h3>Facilities & Equipment</h3>
+        <p>Studios, transmitters, and technical infrastructure history.</p>
       </a>
 
       <a href="/contribute-materials/" class="portal-card">
         <h3>Contribute Materials</h3>
-        <p>Submit recordings, documents, photographs, and historical information.</p>
+        <p>Submit recordings, documents, photographs, and historical materials.</p>
       </a>
 
     </div>
@@ -127,16 +140,17 @@
 
   <!-- INSTITUTIONAL STATEMENT -->
   <section class="portal-institutional">
-    <h2 class="portal-section-title">Institutional Statement</h2>
-    <p>
-      The WMRN Radio History Archive exists to preserve, document, and provide structured access to the broadcast legacy of WMRN-AM and WMRN-FM in Marion, Ohio.
-      Materials are cataloged, described, and presented in accordance with archival standards and historical documentation practices.
-    </p>
-  </section>
 
-  <!-- BODY CONTENT -->
-  <section class="portal-body">
-    {{ .Content }}
+    <h2 class="portal-section-title">Institutional Statement</h2>
+
+    <p>
+      The WMRN Radio History Archive exists to preserve, document,
+      and provide structured access to the broadcast legacy of
+      WMRN-AM (1490) and WMRN-FM in Marion, Ohio.
+      Materials are cataloged, described, and presented in accordance
+      with archival standards and historical documentation practices.
+    </p>
+
   </section>
 
 </section>
