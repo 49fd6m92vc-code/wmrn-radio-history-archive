@@ -1895,3 +1895,36 @@ body {
   max-width: 800px;
   opacity: 0.85;
 }
+
+/* =========================================
+   HOMEPAGE BUTTONS (EXPLICIT CLASS)
+========================================= */
+
+.home-button {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  background: #3A5F8C;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.05em;
+  border-radius: 2px;
+  transition: all 0.25s ease;
+}
+
+.home-button:hover {
+  background: #2c4a70;
+  transform: translateY(-2px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .home-button {
+    background: #2c4a70;
+  }
+
+  .home-button:hover {
+    background: #3A5F8C;
+  }
+}
