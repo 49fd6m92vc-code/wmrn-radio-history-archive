@@ -1793,3 +1793,36 @@ body {
   }
 
 }
+
+/* =========================================
+   PORTAL LAYOUT OVERRIDE (Mainroad Fix)
+========================================= */
+
+.page-portal .main__content {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+
+.page-portal .portal-section {
+  margin-bottom: 6rem;
+}
+
+.page-portal .portal-section:last-child {
+  margin-bottom: 0;
+}
+
+/* Remove cramped heading spacing */
+.page-portal h2,
+.page-portal h3 {
+  margin-top: 0;
+}
+
+/* Add breathing room between headings and content */
+.page-portal .portal-section-title {
+  margin-bottom: 2.5rem;
+}
+
+/* Give the timeline more air */
+.page-portal .portal-timeline {
+  margin-top: 2rem;
+}
