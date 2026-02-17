@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = "WMRN Radio History Archive"
 theme = "mainroad"
 
-canonifyURLs = false
+canonifyURLs = true
 relativeURLs = false
 buildFuture = true
 
@@ -55,6 +55,11 @@ mainSections = [
   description = "Preserving the broadcast legacy of WMRN-AM (1490) and WMRN-FM — Marion, Ohio."
   author = "WMRN Radio History Archive"
 
+  # Enable native social + schema
+  opengraph = true
+  twitter_cards = true
+  schema = true
+
   pager = false
   toc = false
   post_meta = ["author", "date"]
@@ -63,9 +68,10 @@ mainSections = [
 
   copyright = "© 2026 WMRN Radio History Archive"
 
-  images = ["images/wmrn-radio-history-archive-social.png"]
+  # Absolute URL for social sharing
+  images = ["https://wmrnhistory.com/images/wmrn-radio-history-archive-social.png"]
 
-  # CORRECT accent override location
+  # Accent color override
   [params.style]
     [params.style.vars]
       highlightColor = "#1c2d4a"
