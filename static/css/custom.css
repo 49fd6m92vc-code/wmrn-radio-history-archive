@@ -1779,3 +1779,119 @@ body {
   }
 
 }
+
+/* =========================================
+   HOMEPAGE – STRUCTURAL POLISH
+========================================= */
+
+.home .main__content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4rem 2rem 6rem;
+}
+
+/* =========================================
+   HOMEPAGE HEADINGS
+========================================= */
+
+.home h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+}
+
+.home h2 {
+  margin-top: 4.5rem;
+  margin-bottom: 2rem;
+  font-size: 1.35rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+.home h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 2px;
+  background: #3A5F8C;
+  margin-top: 0.75rem;
+}
+
+/* =========================================
+   SECTION SPACING
+========================================= */
+
+.home hr {
+  margin: 3rem 0;
+  opacity: 0.1;
+}
+
+.home p {
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+  opacity: 0.9;
+}
+
+/* =========================================
+   HOMEPAGE IMAGES
+========================================= */
+
+.home img {
+  display: block;
+  max-width: 100%;
+  margin: 2rem auto 1.5rem;
+  border: 1px solid rgba(0,0,0,0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  .home img {
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+}
+
+/* =========================================
+   HOMEPAGE BUTTON LINKS
+========================================= */
+
+.home a[href^="/"] {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.4rem;
+  background: #3A5F8C;
+  color: #fff !important;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  transition: all 0.25s ease;
+}
+
+.home a[href^="/"]:hover {
+  background: #2c4a70;
+  transform: translateY(-2px);
+}
+
+@media (prefers-color-scheme: dark) {
+  .home a[href^="/"] {
+    background: #2c4a70;
+  }
+
+  .home a[href^="/"]:hover {
+    background: #3A5F8C;
+  }
+}
+
+/* =========================================
+   ARCHIVAL STATEMENT BLOCK
+========================================= */
+
+.home h2:last-of-type {
+  margin-top: 5rem;
+}
+
+.home h2:last-of-type + p {
+  max-width: 800px;
+  opacity: 0.85;
+}
