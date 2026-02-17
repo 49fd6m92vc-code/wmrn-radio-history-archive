@@ -1748,45 +1748,67 @@ body {
 }
 
 /* ========================================
-   WMRN SCROLLING TIMELINE BANNER
+   WMRN SCROLLING BANNER
 ======================================== */
 
 .wmrn-banner {
-  background-color: #1c2d4a;
-  color: #ffffff;
+  width: 100%;
   overflow: hidden;
-  height: 38px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid rgba(255,255,255,0.15);
+  background-color: #1c2d4a; /* Navy */
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.wmrn-banner-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
 }
 
 .wmrn-banner-track {
   display: flex;
   width: max-content;
-  animation: wmrn-scroll 60s linear infinite;
+  animation: wmrn-scroll 45s linear infinite;
 }
 
-.wmrn-banner-track span {
+.wmrn-banner-content {
   white-space: nowrap;
   padding-right: 4rem;
+  color: #ffffff;
   font-size: 0.9rem;
+  letter-spacing: 0.3px;
 }
 
-/* Continuous scroll */
+/* Scroll animation */
 @keyframes wmrn-scroll {
-  0% {
+  from {
     transform: translateX(0);
   }
-  100% {
+  to {
     transform: translateX(-50%);
   }
 }
 
-/* Force navy in dark mode */
+/* Pause on hover (desktop only) */
+@media (hover: hover) {
+  .wmrn-banner:hover .wmrn-banner-track {
+    animation-play-state: paused;
+  }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .wmrn-banner-track {
+    animation: none;
+  }
+}
+
+/* ========================================
+   DARK MODE (Force Proper Navy)
+======================================== */
+
 @media (prefers-color-scheme: dark) {
   .wmrn-banner {
-    background-color: #1c2d4a !important;
-    color: #ffffff !important;
+    background-color: #1c2d4a;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
   }
 }
