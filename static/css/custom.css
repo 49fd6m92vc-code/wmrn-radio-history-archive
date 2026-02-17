@@ -1752,37 +1752,41 @@ body {
 ======================================== */
 
 .wmrn-banner {
-  background-color: #1c2d4a;   /* Official navy */
+  background-color: #1c2d4a;
   color: #ffffff;
   overflow: hidden;
-  white-space: nowrap;
+  height: 38px;
+  display: flex;
+  align-items: center;
   border-bottom: 1px solid rgba(255,255,255,0.15);
 }
 
 .wmrn-banner-track {
   display: inline-block;
-  padding: 0.6rem 0;
-  animation: wmrn-scroll 40s linear infinite;
+  white-space: nowrap;
+  animation: wmrn-scroll 35s linear infinite;
 }
 
 .wmrn-banner-track span {
   display: inline-block;
   padding-left: 100%;
   font-size: 0.9rem;
-  letter-spacing: 0.4px;
 }
 
 /* Scroll animation */
 @keyframes wmrn-scroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
-/* Force same navy in dark mode */
+/* Force same styling in dark mode */
 @media (prefers-color-scheme: dark) {
   .wmrn-banner {
     background-color: #1c2d4a !important;
     color: #ffffff !important;
-    border-bottom: 1px solid rgba(255,255,255,0.15);
   }
 }
