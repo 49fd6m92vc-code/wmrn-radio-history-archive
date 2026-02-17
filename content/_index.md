@@ -7,72 +7,71 @@ outputs:
   - JSON
 ---
 
-# Welcome to the WMRN Radio History Archive
+# WMRN Radio History Archive
 
-The **WMRN Radio History Archive** is a historical preservation project dedicated to documenting the legacy of **WMRN (AM 1490)** and **WMRN-FM** in Marion, Ohio.
+The **WMRN Radio History Archive** is an independent historical preservation initiative dedicated to documenting the broadcast legacy of **WMRN-AM (1490)** and **WMRN-FM** in Marion, Ohio.
 
-Founded in **1940**, WMRN has served north-central Ohio for generations through news, music, sports, and community service. This archive preserves that story through **photographs, documents, audio recordings, ephemera, and original research**.
+Founded in **December 1940**, WMRN has served north-central Ohio for generations through news, music, sports, and community service. This archive preserves that legacy through **photographs, documents, broadcast recordings, ephemera, and documented research**.
 
-Materials are collected from **public records** and **private collections** for educational and historical purposes.
+Materials are collected from **public records** and **private collections** and are presented for educational and historical documentation purposes.
 
 ---
 
-## Station History
+## Explore the Archive
+
+---
+
+### Station History
 
 ![Original WMRN facilities and early broadcast infrastructure](/images/homepage/station-history.jpeg)
 
-Ownership, formats, call letters, and major milestones from WMRN’s founding in 1940 to today.
+Ownership, call letters, format changes, regulatory milestones, and institutional developments from WMRN’s founding in 1940 through the present era.
 
-[View Station History →](/station-history/)
+[Explore Station History →](/station-history/)
 
 ---
 
-## Facilities & Equipment
+### Facilities & Equipment
 
 ![WMRN transmission tower and broadcast facilities](/images/homepage/facilities-equipment.jpeg)
 
-Studios, transmitters, towers, blueprints, photographs, and technical documentation related to WMRN’s physical broadcast infrastructure.
+Studios, transmission towers, engineering records, blueprints, photographs, and technical documentation related to WMRN’s physical broadcast infrastructure.
 
-[Explore Facilities →](/facilities-equipment/)
+[Explore Facilities & Equipment →](/facilities-equipment/)
 
 ---
 
-## People & Programming
+### People & Programming
 
 ![Vintage WMRN microphone and network-era broadcast branding](/images/homepage/people-programming.jpeg)
 
-Air personalities, engineers, newsroom staff, shows, slogans, and eras that defined WMRN on the air.
+Air personalities, engineers, newsroom staff, programming eras, slogans, and defining broadcast moments that shaped WMRN on the air.
 
-[Meet the People →](/people-programming/)
-
----
-
-## Browse the Archive
-
-Individual records including photographs, audio recordings, documents, advertisements, and ephemera preserved as discrete archival entries.
-
-[Browse the Archive →](/browse-the-archive/)
+[Explore People & Programming →](/people-programming/)
 
 ---
 
-## About the Archive
+### Browse the Archive
 
-Scope, collection policy, provenance, and project background.
+Individual archival records including photographs, audio recordings, documents, advertisements, and ephemera cataloged as discrete entries.
 
-[About the Archive →](/about/)
+[Browse Archival Records →](/browse-the-archive/)
 
 ---
 
-This site is a **living archive**. New materials are added as they are identified, documented, and preserved.
+### About the Archive
 
-WMRN and WMRN-FM are referenced for historical documentation purposes only.
+Scope, collection policy, provenance standards, archival methodology, and project background.
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQHE4LCHPT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+[Learn About the Archive →](/about/)
+
+---
+
+## Archival Statement
+
+This is a **living archive**. Materials are added as they are identified, documented, verified, and preserved.
+
+WMRN-AM and WMRN-FM are referenced for historical documentation purposes. The WMRN Radio History Archive operates independently as a preservation initiative dedicated to safeguarding Marion’s broadcast history.  gtag('js', new Date());
 
   gtag('config', 'G-BQHE4LCHPT');
 </script>
