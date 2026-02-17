@@ -113,56 +113,26 @@ mainSections = [
     weight = 1
 
   [[menu.main]]
-    identifier = "history"
-    name = "History"
-    pageRef = "/station-history/"
-    weight = 2
-
-  [[menu.main]]
-    parent = "history"
-    name = "Founding of WMRN"
-    pageRef = "/founding-of-wmrn/"
-    weight = 1
-
-  [[menu.main]]
-    identifier = "collections"
-    name = "Collections"
-    pageRef = "/browse-the-archive/"
-    weight = 3
-
-  [[menu.main]]
-    parent = "collections"
-    name = "Facilities"
-    pageRef = "/facilities-equipment/"
-    weight = 1
-
-  [[menu.main]]
-    parent = "collections"
-    name = "People"
-    pageRef = "/people-programming/"
+    name = "Portal"
+    pageRef = "/portal/"
     weight = 2
 
   [[menu.main]]
     name = "Podcast"
     pageRef = "/podcast/"
-    weight = 4
+    weight = 3
 
   [[menu.main]]
     identifier = "about"
     name = "About"
     pageRef = "/about/"
-    weight = 5
+    weight = 4
 
   [[menu.main]]
     parent = "about"
     name = "Contribute"
     pageRef = "/contribute-materials/"
     weight = 1
-
-  [[menu.main]]
-    name = "Portal"
-    pageRef = "/portal/"
-    weight = 6
 
   [[menu.footer]]
     name = "Access & Use Policy"
