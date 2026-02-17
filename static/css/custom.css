@@ -1548,32 +1548,37 @@ body {
 }
 
 /* =====================================================
-   WMRN RADIO HISTORY ARCHIVE – PORTAL SYSTEM
-   ===================================================== */
-
-/* -----------------------------------------------------
-   BASE LAYOUT
------------------------------------------------------ */
+   WMRN PORTAL – REFINED STRUCTURE
+===================================================== */
 
 .portal {
-  padding: 3rem 0 5rem 0;
+  padding: 4rem 0 6rem 0;
 }
 
 .portal-inner {
-  max-width: 950px;
+  max-width: 1050px;   /* Wider for breathing room */
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 }
 
-/* Section rhythm */
+/* -----------------------------------------------------
+   SECTION STRUCTURE
+----------------------------------------------------- */
 
 .portal-section {
-  padding: 3.5rem 0;
-  border-top: 1px solid rgba(255,255,255,0.08);
+  padding: 4rem 0;
+  border-top: 1px solid rgba(0,0,0,0.08);
 }
 
 .portal-section:first-of-type {
   border-top: none;
+}
+
+/* Dark mode borders */
+@media (prefers-color-scheme: dark) {
+  .portal-section {
+    border-top: 1px solid rgba(255,255,255,0.06);
+  }
 }
 
 /* -----------------------------------------------------
@@ -1582,20 +1587,20 @@ body {
 
 .portal-hero {
   text-align: center;
-  padding: 2rem 0 3rem 0;
+  padding-bottom: 3rem;
 }
 
 .portal-title {
-  font-size: 2rem;
+  font-size: 2.1rem;
   letter-spacing: 0.5px;
   margin-bottom: 1rem;
 }
 
 .portal-description {
-  max-width: 650px;
+  max-width: 700px;
   margin: 0 auto;
-  opacity: 0.8;
-  line-height: 1.6;
+  opacity: 0.75;
+  line-height: 1.7;
 }
 
 /* -----------------------------------------------------
@@ -1603,11 +1608,23 @@ body {
 ----------------------------------------------------- */
 
 .portal-section-title {
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  margin-bottom: 2rem;
-  opacity: 0.85;
+  letter-spacing: 1.2px;
+  margin-bottom: 2.5rem;
+  position: relative;
+  padding-bottom: 0.75rem;
+}
+
+/* Subtle underline accent */
+.portal-section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  height: 2px;
+  background: #3A5F8C;
 }
 
 /* -----------------------------------------------------
@@ -1616,9 +1633,9 @@ body {
 
 .portal-record-grid {
   display: grid;
-  grid-template-columns: 220px 1fr;
-  row-gap: 1rem;
-  column-gap: 2rem;
+  grid-template-columns: 260px 1fr;
+  row-gap: 1.25rem;
+  column-gap: 3rem;
 }
 
 .portal-record-label {
@@ -1635,15 +1652,16 @@ body {
 ----------------------------------------------------- */
 
 .portal-lead {
-  margin-bottom: 1.5rem;
-  line-height: 1.6;
+  max-width: 750px;
+  line-height: 1.75;
   opacity: 0.85;
+  margin-bottom: 1.75rem;
 }
 
 .portal-primary-link {
   font-weight: 600;
   text-decoration: none;
-  border-bottom: 1px solid rgba(255,255,255,0.4);
+  border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
   transition: opacity 0.2s ease;
 }
@@ -1653,19 +1671,25 @@ body {
 }
 
 /* -----------------------------------------------------
-   TIMELINE – CLEAN VERTICAL RULE SYSTEM
+   TIMELINE – CLEAN PROFESSIONAL RULE
 ----------------------------------------------------- */
 
 .portal-timeline {
   position: relative;
-  margin-left: 1rem;
   padding-left: 2.5rem;
-  border-left: 2px solid rgba(255,255,255,0.15);
+  margin-left: 0.5rem;
+  border-left: 2px solid rgba(0,0,0,0.15);
+}
+
+@media (prefers-color-scheme: dark) {
+  .portal-timeline {
+    border-left: 2px solid rgba(255,255,255,0.15);
+  }
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 2.75rem;
+  margin-bottom: 3rem;
 }
 
 .timeline-item:last-child {
@@ -1674,62 +1698,78 @@ body {
 
 .timeline-year {
   font-weight: 600;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
 }
 
 .timeline-content {
+  line-height: 1.75;
   opacity: 0.85;
-  line-height: 1.6;
 }
 
-/* Timeline node dot */
-
+/* Timeline node */
 .timeline-item::before {
   content: "";
   position: absolute;
-  left: -2.75rem;
+  left: -2.9rem;
   top: 0.4rem;
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   background: #3A5F8C;
   border-radius: 50%;
-  border: 2px solid #111;
+  border: 3px solid #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+  .timeline-item::before {
+    border: 3px solid #111;
+  }
 }
 
 /* -----------------------------------------------------
-   RESEARCH & ACCESS GRID
+   RESEARCH & ACCESS CARDS
 ----------------------------------------------------- */
 
 .portal-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 1.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
 }
 
 .portal-card {
-  background: rgba(255,255,255,0.04);
-  padding: 1.75rem;
+  padding: 2rem;
+  background: #f6f6f6;
+  border: 1px solid rgba(0,0,0,0.08);
   text-decoration: none;
   color: inherit;
-  border: 1px solid rgba(255,255,255,0.08);
   transition: all 0.25s ease;
 }
 
 .portal-card h3 {
-  margin-bottom: 0.75rem;
-  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
 }
 
 .portal-card p {
   font-size: 0.9rem;
+  line-height: 1.7;
   opacity: 0.8;
-  line-height: 1.6;
 }
 
 .portal-card:hover {
-  background: rgba(255,255,255,0.08);
-  border-color: rgba(255,255,255,0.2);
-  transform: translateY(-3px);
+  transform: translateY(-4px);
+  border-color: #3A5F8C;
+}
+
+@media (prefers-color-scheme: dark) {
+  .portal-card {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+  }
+
+  .portal-card:hover {
+    background: rgba(255,255,255,0.08);
+  }
 }
 
 /* -----------------------------------------------------
@@ -1737,83 +1777,32 @@ body {
 ----------------------------------------------------- */
 
 .portal-institutional p {
-  margin-bottom: 1.25rem;
-  line-height: 1.7;
+  max-width: 850px;
+  line-height: 1.8;
   opacity: 0.85;
+  margin-bottom: 1.5rem;
 }
 
 /* -----------------------------------------------------
-   MOBILE OPTIMIZATION
+   RESPONSIVE
 ----------------------------------------------------- */
 
 @media (max-width: 768px) {
+
+  .portal-inner {
+    padding: 0 1.25rem;
+  }
 
   .portal-record-grid {
     grid-template-columns: 1fr;
   }
 
-  .portal-record-label {
-    margin-top: 1rem;
-  }
-
   .portal-timeline {
-    margin-left: 0;
     padding-left: 2rem;
   }
 
   .timeline-item::before {
-    left: -2.2rem;
-  }
-
-}
-
-/* -----------------------------------------------------
-   BANNER COMPATIBILITY
------------------------------------------------------ */
-
-.wmrn-banner {
-  background: #1c2d4a;
-  color: #ffffff;
-  font-size: 0.85rem;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.wmrn-banner-track {
-  display: inline-block;
-  padding: 0.6rem 0;
-  animation: banner-scroll 65s linear infinite;
-}
-
-@keyframes banner-scroll {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-
-/* -----------------------------------------------------
-   DARK MODE REFINEMENTS
------------------------------------------------------ */
-
-@media (prefers-color-scheme: dark) {
-
-  .portal-section {
-    border-top: 1px solid rgba(255,255,255,0.05);
-  }
-
-  .portal-timeline {
-    border-left: 2px solid rgba(255,255,255,0.12);
-  }
-
-  .portal-card {
-    background: rgba(255,255,255,0.03);
-  }
-
-  .portal-card:hover {
-    background: rgba(255,255,255,0.06);
+    left: -2.4rem;
   }
 
 }
