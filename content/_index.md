@@ -71,7 +71,12 @@ Scope, collection policy, provenance standards, archival methodology, and projec
 
 This is a **living archive**. Materials are added as they are identified, documented, verified, and preserved.
 
-WMRN-AM and WMRN-FM are referenced for historical documentation purposes. The WMRN Radio History Archive operates independently as a preservation initiative dedicated to safeguarding Marion’s broadcast history.  gtag('js', new Date());
+WMRN-AM and WMRN-FM are referenced for historical documentation purposes. The WMRN Radio History Archive operates independently as a preservation initiative dedicated to safeguarding Marion’s broadcast history.
 
-  gtag('config', 'G-BQHE4LCHPT');
-</script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BQHE4LCHPT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+“
