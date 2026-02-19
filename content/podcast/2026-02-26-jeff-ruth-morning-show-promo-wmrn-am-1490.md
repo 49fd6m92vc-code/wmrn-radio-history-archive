@@ -15,7 +15,7 @@ collection: WMRN Radio History Archive Podcast
 
 This episode presents a preserved promotional announcement for WMRN-AM 1490 highlighting the station’s weekday morning program featuring Jeff Ruth and Terry Cole.
 
-Airing Monday through Friday from 6:00 to 9:00 a.m., the program was branded as “Home Town Radio, WMRN,” emphasizing a blend of local information, personality-driven conversation, humor, and community engagement. The promo captures the tone of the show and reflects how WMRN-AM positioned its morning programming within the Marion, Ohio media landscape.
+Airing Monday through Friday from 6:00 to 9:00 a.m., the program was branded as “Hometown Radio, WMRN,” emphasizing a blend of local information, personality-driven conversation, humor, and community engagement. The promo captures the tone of the show and reflects how WMRN-AM positioned its morning programming within the Marion, Ohio media landscape.
 
 The recording illustrates the station’s format strategy during the period in which it aired — combining host-driven content with newsroom presence to start the day for listeners.
 
