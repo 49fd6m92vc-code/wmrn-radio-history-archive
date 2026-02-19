@@ -34,7 +34,7 @@ The recording illustrates WMRN’s broader mid-1990s newsroom identity — blend
 
 <div class="podcast-player">
   <iframe
-    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-accurate-grapevine-wmrn-news-promo-date-unknown-323582975?app=listen&embed=true"
+    src="https://www.iheart.com/podcast/53-wmrn-radio-history-archive-321958340/episode/the-wmrn-archives-19941995-domestic-violence-denise-brown-interview-wmrn-news-promo-323577408?app=listen&embed=true"
     width="100%"
     height="200"
     title="THE WMRN ARCHIVES: 1994-1995 - Domestic Violence: Denise Brown Interview, WMRN News"
